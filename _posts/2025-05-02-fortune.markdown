@@ -1,0 +1,14 @@
+
+The New York Times is read by the people who run the country.  The
+Washington Post is read by the people who think they run the country.
+The National Enquirer is read by the people who think Elvis is alive
+and running the country ...
+		-- Robert J. Woodhead
+
+The nice thing about standards is that there are so many of them to
+choose from.
+		-- Andrew S. Tanenbaum
+
+The number of arguments is unimportant unless some of them are
+correct.
+		-- Ralph Hartley
