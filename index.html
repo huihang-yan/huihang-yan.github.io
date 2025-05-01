@@ -10,4 +10,16 @@ docs.github.com:
    ...
 ...
 
+---
+
+I would use static method. Build static Jekyll site locally, then push
+the built HTML/CSS/JS etc. files to the repo. The reason is that GitHub
+Action might be problematic - e.g. when the GitHub server gets down ...
+
+On the other side, the cons is that I would need to track the diff-s of
+the *generated* HTML/CSS/JS etc. file. Absolutely more work than using
+GitHub Action, which hides the generated site files behind the scene.
+
+---
+
 cool old terminal, CRT emulation
