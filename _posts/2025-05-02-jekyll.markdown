@@ -48,7 +48,7 @@ I could not connect to neither Blogspot and Wordpress.
 Link to the document:
 [https://docs.github.com/en/pages/quickstart](https://docs.github.com/en/pages/quickstart)
 
-## Plaintext blog?
+## Plaintext blogging
 
 Maybe we could blog in plaintext only? - that is, providing pages as a big
 `<pre>`.
@@ -62,6 +62,13 @@ I decided to use Jekyll for now. I have used Jekyll for one of my previous
 blogs, and it's good enough - there is space for improvement for everything,
 though.
 
+But wait - we could probably fuse Jekyll with
+
+TAOUP
+useplaintext.email
+typewriter tradition
+underline
+italic? bold?
 
 ## Reasons to blog
 
