@@ -57,6 +57,10 @@ No. This might be okay for technical users, but it would probably look
 extremely weird for most people. People would feel that maybe it's something
 wrong with my blog page, since it 'looks different from other websites/blogs'.
 
+I decided to use Jekyll for now. I have used Jekyll for one of my previous
+blogs, and it's good enough - there is space for improvement for everything,
+though - 
+
 ## Reasons to blog
 
 But why should we write blogs?
