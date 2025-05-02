@@ -48,6 +48,8 @@ I could not connect to neither Blogspot and Wordpress.
 Link to the document:
 [https://docs.github.com/en/pages/quickstart](https://docs.github.com/en/pages/quickstart)
 
+## Reasons to blog
+
 But why should we write blogs?
 Firstly,
 for fun.
