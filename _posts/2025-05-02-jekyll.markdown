@@ -19,8 +19,11 @@ I could not connect to neither Blogspot and Wordpress.
 Link to the document:
 [https://docs.github.com/en/pages/quickstart](https://docs.github.com/en/pages/quickstart)
 
-But why should we write blogs? Well, firstly, at least it is fun for me.
-For fun. And secondly, blogs could help people know and understand me better,
+But why should we write blogs?
+Firstly,
+for fun.
+Secondly,
+blogs could help people know and understand me better,
  and might
 at the same time provide me with more opportunites and/or trust. What's more,
 I myself have benefited a lot from the blogs written by other people - for
