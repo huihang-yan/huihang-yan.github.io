@@ -101,6 +101,10 @@ They would automatically update if we use
 `jekyll serve`, which launches a web server and auto-regenerates the site 
 when a file is updated.
 
+`--livereload` is a really convenient feature which tells the browser to
+refresh the page every time we have made an edit. Therefore we don't need to
+refresh the page ourselves.
+
 Jekyll requires blog post files to be named according to the following format:
 
 `YEAR-MONTH-DAY-title.MARKUP`
