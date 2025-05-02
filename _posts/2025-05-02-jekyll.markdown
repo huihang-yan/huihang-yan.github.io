@@ -11,6 +11,10 @@ In the document Quickstart for GitHub Pages, we have the answer:
 > You can use GitHub Pages to showcase some open source projects,
 > host a blog, or even share your resume.
 
+Yes, we could use GitHub Pages as blog. That is great - especially
+considering the fact that for some reason - probably the national firewall
+- I could not connect to neither Blogspot and Wordpress.
+
 The document link is: https://docs.github.com/en/pages/quickstart
 
 The posts are put in the `_posts` directory.
