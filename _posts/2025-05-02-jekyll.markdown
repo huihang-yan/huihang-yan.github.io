@@ -20,6 +20,14 @@ Another unique feature of GitHub Pages is the version control thing. I don't
 really need version control,
 but it's okay for me.
 
+Availability should also be taken into consideration. Besides GitHub Pages,
+I know other two blogging platform: Blogspot and Wordpress. If my memory
+is correct, Blogspot is a Google thing, and is thus - like other Google
+thing - unavailable in the place I live in. I cannot connect to the
+Wordpress website either. GitHub Pages is also unusable from time to time,
+but is at least available *some times*, and the repository push-pull
+are not blocked and always available, according to my experience.
+
 What can we write in GitHub Pages?
 In the document Quickstart for GitHub Pages, we have the answer:
 
