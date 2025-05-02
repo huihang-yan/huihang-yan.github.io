@@ -13,6 +13,9 @@ usually provides in-browser interface - yes, with some scripting or something,
 we might end up being able to blog in command-line, even though it's not
 designed to do so - but then, why don't we simply use GitHub Pages?
 
+Another unique feature of GitHub Pages is the version control thing. I don't
+really need this, but it's okay for me.
+
 What can we write in GitHub Pages?
 In the document Quickstart for GitHub Pages, we have the answer:
 
