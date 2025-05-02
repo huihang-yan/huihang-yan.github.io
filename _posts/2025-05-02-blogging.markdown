@@ -2,7 +2,6 @@
 layout: post
 title:  "On Blogging"
 date:   2025-05-02 10:54:00 +0800
-categories: jekyll update
 ---
 
 We have decided to begin our new blog on GitHub Pages.
