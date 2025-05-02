@@ -19,6 +19,9 @@ designed to do so - but then, why don't we simply use GitHub Pages?
 Another unique feature of GitHub Pages is the version control thing. I don't
 really need version control,
 but it's okay for me.
+I feel a bit uneasy for the need of git-commit every time changes are made,
+but at the same time I always check what I have edited with git-diff.
+This is weird.
 
 Availability is another factor to be considered. Besides GitHub Pages,
 I know two other blog platforms, Blogspot and Wordpress. If my memory
