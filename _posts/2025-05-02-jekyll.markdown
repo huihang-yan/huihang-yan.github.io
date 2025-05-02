@@ -5,8 +5,11 @@ date:   2025-05-02 10:54:00 +0800
 categories: jekyll update
 ---
 
-What are the pros of using GitHub Pages, instead of other blogging
-platforms? The biggest pros should be that: we could do blogging on the
+We have decided to begin our new blog on GitHub Pages.
+But why not other blogging platforms?
+What are the pros of GitHub Pages?
+
+The biggest pros should be that: we could do blogging on the
 command-line. GitHub Pages is *designed* to be used on the command-line,
 while other blogging platforms usually do not. Other blogging platforms
 usually provides in-browser interface - yes, with some scripting or something,
