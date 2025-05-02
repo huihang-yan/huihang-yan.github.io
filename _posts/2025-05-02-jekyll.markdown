@@ -34,6 +34,11 @@ tiny 'articles' - or, should we use the term 'snippet'? - no, 'snippet'
 is even longer - maybe 'cards'
 should be the right word.
 
+What I also did before is to edit Markdown texts in-line - in every line -
+which produces git-diff results that are more difficult to read. This time
+I find it great to minimise the git-diff results - since, anyway, the
+target view would be the brew'd HTML, not the Markdown source text.
+
 The posts are put in the `_posts` directory.
 They would automatically update if we use 
 `jekyll serve`, which launches a web server and auto-regenerates the site 
