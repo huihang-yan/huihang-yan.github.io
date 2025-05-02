@@ -19,7 +19,8 @@ the national firewall
 The document link is: https://docs.github.com/en/pages/quickstart
 
 But why should we write blogs? Well, firstly, at least it is fun for me.
-For fun. And secondly, blogs could help people know about me, and might
+For fun. And secondly, blogs could help people know and understand me better,
+ and might
 at the same time provide me with more opportunites and/or trust.
 
 The posts are put in the `_posts` directory.
