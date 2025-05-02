@@ -1,8 +1,3 @@
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Huihang Yan's Home Page
 email: huihang.yan@outlook.com
 baseurl: "" # the subpath of your site, e.g. /blog
