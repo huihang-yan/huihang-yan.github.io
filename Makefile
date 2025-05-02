@@ -1,2 +1,2 @@
 all: huihang.7
-	echo $?
+	groff -man -T ascii < $?
