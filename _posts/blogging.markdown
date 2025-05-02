@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "On Blogging"
+date: 2025-05-02
 permalink: "/blogging.html"
 ---
 
