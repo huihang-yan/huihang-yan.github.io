@@ -28,6 +28,11 @@ in C.
 By writing blogs myself, maybe I would help then other people - that's great,
 isn't it? Helping other people should be great.
 
+It occured to me that when I wrote blogs before, I don't know how to
+manage the size of one article. The result is that, I wrote lots of really
+tiny 'articles' - or, should we use the term 'snippet'? - no, 'snippet'
+is even longer - maybe 'cards'.
+
 The posts are put in the `_posts` directory.
 They would automatically update if we use 
 `jekyll serve`, which launches a web server and auto-regenerates the site 
