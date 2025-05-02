@@ -1,5 +1,3 @@
-title: Huihang Yan's Home Page
-email: huihang.yan@outlook.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  huihang-yan
