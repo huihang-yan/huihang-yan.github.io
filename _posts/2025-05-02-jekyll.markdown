@@ -21,7 +21,7 @@ really need version control,
 but it's okay for me.
 
 Availability is another factor to be considered. Besides GitHub Pages,
-I know other two blogging platform: Blogspot and Wordpress. If my memory
+I know two other blogging platforms: Blogspot and Wordpress. If my memory
 is correct, Blogspot is a Google thing, and is thus - like other Google
 thing - unavailable in the place I live in. I cannot connect to the
 Wordpress website either. GitHub Pages is also unusable from time to time,
