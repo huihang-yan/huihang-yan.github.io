@@ -53,7 +53,8 @@ Link to the document:
 Maybe we could blog in plaintext only? - that is, providing pages as a big
 `<pre>`.
 
-No. This might be okay for technical users, but it would probably look
+No. This might be okay for users who prefer plain text like me,
+but it would probably look
 extremely weird for most people. People would feel that maybe it's something
 wrong with my blog page, since it 'looks different from other websites/blogs'.
 
