@@ -5,6 +5,14 @@ date:   2025-05-02 10:54:00 +0800
 categories: jekyll update
 ---
 
+What can we write in GitHub Pages?
+In the document Quickstart for GitHub Pages, we have the answer:
+
+> You can use GitHub Pages to showcase some open source projects,
+> host a blog, or even share your resume.
+
+The document link is: https://docs.github.com/en/pages/quickstart
+
 The posts are put in the `_posts` directory.
 They would automatically update if we use 
 `jekyll serve`, which launches a web server and auto-regenerates the site 
