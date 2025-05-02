@@ -25,6 +25,8 @@ at the same time provide me with more opportunites and/or trust. What's more,
 I myself have benefited a lot from the blogs written by other people - for
 many years, from the beginning - when I firstly studied DOS commands and coding
 in C.
+By writing blogs myself, maybe I would help then other people - that's great,
+isn't it? Helping other people should be great.
 
 The posts are put in the `_posts` directory.
 They would automatically update if we use 
