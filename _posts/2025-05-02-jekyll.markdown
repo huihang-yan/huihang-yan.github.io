@@ -31,6 +31,8 @@ Wordpress website either. GitHub Pages is also unusable from time to time,
 but is at least available *some times*, and the repository push-pull
 are not blocked and always available, according to my experience.
 
+## Is it okay to blog on GitHub Pages?
+
 GitHub is mainly designed to host code repositories, so I decided to
 check twice whether we could blog in GitHub Pages.
 In the document Quickstart for GitHub Pages, we have the answer:
