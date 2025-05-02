@@ -1,0 +1,61 @@
+.TH huihang 7
+.SH
+bzip2, bunzip2 \- a block-sorting file compressor, v1.0.8
+.br
+bzcat \- decompresses files to stdout
+.br
+bzip2recover \- recovers data from damaged bzip2 files
+
+.SH DESCRIPTION
+.I bzip2
+compresses files using the Burrows-Wheeler block sorting
+text compression algorithm, and Huffman coding.  Compression is
+generally considerably better than that achieved by more conventional
+LZ77/LZ78-based compressors, and approaches the performance of the PPM
+family of statistical compressors.
+
+The command-line options are deliberately very similar to 
+those of 
+.I GNU gzip, 
+but they are not identical.
+
+.I bzip2
+expects a list of file names to accompany the
+command-line flags.  Each file is replaced by a compressed version of
+itself, with the name "original_name.bz2".  
+Each compressed file
+has the same modification date, permissions, and, when possible,
+ownership as the corresponding original, so that these properties can
+be correctly restored at decompression time.  File name handling is
+naive in the sense that there is no mechanism for preserving original
+file names, permissions, ownerships or dates in filesystems which lack
+these concepts, or have serious file name length restrictions, such as
+MS-DOS.
+
+
+.SH AUTHOR
+Julian Seward, jseward@acm.org.
+
+https://sourceware.org/bzip2/
+
+The ideas embodied in
+.I bzip2
+are due to (at least) the following
+people: Michael Burrows and David Wheeler (for the block sorting
+transformation), David Wheeler (again, for the Huffman coder), Peter
+Fenwick (for the structured coding model in the original
+.I bzip,
+and many refinements), and Alistair Moffat, Radford Neal and Ian Witten
+(for the arithmetic coder in the original
+.I bzip).  
+I am much
+indebted for their help, support and advice.  See the manual in the
+source distribution for pointers to sources of documentation.  Christian
+von Roques encouraged me to look for faster sorting algorithms, so as to
+speed up compression.  Bela Lubkin encouraged me to improve the
+worst-case compression performance.  
+Donna Robinson XMLised the documentation.
+The bz* scripts are derived from those of GNU gzip.
+Many people sent patches, helped
+with portability problems, lent machines, gave advice and were generally
+helpful.
