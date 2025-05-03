@@ -7,3 +7,5 @@ index.html: huihang.7
 	echo '</pre></html>' >> $@
 	sed -i '/BANNER_HERE/r banner.ascii' $@
 	sed -i '/BANNER_HERE/d' $@
+	sed -i '/ASCII_ART_HERE/r ascii.art' $@
+	sed -i '/ASCII_ART_HERE/d' $@
