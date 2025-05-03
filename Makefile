@@ -1,2 +1,2 @@
 all: huihang.7
-	groff -man -T ascii < $?
+	groff -man -T ascii < $? | less
