@@ -279,15 +279,17 @@ and symbols. Typewriters support cursor movement, and therefore allowing
 using the underscore and hyphen symbols to print out underline and
 delete lines.
 
-Today's software terminal emulators offer underline, but
-delete lines are not the same way widely supported. Many terminal
-emulators follow the 'standard' of VT-100, supporting a number of
-colour, bold and italic besides underline. As a result, the man pages
-make heavy use of underline and bold text widely and many distributions turn
-on the colour of the ls(1) program by default, along with a large number
-of various command-line software. An interesting thing is there are
-people suggesting yet another new standard that supresses the colour
-output according to the NO_COLOR environment variable. Check these two links:
+Today's software terminal emulators offer underlining, but
+strikethrough is not the same way widely supported. Many terminal
+emulators adhere to the VT-100 'standard', which, in addition to underlining,
+offers support for a number of colour, bold and italic formatting.
+Consequently, man pages
+make heavy use of underlined and bold text, and many distributions enable
+the coloured output of the ls(1) program by default, along with numerous
+other command-line software. An intriguing development is that some
+people propose a yet another new standard that restricts colour
+output based on the NO_COLOR environment variable. Take a look at
+these two links:
 
         no-color.org
         github.com/jcs/no_color
