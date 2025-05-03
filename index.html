@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/03 20:42:22</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/03 21:03:09</u></b> huihang Exp $</div>
 huihang(7)                   Drafts of Huihang Yan                  huihang(7)
 
 
@@ -264,16 +264,45 @@ Jekyll
 
 
 PLAIN-TEXT
-       TAOUP
-       useplaintext.email
-       typewriter tradition
+       Some reasons to use plain-text can be found in the book TAOUP - The Art
+       of Unix Programming, as well as the use-plain-text-email website:
 
-       Underline? Italic? Bold? No, I won't use these in my blog. The reason
-       is that I want my blog to be able to be viewed in multiple plain-text
-       environment. The GitHub in-browser source-view doesn't have support to
-       underline/italic/bold. What's more, I guess some people have those
-       turned off in their terminals. And what's more maybe some people are
-       still using dumb terminals?
+             useplaintext.email
+
+       But I think there is one important reason behind. The typewriter tradi-
+       tion of the western society.
+
+
+PLAIN-TEXT BLOGGING
+       The term plain-text is somewhat chaotic.
+
+       At the very beginning there are the typewriters, which usually only
+       prints out mono-colour letters and symbols. Typewriters support cursor
+       movement, and therefore allowing using the underscore and hyphen sym-
+       bols to print out underline and delete lines.
+
+       In today's software terminal emulator, we could see underline, but
+       delete lines are not the same widely supported. Many of the terminal
+       emulators follow the 'standard' of VT-100, supporting a number of
+       colour, bold and italic besides underline. As a result, the man pages
+       make heavy use of underline and bold text widely and many distributions
+       turn on the colour of the ls(1) program by default, along with a large
+       number of various command-line software. An interesting thing is there
+       are even people suggesting yet another new standard that supresses the
+       colour output according to the NO_COLOR environment variable. See these
+       two links:
+
+               no-color.org
+               github.com/jcs/no_color
+
+       I typeset my blog page with groff(1), the same tool which processes the
+       man-pages(7). Should I use underline and bold text just like man-
+       pages(7) do? What about italic? No, I won't use these in my blog. The
+       reason is that I want my blog to be able to be viewed in multiple
+       plain-text environment. The GitHub in-browser source-view doesn't have
+       support to underline/italic/bold. What's more, I guess some people have
+       those turned off in their terminals. And what's more maybe some people
+       are still using dumb terminals?
 
        The e-mail environment is also taken into consideration. Usually the
        plain-text email doesn't include underline/italic/bold.
