@@ -174,8 +174,16 @@ PLAIN-TEXT
        TAOUP
        useplaintext.email
        typewriter tradition
-       underline
-       italic? bold?
+
+       Underline? Italic? Bold? No, I won't use these in my blog.  The  reason
+       is  that  I want my blog to be able to be viewed in multiple plain-text
+       environment. The GitHub in-browser source-view doesn't have support  to
+       underline/italic/bold.  What's  more,  I  guess  some people have those
+       turned off in their terminals. And what's more maybe  some  people  are
+       still using dumb terminals?
+
+       The  e-mail  environment  is also taken into consideration. Usually the
+       plain-text email doesn't include underline/italic/bold.
 
        80x24 'ANSI' screen?
 
@@ -299,6 +307,23 @@ INTERPRETED/SCRIPTING LANGUAGES
 
        What's  more,  there are no extra generated files to worry about.  Just
        the source files.
+
+
+GROFF
+       At first this blog is written directly in  HTML.  After  some  edits  I
+       found it really tiring to redo the typesetting whenever I make some ed-
+       its - the line lengths would change, so if I am to  edit  one  line,  I
+       would  in  the end edit multiple lines to adjust the typesetting, some-
+       times even the whole paragraph. So I turned to groff(1), and  it  works
+       great!
+
+       Its text formatting language syntax is really clear and easy to use.  I
+       just   grab   a   roff   file   from   /usr/share/man/   -    it    was
+       /usr/share/man/man1/bzip2.1  -  and I got my hands on. There are really
+       not much commands, just SS, SH and TH for the title stuff.
+
+       The only problem is that groff(1) generates output for the terminal, so
+       I need to sed(1) out the terminal escape sequences.
 
 
 AUTHOR
