@@ -9,3 +9,5 @@ index.html: huihang.7 ascii.art
 	@sed -i '/BANNER_HERE/d' $@
 	@sed -i '/ASCII_ART_HERE/r ascii.art' $@
 	@sed -i '/ASCII_ART_HERE/d' $@
+	@sed -i '/ASCII_ART2/r ascii.art2' $@
+	@sed -i '/ASCII_ART2/d' $@
