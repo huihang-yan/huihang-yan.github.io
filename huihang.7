@@ -316,6 +316,23 @@ errors.
 What's more, there are no extra generated files to worry about.
 Just the source files.
 
+.SH GROFF
+
+At first this blog is written directly in HTML. After some edits I
+found it really tiring to redo the typesetting whenever I make some
+edits - the line lengths would change, so if I am to edit one line,
+I would in the end edit multiple lines to adjust the typesetting,
+sometimes even the whole paragraph. So I turned to groff(1), and it
+works great!
+
+Its text formatting language syntax is really clear and easy to use.
+I just grab a roff file from /usr/share/man/ - it was
+/usr/share/man/man1/bzip2.1 - and I got my hands on. There are really
+not much commands, just SS, SH and TH for the title stuff.
+
+The only problem is that groff(1) generates output for the terminal,
+so I need to sed(1) out the terminal escape sequences.
+
 .SH AUTHOR
 Huihang Yan, huihang.yan@outlook.com.
 
