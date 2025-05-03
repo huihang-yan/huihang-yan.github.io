@@ -317,13 +317,21 @@ GROFF
        times even the whole paragraph. So I turned to groff(1), and  it  works
        great!
 
-       Its text formatting language syntax is really clear and easy to use.  I
-       just   grab   a   roff   file   from   /usr/share/man/   -    it    was
+       The roff(7) text formatting language syntax is really clear and easy to
+       use.   I  just  grab  a  roff  file  from  /usr/share/man/  -  it   was
        /usr/share/man/man1/bzip2.1  -  and I got my hands on. There are really
        not much commands, just SS, SH and TH for the title stuff.
 
        The only problem is that groff(1) generates output for the terminal, so
        I need to sed(1) out the terminal escape sequences.
+
+       Now  I just need to edit the roff(7) source and `make`. The output HTML
+       is also maintained by git(1), and I feel really pleased when seeing the
+       git-diff  updates  automatically  generated  by groff(1). It beautiful.
+       Clear, neat and beautiful. And it doesn't hurt anything - if I were  to
+       continue  editing  the  HTML  by hand as before, that would be the same
+       scene, with the only difference that the git-diff updates  are  typeset
+       by my hands, instead of automatically by groff(1).
 
 
 AUTHOR
