@@ -911,7 +911,9 @@ nop: '.nop [anything]' - always process [anything]
 .P
 macro stuff: \\)\\\\$*
 .P
-	\\$*: the concatenation of all arguments separated by spaces
+.RS
+\\$*: the concatenation of all arguments separated by spaces
+.RE
 .P
 tab: if a tab character occurs during text, the interpreter makes a
 horizontal jump to the next pre-defined tab position. There is a
