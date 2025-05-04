@@ -915,6 +915,20 @@ macro stuff: \\)\\\\$*
 \\$*: the concatenation of all arguments separated by spaces
 .RE
 .P
+However, when `\\$' appears alone, it stands
+as a single-character escapes,
+resulting in a non-printable,
+zero-width glyph.
+This nature makes it
+suitable for the purpose of
+being put at the start of a line
+to prevent the `real' beginning
+character to be parsed as commands.
+For example, when we really
+need to write something that
+begins with the dot, instead of
+trying to enter an groff command.
+.P
 tab: if a tab character occurs during text, the interpreter makes a
 horizontal jump to the next pre-defined tab position. There is a
 sophisticated interface for handling tab positions.

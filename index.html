@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 22:04:14</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 22:06:31</u></b> huihang Exp $</div>
 huihang(7)                 Greenhouse of Huihang Yan                huihang(7)
 
 
@@ -870,9 +870,18 @@ ROFF NOTES
               \$*: the concatenation of all arguments  sepa-
               rated by spaces
 
-       tab:  if  a tab character occurs during text, the in-
+       However, when `\$' appears alone, it stands as a sin-
+       gle-character escapes, resulting in a  non-printable,
+       zero-width  glyph.  This nature makes it suitable for
+       the purpose of being put at the start of  a  line  to
+       prevent  the  `real' beginning character to be parsed
+       as commands.  For example, when  we  really  need  to
+       write  something that begins with the dot, instead of
+       trying to enter an groff command.
+
+       tab: if a tab character occurs during text,  the  in-
        terpreter makes a horizontal jump to the next pre-de-
-       fined  tab  position. There is a sophisticated inter-
+       fined tab position. There is a  sophisticated  inter-
        face for handling tab positions.
 
        Tabbed/indent example code snippet:
@@ -882,8 +891,8 @@ ROFF NOTES
               .EE
               .RE
 
-       RS: reduce space. Start a  block  of  indented  text.
-       Creates  a  new indentation level. `.RS n` to specify
+       RS:  reduce  space.  Start  a block of indented text.
+       Creates a new indentation level. `.RS n`  to  specify
        the indentation value.
 
        EX: start an example block.
@@ -913,45 +922,45 @@ ROFF NOTES
 
 
 SPACING
-       An issue has been noticed when using  Groff.  It  ap-
+       An  issue  has  been noticed when using Groff. It ap-
        pears that whenever there are alterations to a single
-       line within a paragraph, even when  subsequent  para-
-       graphs  remain completely unchanged in terms of their
+       line  within  a paragraph, even when subsequent para-
+       graphs remain completely unchanged in terms of  their
        content, their spacing also gets modified.
 
-       Despite the text content in these paragraphs  remain-
-       ing  the  same, the visible layout of the document is
+       Despite  the text content in these paragraphs remain-
+       ing the same, the visible layout of the  document  is
        affected.
 
-       This is very annoying when  it  comes  together  with
-       git-diff.   I am wondering if this is a well-known or
+       This  is  very  annoying  when it comes together with
+       git-diff.  I am wondering if this is a well-known  or
        classical problem within in the Groff community.
 
-       Well, it seems so. Let's check the man-page.  In  the
+       Well,  it seems so. Let's check the man-page.  In the
        section EDITING ROFF:
 
-              All  _roff_  formatters provide automated line
+              All _roff_ formatters provide  automated  line
               breaks and horizontal and vertical spacing. In
-              order  to not disturb this, the following tips
+              order to not disturb this, the following  tips
               can be helpful.
 
-              First of all, never  include  empty  or  blank
-              lines  in  a  roff  document. Instead, use the
+              First  of  all,  never  include empty or blank
+              lines in a roff  document.  Instead,  use  the
               empty request, i.e. a line consisting of a dot
-              only,  or  a line comment .\" if a structuring
+              only, or a line comment .\" if  a  structuring
               element is needed.
 
-              Never start a  line  with  whitespace  because
-              this  can  lead  to unexpected behaviour.  In-
+              Never  start  a  line  with whitespace because
+              this can lead to  unexpected  behaviour.   In-
               dented paragraphs can be constructed in a con-
               trolled way by roff requests.
 
-              Start  each sentence on a line of its own, for
+              Start each sentence on a line of its own,  for
               the spacing after a dot is handled differently
               depending on whether it terminates an abbrevi-
-              ation or  a  sentence.   To  distinguish  both
-              cases,  do  a  line break after each sentence.
-              The following example shows a  judicious  line
+              ation  or  a  sentence.   To  distinguish both
+              cases, do a line break  after  each  sentence.
+              The  following  example shows a judicious line
               breaking in a roff input file.
 
                      This is an example of a
@@ -969,30 +978,30 @@ SPACING
                      In the output, this sentence continues
                      the same paragraph.
 
-       This  might  be  the case.  There seems to have three
+       This might be the case.  There seems  to  have  three
        things which might cause problems.
 
        Firstly the blank lines.  It would 'disturb' the for-
        matting?
 
        Secondly the line starting with whitespace.  This can
-       'lead to unexpected behaviour'?   Well,  weird.   Too
+       'lead  to  unexpected  behaviour'?  Well, weird.  Too
        weird.  Anyway, though it's weird, let's try not step
        on this trap.  It's not that hard.
 
-       Finally, start each sentence on a line  of  its  own.
-       'For  the  spacing after a dot is handled differently
+       Finally,  start  each  sentence on a line of its own.
+       'For the spacing after a dot is  handled  differently
        depending on whether it terminates an abbreviation or
-       a  sentence.'   Well, this is also weird.  But anyway
+       a sentence.'  Well, this is also weird.   But  anyway
        let's try to follow this security advice too.
 
 THEN HOW?
-       Ok, now we have learnt from the  possible  causes  to
+       Ok,  now  we  have learnt from the possible causes to
        that space-modifing issue.  Then what should we do?
 
-       The  only  issue should be how to separate paragraphs
-       without using black lines.  I check the roff  sources
-       of  the  man-pages, and I see them use '.P'.  I tried
+       The only issue should be how to  separate  paragraphs
+       without  using black lines.  I check the roff sources
+       of the man-pages, and I see them use '.P'.   I  tried
        it and it works.
 
        Well, seems that we don't have problems anymore.  But
@@ -1002,21 +1011,21 @@ THEN HOW?
        used to start a new paragraph.
 
        The AI also told me that there is an '.LP' command to
-       start  a  list paragraph, and might add bullet points
+       start a list paragraph, and might add  bullet  points
        and numbering.  That sounds good and useful.
 
        But where is '.P' command mentioned in the man-pages?
        Weird, can't find it.
 
 KAKAOTALK
-       The  registration  requires  the user to send an SMS,
+       The registration requires the user to  send  an  SMS,
        instead of receiving an SMS from them.
 
 PROTON MAIL
-       Proton Mail also comes with a VPN. The limit  of  the
+       Proton  Mail  also comes with a VPN. The limit of the
        free plan is one connection.
 
-       IMAP/SMTP:  included with Mail Plus, Proton Unlimited
+       IMAP/SMTP: included with Mail Plus, Proton  Unlimited
        and Proton for Business.  Need to upgrade.
 
        That is, there is no access to IMAP/SMTP or something
@@ -1028,54 +1037,54 @@ PROTON MAIL
 APPS
        Proton VPN - haven't tried but I guess it works.
 
-       Proton  Mail  - for free plan, this is the only email
+       Proton Mail - for free plan, this is the  only  email
        client supporting Proton Mail accounts.
 
 
 SINS AND VIRTUES
        inspirationfeed.com
 
-       The seven cardinal sins: pride, greed,  wrath,  lust,
+       The  seven  cardinal sins: pride, greed, wrath, lust,
        envy, gluttony and sloth.
 
-       Lust  refers  to an intense desire, usually to engage
+       Lust refers to an intense desire, usually  to  engage
        in illegal or immoral sexual pleasure.
 
-       Gluttony refers to the  overconsumption  of  food  or
+       Gluttony  refers  to  the  overconsumption of food or
        anything to the point of waste.
 
-       Greed  is  an  intense desire and passionate love for
-       material wealth. Much like lust and  gluttony,  greed
+       Greed is an intense desire and  passionate  love  for
+       material  wealth.  Much like lust and gluttony, greed
        results from an irrational longing for what you don't
        need.
 
-       Sloth is laziness as is  manifested  by  the  willful
-       avoidance  of work. It stems from the desire to avoid
+       Sloth  is  laziness  as  is manifested by the willful
+       avoidance of work. It stems from the desire to  avoid
        responsibility. One adage that aptly captures the sin
        of sloth is, 'those who do not work should not eat.'
 
-       Wrath  is simply uncontrolled feelings of anger, rage
-       or hatred. Wrath feeds on a strong  desire  to  exact
-       vengeance  and is often fueled by an irrational drive
+       Wrath is simply uncontrolled feelings of anger,  rage
+       or  hatred.  Wrath  feeds on a strong desire to exact
+       vengeance and is often fueled by an irrational  drive
        to harm others.
 
        Wrath  counterparts:  gentleness,  self-control,  pa-
        tience and peace.
 
-       Scriptural   references:  Colossians  3:8,  Ephesians
-       4:26-27, James  1:19-20,  Proverbs  14:29  and  15:1,
+       Scriptural  references:  Colossians  3:8,   Ephesians
+       4:26-27,  James  1:19-20,  Proverbs  14:29  and 15:1,
        Psalm 37:8 and Romans 12:19.
 
        Envy is the desire for possessions, happiness as well
        as the talents and abilities of others.
 
-       Pride is defined as an excessive  love  for  oneself,
+       Pride  is  defined  as an excessive love for oneself,
        belief in one's abilities, the desire to excel every-
        one else.  Pride is such a vile sin that it has often
        been considered as the root cause of the other six of
        the seven cardinal sins.
 
-       The seven heavenly virtues: prudence,  justice,  tem-
+       The  seven  heavenly virtues: prudence, justice, tem-
        perance, courage, faith, hope and charity.
 
 
@@ -1095,14 +1104,14 @@ AUTHOR
 
        Typesetting by groff(1):
             GNU groff version 1.22.4
-            Copyright (C)  2018  Free  Software  Foundation,
+            Copyright  (C)  2018  Free  Software Foundation,
        Inc.
             GNU groff comes with ABSOLUTELY NO WARRANTY.
-            You  may  redistribute  copies  of groff and its
+            You may redistribute copies  of  groff  and  its
        subprograms
-            under the terms of the GNU  General  Public  Li-
+            under  the  terms  of the GNU General Public Li-
        cense.
-            For  more  information  about these matters, see
+            For more information about  these  matters,  see
        the file
             named COPYING.
 
