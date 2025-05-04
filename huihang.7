@@ -644,6 +644,39 @@ errors.
 
 What's more, there are no extra generated files to worry about.
 Just the source files.
+
+The problem of C/C++ is that they do not have the modern standard
+libraries. They are born in the ages of the command-line interface,
+and when the network standards have not yet been settled.
+
+C/C++ have not standard library for GUI, network and even no
+curses-like terminal functionality. All the things are file system
+and line-oriented I/O - that is, only ed(1), even not vi(1).
+
+At that time C is a good save for portability. However it's not
+anymore true today. The lack of standard libraries result in
+lack of portability.
+
+Imagine when we develop a GUI program. If we are to use a GUI
+toolkit, then the portability gets restricted by that GUI
+toolkit. If we are to write it ourselves, people with other
+environment would often find our program not working in their
+boxes, due to the system-dependent code.
+
+The good thing is that we have Qt, GTK and web browsers, which
+provide a really full support to different environments, and
+work as a good standard library - filling the gaps of the
+standard library of C/C++.
+
+Apart from giant solutions like Qt, GTK and web browsers,
+it is also popular to solve this issue by writing a HTTP server
+instead and let the user pick a browser to render the user
+interface. This is smart.
+
+However, this also requires a good
+cross-platform network library. The good news is that a network
+library is much smaller and there exist good ones.
+
 .SH ROFF(7)/GROFF(1)/TROFF?
 
 At first this blog is written directly in HTML. After some edits I
