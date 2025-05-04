@@ -868,7 +868,7 @@ In the section EDITING ROFF:
 All _roff_ formatters provide automated line breaks
 and horizontal and vertical spacing. In order to not
 disturb this, the following tips can be helpful.
-
+.P
 First of all, never include empty or blank lines in a
 roff document. Instead, use the empty request,
 i.e. a line consisting of a dot only, or
@@ -879,7 +879,7 @@ Never start a line with whitespace
 because this can lead to unexpected behaviour.
 Indented paragraphs can be constructed
 in a controlled way by roff requests.
-
+.P
 Start each sentence on a line of its
 own, for the spacing after a dot
 is handled differently depending
@@ -912,9 +912,33 @@ the same paragraph.
 .EE
 .RE
 .RE
-
-This might be the case. 
-
+.P
+This might be the case.
+There seems to have three things which
+might cause problems.
+.P
+Firstly the blank lines.
+It would 'disturb' the formatting?
+.P
+Secondly the line starting
+with whitespace.
+This can 'lead to unexpected behaviour'?
+Well, weird.
+Too weird.
+Anyway, though it's weird,
+let's try not step on this trap.
+It's not that hard.
+.P
+Finally, start each sentence on
+a line of its own.
+\&'For the spacing after a dot is
+handled differently depending on
+whether it terminates an
+abbreviation or a sentence.'
+Well, this is also weird.
+But anyway let's try to follow
+this security advice too.
+.P
 .SH KAKAOTALK
 
 The registration requires the user to send an SMS, instead of receiving an
