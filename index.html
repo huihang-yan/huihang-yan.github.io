@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 19:25:49</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 20:04:34</u></b> huihang Exp $</div>
 huihang(7)                 Greenhouse of Huihang Yan                huihang(7)
 
 
@@ -891,6 +891,64 @@ ROFF NOTES
 
        IP: Increase position/tab?
               .IP \(bu
+
+
+SPACING
+       An issue has been noticed when using  Groff.  It  ap-
+       pears that whenever there are alterations to a single
+       line within a paragraph, even when  subsequent  para-
+       graphs  remain completely unchanged in terms of their
+       content, their spacing also gets modified.
+
+       Despite the text content in these paragraphs  remain-
+       ing  the  same, the visible layout of the document is
+       affected.
+
+       This is very annoying when  it  comes  together  with
+       git-diff.   I am wondering if this is a well-known or
+       classical problem within in the Groff community.
+
+       Well, it seems so. Let's check the man-page.  In  the
+       section EDITING ROFF:
+
+              All  _roff_  formatters provide automated line
+              breaks and horizontal and vertical spacing. In
+              order  to not disturb this, the following tips
+              can be helpful.
+
+              First of all, never  include  empty  or  blank
+              lines  in  a  roff  document. Instead, use the
+              empty request, i.e. a line consisting of a dot
+              only, or a line comment .  needed.
+
+              Never  start  a  line  with whitespace because
+              this can lead to  unexpected  behaviour.   In-
+              dented paragraphs can be constructed in a con-
+              trolled way by roff requests.
+
+              Start each sentence on a line of its own,  for
+              the spacing after a dot is handled differently
+              depending on whether it terminates an abbrevi-
+              ation  or  a  sentence.   To  distinguish both
+              cases, do a line break  after  each  sentence.
+              The  following  example shows a judicious line
+              breaking in a roff input file.
+                     This is an example of a
+                     .I roff
+                     document that you can type into your text editor.
+                     .
+                     This is the next sentence in the same paragraph.
+                     .
+                     This is a longer sentence stretching over several
+                     input lines;
+                     abbreviations like cf. are easily identified
+                     because the dot is not followed by a
+                     line break.
+                     .
+                     In the output, this sentence continues
+                     the same paragraph.
+
+       This might be the case.
 
 
 KAKAOTALK
