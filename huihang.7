@@ -908,11 +908,11 @@ typesetting or otherwise.
 Macro definition: '.de [macro]', then use '..' to end.
 
 nop: '.nop [anything]' - always process [anything]
-
-macro stuff: \)\\$*
-
+.P
+macro stuff: \\)\\\\$*
+.P
 	\\$*: the concatenation of all arguments separated by spaces
-
+.P
 tab: if a tab character occurs during text, the interpreter makes a
 horizontal jump to the next pre-defined tab position. There is a
 sophisticated interface for handling tab positions.
