@@ -706,6 +706,19 @@ Rob Pike.
 
 .SH ROFF NOTES
 
+The roff language is line-oriented. There are only two kinds of lines,
+control lines and text lines. The control lines start with a control
+character, by default a period '.' or a single quote `'`; all other
+lines are text lines.
+
+Command arguments are separated by spaces, but not tab characters.
+
+For indentation, any number of space or tab characters can be inserted
+between the leading control character and the command name, but
+the control character must be on the first position of the line.
+
+Escape sequence - backslash `\\'.
+
 .Text '.P'
 
 .Text '.I xxx' - italic
@@ -733,9 +746,26 @@ Macro definition: '.de [macro]', then use '..' to end.
 
 nop: '.nop [anything]' - always process [anything]
 
-\)\\$*
+macro stuff: \)\\$*
 
-.Text Tabbed/indent example code snippet:
+	\\$*: the concatenation of all arguments separated by spaces
+
+tab: if a tab character occurs during text, the interpreter makes a
+horizontal jump to the next pre-defined tab position. There is a
+sophisticated interface for handling tab positions.
+
+.Text Tabbed/indent example code snippet: .RS, .EX, .EE, .RE?
+.RS
+.EX
+-RS
+-EX
+$ code here, automatically indented
+.EE
+.RE
+
+SS: subsection, like SN
+
+List:
 
 .SH KAKAOTALK
 

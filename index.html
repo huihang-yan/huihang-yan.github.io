@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 10:15:11</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 10:53:09</u></b> huihang Exp $</div>
 huihang(7)                   Drafts of Huihang Yan                  huihang(7)
 
 
@@ -758,38 +758,71 @@ THE ROFF FAMILY
 
 
 ROFF NOTES
+       The  roff  language  is line-oriented. There are only
+       two kinds of lines, control lines and text lines. The
+       control  lines  start  with  a  control character, by
+       default a period '.' or a single quote `'`; all other
+       lines are text lines.
+
+       Command  arguments  are  separated by spaces, but not
+       tab characters.
+
+       For  indentation,  any  number  of   space   or   tab
+       characters   can  be  inserted  between  the  leading
+       control character  and  the  command  name,  but  the
+       control  character  must  be on the first position of
+       the line.
+
+       Escape sequence - backslash `\'.
+
        '.P'
 
        '.I xxx' - italic
 
-       '.'  -  a  line  consisting  of a dot only, an 'empty
+       '.' - a line consisting of  a  dot  only,  an  'empty
        roff(1) request':
 
             'To  additionally  use  the  auto-fill  mode  in
        Emacs, it is best to insert an empty roff(1) request,
-       a  line  consisting  of  a  dot  only,   after   each
+       a   line   consisting  of  a  dot  only,  after  each
        sentence.'
 
-            Thus,  this dot-line appears to serve solely the
-       purpose of activating  a  certain  auto-fill  feature
-       within  Emacs, and seems to hold no function in terms
-       of typesetting, much like a comment  line  that  does
-       not  contribute to the actual execution or formatting
-       of the content.  Since I don't use Emacs,  it  stands
-       to  reason  that  I  can safely overlook this command
-       without any adverse effects on my  tasks  related  to
+            Thus, this dot-line appears to serve solely  the
+       purpose  of  activating  a  certain auto-fill feature
+       within Emacs, and seems to hold no function in  terms
+       of  typesetting,  much  like a comment line that does
+       not contribute to the actual execution or  formatting
+       of  the  content.  Since I don't use Emacs, it stands
+       to reason that I can  safely  overlook  this  command
+       without  any  adverse  effects on my tasks related to
        typesetting or otherwise.
 
        '.BR' - bold text?
 
-       Macro  definition:  '.de  [macro]',  then use '..' to
+       Macro definition: '.de [macro]',  then  use  '..'  to
        end.
 
        nop: '.nop [anything]' - always process [anything]
 
-       \$*
+       macro stuff: \$*
 
-       Tabbed/indent example code snippet:
+            \$*:   the   concatenation   of   all  arguments
+       separated by spaces
+
+       tab: if a  tab  character  occurs  during  text,  the
+       interpreter  makes a horizontal jump to the next pre-
+       defined  tab  position.  There  is  a   sophisticated
+       interface for handling tab positions.
+
+       Tabbed/indent  example  code  snippet: .RS, .EX, .EE,
+       .RE?
+              -RS
+              -EX
+              $ code here, automatically indented
+
+       SS: subsection, like SN
+
+       List:
 
 
 KAKAOTALK
@@ -829,8 +862,8 @@ AUTHOR
             GNU groff comes with ABSOLUTELY NO WARRANTY.
             You may redistribute copies  of  groff  and  its
        subprograms
-            under  the  terms  of  the  GNU  General  Public
-       License.
+            under  the  terms  of the GNU General Public Li-
+       cense.
             For more information about  these  matters,  see
        the file
             named COPYING.
