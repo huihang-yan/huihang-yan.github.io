@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 09:50:22</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/04 10:10:56</u></b> huihang Exp $</div>
 huihang(7)                   Drafts of Huihang Yan                  huihang(7)
 
 
@@ -731,9 +731,29 @@ GROFF(7) NOTES
        troff: the *roff language*  was  historically  called
        *troff*.
 
-       Texinfo:
+       Texinfo:  software  documentation  system that uses a
+       single source file to produce both online information
+       and printed output.
 
-       nroff:
+       nroff: use groff to format documents for TTY devices.
+
+            GNU   _nroff_   emulates  the  traditional  Unix
+       _nroff_  command  using  groff(1).  _nroff_  generats
+       output via grotty(1), _groff_'s TTY output device.
+
+       troff.org: 'The Text Processor for Typesetters'
+
+            'troff,  and its GNU implementation `groff`, are
+       programs that process  a  textual  description  of  a
+       document  to  produce  typeset  verions  suitable for
+       printing. It's more 'What you describe  is  what  you
+       get' rather than WYSIWYG.'
+
+       'The  great strength of `troff` is the flexibility of
+       the basic language and its programmability -  it  can
+       be  made  to  do  almost any formatting task.' -- The
+       UNIX Programming Environment, Brian W. Kernighan  and
+       Rob Pike.
 
        '.P'
 
@@ -747,11 +767,15 @@ GROFF(7) NOTES
        a  line  consisting  of  a  dot  only,   after   each
        sentence.'
 
-            So  this  is  only for triggering some auto-fill
-       feature of Emacs, and seemingly  does  not  have  any
-       function  in  the  means of typesetting.  Just like a
-       line of comment.  Since I don't use Emacs,  I  should
-       be able to simply ignore this command.
+            Thus,  this dot-line appears to serve solely the
+       purpose of activating  a  certain  auto-fill  feature
+       within  Emacs, and seems to hold no function in terms
+       of typesetting, much like a comment  line  that  does
+       not  contribute to the actual execution or formatting
+       of the content.  Since I don't use Emacs,  it  stands
+       to  reason  that  I  can safely overlook this command
+       without any adverse effects on my  tasks  related  to
+       typesetting or otherwise.
 
        '.BR' - bold text?
 
@@ -759,6 +783,8 @@ GROFF(7) NOTES
        end.
 
        nop: '.nop [anything]' - always process [anything]
+
+       \$*
 
        Tabbed/indent example code snippet:
 
