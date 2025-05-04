@@ -289,42 +289,44 @@ https://talk.jekyllrb.com/
 Some reasons to use plain-text can be found in the book
 TAOUP - The Art of Unix Programming, as well as the use-plain-text-email
 website:
-
-      useplaintext.email
-
+.P
+.RS
+useplaintext.email
+.RE
+.P
 The use-plain-text-email site gives some really interesting points, but
 those points are mainly for the context of e-mail:
-
+.P
 1. 72-column text for easier quoting.
-
+.P
 2. Phishing, marketing and spam e-mails use HTML. Plain-text emails can be
 distinguished between them.
-
+.P
 3. HTML is an extensive standard, and its implementation often
 gives rise to numerours vulnerabilities.
 What's more, the vast array of features that HTML encompasses is
 largely superfluous when it comes to the purpose of
 email.
-
+.P
 4. HTML e-mail can contain hidden tracking stuff.
-
+.P
 5. HTML is less accessible, unless accessible is considered when writing.
-
+.P
 6. Some people use e-mail clients that support *only* plain-text e-mails.
-
+.P
 But I think there is one important reason behind. The typewriter tradition
 of the western society.
-
+.
 .SH  PLAIN-TEXT BLOGGING
-
+.
 The term plain-text is somewhat chaotic.
-
+.P
 At the very beginning there
 are the typewriters, which usually only prints out mono-colour letters
 and symbols. Typewriters support cursor movement, and therefore allowing
 using the underscore and hyphen symbols to print out underline and
 delete lines.
-
+.P
 Today's software terminal emulators offer underlining, but
 strikethrough is not the same way widely supported. Many terminal
 emulators adhere to the VT-100 'standard', which, in addition to underlining,
@@ -333,15 +335,18 @@ Consequently, man pages
 make heavy use of underlined and bold text, and many distributions enable
 the coloured output of the ls(1) program by default, along with numerous
 other command-line software.
-
+.P
 An intriguing development is that some
 people propose a yet another new standard that restricts colour
 output based on the NO_COLOR environment variable. Take a look at
 these two links:
-
-        no-color.org
-        github.com/jcs/no_color
-
+.P
+.RS
+no-color.org
+.br
+github.com/jcs/no_color
+.RE
+.P
 I typeset my blog with groff(1), the very same tool employed for
 processing the
 man-pages(7). This choice then prompts a series of questions: Should I
