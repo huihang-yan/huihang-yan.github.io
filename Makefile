@@ -6,7 +6,7 @@ index.html: huihang.7 ascii.art Makefile
 	@echo >> $@
 	@echo 'Last update:' $$(date) >> $@
 	@echo >> $@
-	@echo 'Current version:' $$(date) >> $@
+	@echo ------------------------------------ >> $@
 	@echo >> $@
 	@groff -man -T ascii < huihang.7 | sed 's/\x08.//g' >> $@
 	@echo '</pre></html>' >> $@
