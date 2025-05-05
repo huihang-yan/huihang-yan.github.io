@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/05 12:45:28</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/05 12:50:53</u></b> huihang Exp $</div>
 huihang(7)                 Greenhouse of Huihang Yan                huihang(7)
 
 
@@ -1136,16 +1136,17 @@ AGAIN
        file  prettiness,  it  simplifies my life, leaving me
        content and free from Markdown's demands.
 
-       However, I would like to  discuss  the  line-breaking
-       style.   Its  key  advantage lies in version control,
-       where it generates more concise diffs, making it  ef-
-       fortless to review edits upon sign-off.  This benefit
-       extends  to  collaboration  as  well;  when   sharing
-       patches  via  email,  it  streamlines the process and
-       saves others' time.
+       However, I want to talk the line-breaking style.  Its
+       key  advantage lies in version control, where it gen-
+       erates more concise diffs, making  it  effortless  to
+       review  edits upon sign-off.  This benefit extends to
+       collaboration  as  well;  when  sharing  patches  via
+       email,  it  streamlines the process and saves others'
+       time.
 
-       Check the following example.  It's extracts from  the
-       real git-log history of this very text I am editing:
+       Look at this example from the real  git-log  of  this
+       very text that I am editing:
+
               commit fc05868be12a41cfce056f59a3c5e50cea26a14b
               Author: Huihang Yan <huihang.yan@outlook.com>
               Date:   Mon May 5 12:37:23 2025 +0800
@@ -1168,16 +1169,20 @@ AGAIN
                       Now I use roff(7).  Maybe you have never heard of it,
                       but  odds  are  you  have  used it without realising,
 
-       You  can  see  that  by manually place new-lines, the
-       diff(1) results are minimised.  On the other hand, if
-       we  put  the  whole  paragraph  in the same line, the
-       diff(1) result would be of the whole  big  paragraph,
-       including those parts that are not touched at all.
+       Manually  placing  new-lines shrinks diff(1) results.
+       One-line paragraphs make diff(1) cover  entire  text,
+       untouched parts included.
 
        Though, I have to admit that this is not a problem at
        all for many.  Even if the diff(1) results  is  para-
        graph-length,  it's not much. And there are literally
        many people just doing that on GitHub.
+
+       What's more important, version  control  and  diff(1)
+       etc.  are  not used by anyone.  For those not this is
+       not even an issue at all.  But I just  want  to  talk
+       about  this,  otherwise it seems to have no reason to
+       put this guideline in Markdown.
 
 GACHA
 THEN HOW?

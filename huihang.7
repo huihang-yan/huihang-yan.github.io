@@ -1293,7 +1293,7 @@ it simplifies my life,
 leaving me content and free from
 Markdown's demands.
 .P
-However, I would like to discuss the
+However, I want to talk the
 line-breaking style.
 Its key advantage lies in version control,
 where it generates more
@@ -1305,9 +1305,9 @@ when sharing patches via email, it
 streamlines the process and saves
 others' time.
 .P
-Check the following example.
-It's extracts from the real git-log
-history of this very text I am editing:
+Look at this example from the real
+git-log of this very text that I am editing:
+.P
 .RS
 .EX
 commit fc05868be12a41cfce056f59a3c5e50cea26a14b
@@ -1334,19 +1334,24 @@ index 116c92d..2e7d61a 100644
 .EE
 .RE
 .P
-You can see that by manually place new-lines,
-the diff(1) results are minimised.
-On the other hand, if we put the
-whole paragraph in the same line,
-the diff(1) result would be of the
-whole big paragraph, including those
-parts that are not touched at all.
+Manually placing new-lines shrinks
+diff(1) results.
+One-line paragraphs make
+diff(1) cover entire text,
+untouched parts included.
 .P
 Though, I have to admit that this is
 not a problem at all for many.
 Even if the diff(1) results is paragraph-length,
 it's not much. And there are literally
 many people just doing that on GitHub.
+.P
+What's more important, version control
+and diff(1) etc. are not used by anyone.
+For those not this is not even an issue at all.
+But I just want to talk about this,
+otherwise it seems to have no reason
+to put this guideline in Markdown.
 .
 .SH GACHA
 .
