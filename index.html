@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/05 11:19:16</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/05 11:42:06</u></b> huihang Exp $</div>
 huihang(7)                 Greenhouse of Huihang Yan                huihang(7)
 
 
@@ -1067,24 +1067,23 @@ A COMMENT
        Using `real' newlines means a tiny edit can  spawn  a
        huge diff(1) result.
 
-       Sounds abstract? Check the commit history of any git-
-       based GitHub Pages, and/or the  ones  of  plain  text
-       documents,   and/or  absolutely,  Markdown  documents
-       hosted on GitHub.
+       Sounds   abstract?  Check  the  commit  histories  of
+       GitHub-hosted GitHub Pages  sites,  plain-text  docu-
+       ments, or Markdown files.
 
-       Many don't use version control  or  collaborate  with
+       Many  don't  use  version control or collaborate with
        old-school Unix tools like diff(1) and patch(1).  But
-       that's a large portion of the worlds of Markdown  and
+       that's  a large portion of the worlds of Markdown and
        Unix.
 
-       The  Markdown  line-break  convention  feels natural.
-       It's the norm in Roff, LaTeX, RST  and  HTML.   Check
+       The Markdown  line-break  convention  feels  natural.
+       It's  the  norm  in Roff, LaTeX, RST and HTML.  Check
        HTML source - same deal.  That's just how it is.
 
-       Look  at  Unix-world plain text docs.  Nearly all are
-       formatted a certain way.  Take two Slackware docs  as
-       an  example.   There  are countless more - LFS, TLDP,
-       Python PEPs, Python RST docs, Linux kernel docs,  RFC
+       Look at Unix-world plain text docs.  Nearly  all  are
+       formatted  a certain way.  Take two Slackware docs as
+       an example.  There are countless more  -  LFS,  TLDP,
+       Python  PEPs, Python RST docs, Linux kernel docs, RFC
        sources.  They are everywhere.
 
               ftp.slackware.com/pub/slackware/
@@ -1092,38 +1091,59 @@ A COMMENT
                       Slackware-HOWTO
                       usb-and-pxe-istallers/README_USB.TXT
 
-       And  I forgot the plain text emails - yes, just check
-       any maillist, either  ArchLinux,  Debian,  Slackware,
+       And I forgot the plain text emails - yes, just  check
+       any  maillist,  either  ArchLinux, Debian, Slackware,
        Gentoo ...  Majority of the mails are line-broke this
        way.
 
-       So the result is - for people of certain  background,
-       this  feels  just natural. But for others, this might
+       So  the result is - for people of certain background,
+       this feels just natural. But for others,  this  might
        feel weird.
 
-       Historical context helps.  Word-wrap was not  common.
-       Open  vi(1)  or  vim(1), and you will see it's off by
-       default.  Sure, some distros like Ubuntu  might  pro-
+       Historical  context helps.  Word-wrap was not common.
+       Open vi(1) or vim(1), and you will see  it's  off  by
+       default.   Sure,  some distros like Ubuntu might pro-
        vide a nice good default `.vimrc', trying to be user-
-       friendly like Windows.  But that's not  the  standard
+       friendly  like  Windows.  But that's not the standard
        way.
 
        Without a common word-wrap feature, manual line-wrap-
-       ping became a habit and standard.  People do  it  be-
-       cause  some  editors  do not auto-warp.  Skip it, and
+       ping  became  a habit and standard.  People do it be-
+       cause some editors do not auto-warp.   Skip  it,  and
        the next turns into a jumbled mess.
 
        And for the asterik part, I shall say that underscore
        is for underline.
 
+AGAIN
+       Well, while editing the above, I found that I want to
+       write something completely different.
+
+       Markdown  is  annoying.  Yes, indeed, Markdown is an-
+       noying.  I totally agree with that.
+
+       So I don't use Markdown now - lol.  It's like an  es-
+       cape.  But I feel much better for that!
+
+       The problem with Markdown, to me, lies exactly at its
+       pros.  Markdown is good in the way that it  is  good-
+       looking  even  at its raw format.  But the issue then
+       goes here - this means that we need to  maintain  the
+       good-looking-ness for that, even for the raw format.
+
+       Now  I  use  roff(7).   It  is a completely different
+       strategy.  It gives up on  the  good-looking-ness  of
+       the  raw  source  file.  And my life gets much easier
+       and I am happy again.
+
 GACHA
 THEN HOW?
-       Ok,  now  we  have learnt from the possible causes to
+       Ok, now we have learnt from the  possible  causes  to
        that space-modifing issue.  Then what should we do?
 
-       The only issue should be how to  separate  paragraphs
-       without  using black lines.  I check the roff sources
-       of the man-pages, and I see them use '.P'.   I  tried
+       The  only  issue should be how to separate paragraphs
+       without using black lines.  I check the roff  sources
+       of  the  man-pages, and I see them use '.P'.  I tried
        it and it works.
 
        Well, seems that we don't have problems anymore.  But
@@ -1133,21 +1153,21 @@ THEN HOW?
        used to start a new paragraph.
 
        The AI also told me that there is an '.LP' command to
-       start a list paragraph, and might add  bullet  points
+       start  a  list paragraph, and might add bullet points
        and numbering.  That sounds good and useful.
 
        But where is '.P' command mentioned in the man-pages?
        Weird, can't find it.
 
 KAKAOTALK
-       The registration requires the user to  send  an  SMS,
+       The  registration  requires  the user to send an SMS,
        instead of receiving an SMS from them.
 
 PROTON MAIL
-       Proton  Mail  also comes with a VPN. The limit of the
+       Proton Mail also comes with a VPN. The limit  of  the
        free plan is one connection.
 
-       IMAP/SMTP: included with Mail Plus, Proton  Unlimited
+       IMAP/SMTP:  included with Mail Plus, Proton Unlimited
        and Proton for Business.  Need to upgrade.
 
        That is, there is no access to IMAP/SMTP or something
@@ -1158,53 +1178,53 @@ PROTON MAIL
 APPS
        Proton VPN - haven't tried but I guess it works.
 
-       Proton Mail - for free plan, this is the  only  email
+       Proton  Mail  - for free plan, this is the only email
        client supporting Proton Mail accounts.
 
 SINS AND VIRTUES
        inspirationfeed.com
 
-       The  seven  cardinal sins: pride, greed, wrath, lust,
+       The seven cardinal sins: pride, greed,  wrath,  lust,
        envy, gluttony and sloth.
 
-       Lust refers to an intense desire, usually  to  engage
+       Lust  refers  to an intense desire, usually to engage
        in illegal or immoral sexual pleasure.
 
-       Gluttony  refers  to  the  overconsumption of food or
+       Gluttony refers to the  overconsumption  of  food  or
        anything to the point of waste.
 
-       Greed is an intense desire and  passionate  love  for
-       material  wealth.  Much like lust and gluttony, greed
+       Greed  is  an  intense desire and passionate love for
+       material wealth. Much like lust and  gluttony,  greed
        results from an irrational longing for what you don't
        need.
 
-       Sloth  is  laziness  as  is manifested by the willful
-       avoidance of work. It stems from the desire to  avoid
+       Sloth is laziness as is  manifested  by  the  willful
+       avoidance  of work. It stems from the desire to avoid
        responsibility. One adage that aptly captures the sin
        of sloth is, 'those who do not work should not eat.'
 
-       Wrath is simply uncontrolled feelings of anger,  rage
-       or  hatred.  Wrath  feeds on a strong desire to exact
-       vengeance and is often fueled by an irrational  drive
+       Wrath  is simply uncontrolled feelings of anger, rage
+       or hatred. Wrath feeds on a strong  desire  to  exact
+       vengeance  and is often fueled by an irrational drive
        to harm others.
 
        Wrath  counterparts:  gentleness,  self-control,  pa-
        tience and peace.
 
-       Scriptural  references:  Colossians  3:8,   Ephesians
-       4:26-27,  James  1:19-20,  Proverbs  14:29  and 15:1,
+       Scriptural   references:  Colossians  3:8,  Ephesians
+       4:26-27, James  1:19-20,  Proverbs  14:29  and  15:1,
        Psalm 37:8 and Romans 12:19.
 
        Envy is the desire for possessions, happiness as well
        as the talents and abilities of others.
 
-       Pride  is  defined  as an excessive love for oneself,
+       Pride is defined as an excessive  love  for  oneself,
        belief in one's abilities, the desire to excel every-
        one else.  Pride is such a vile sin that it has often
        been considered as the root cause of the other six of
        the seven cardinal sins.
 
-       The  seven  heavenly virtues: prudence, justice, tem-
+       The seven heavenly virtues: prudence,  justice,  tem-
        perance, courage, faith, hope and charity.
 
 STORIES
