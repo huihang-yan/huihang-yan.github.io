@@ -10,7 +10,7 @@ pre {
 </style>
 <pre>
 
-<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/05 12:37:18</u></b> huihang Exp $</div>
+<div style="border: 1px solid">$Id: huihang-yan.github.io, <u><b>2025/05/05 12:45:28</u></b> huihang Exp $</div>
 huihang(7)                 Greenhouse of Huihang Yan                huihang(7)
 
 
@@ -1135,6 +1135,49 @@ AGAIN
        since it formats man-pages(7).  By  sacrificing  raw-
        file  prettiness,  it  simplifies my life, leaving me
        content and free from Markdown's demands.
+
+       However, I would like to  discuss  the  line-breaking
+       style.   Its  key  advantage lies in version control,
+       where it generates more concise diffs, making it  ef-
+       fortless to review edits upon sign-off.  This benefit
+       extends  to  collaboration  as  well;  when   sharing
+       patches  via  email,  it  streamlines the process and
+       saves others' time.
+
+       Check the following example.  It's extracts from  the
+       real git-log history of this very text I am editing:
+              commit fc05868be12a41cfce056f59a3c5e50cea26a14b
+              Author: Huihang Yan <huihang.yan@outlook.com>
+              Date:   Mon May 5 12:37:23 2025 +0800
+
+              diff --git a/index.html b/index.html
+              index 116c92d..2e7d61a 100644
+              --- a/index.html
+              +++ b/index.html
+              @@ -1126,9 +1126,9 @@ AGAIN
+
+                      Besides this, I am convinced it's impossible to  com-
+                      bine raw-file attractiveness with full functionality;
+              -       they are mutually exclusive.  Then, if we  want  more
+              -       functions in Markdown, usually we got a worse looking
+              -       raw file.
+              +       they are mutually exclusive.  When we strive for more
+              +       functions in Markdown, the result is usually a worse-
+              +       looking raw file.
+
+                      Now I use roff(7).  Maybe you have never heard of it,
+                      but  odds  are  you  have  used it without realising,
+
+       You  can  see  that  by manually place new-lines, the
+       diff(1) results are minimised.  On the other hand, if
+       we  put  the  whole  paragraph  in the same line, the
+       diff(1) result would be of the whole  big  paragraph,
+       including those parts that are not touched at all.
+
+       Though, I have to admit that this is not a problem at
+       all for many.  Even if the diff(1) results  is  para-
+       graph-length,  it's not much. And there are literally
+       many people just doing that on GitHub.
 
 GACHA
 THEN HOW?
