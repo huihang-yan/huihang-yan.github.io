@@ -1122,6 +1122,147 @@ Well, this is also weird.
 But anyway let's try to follow
 this security advice too.
 .P
+.SH SEMBR
+.
+Semantic line breaks.
+Yes, that's the term.
+.P
+I remember seeing it for Markdown stuff.
+Haven't thought it would even really
+work in this case - and as such an
+important role - in roff(7).
+.P
+See sembr.org.
+.P
+.RS
+Semantic Line Breaks describe a set of conventions
+for using insensitive vertical whitespace
+to structure prose along semantic
+boundaries.
+Many lightweight markup languages,
+including Markdown,
+reStructured Text, and AsciiDoc, join ...
+.RE
+.P
+Also see:
+.RS
+writingslowly.com/semantic-line-breaks-are-a.html
+.P
+Semantic line breaks are a feature of Markdown, not a bug
+.P
+As the semantic line break specification suggests,
+by inserting line breaks at semantic
+boundaries, writers, editors, and other
+collaborators can make
+source text easier to work with, without
+affecting how it's seen by readers.
+.RE
+.SH A COMMENT
+.P
+However, in the comment section of this article,
+a person suggestted that the Markdown line-break convention
+was a compromise, likely devised to
+account for the lowest common denominator
+among the existing, conflicting conventions.
+And this convention has always been extremely
+frustrating to them, because it seems
+evident that a line-break in Markdown should
+signify an actual line-break in the text.
+.P
+What's more, it is also suggestted that the
+bold and underline text conventions are
+annoying to them. They think that it's
+quite clear that bold text ought to be
+denoted with single asterikes and italic
+text with single underscores.
+.P
+Well, I would like to say something about that
+comment.
+.P
+I understand why people feel weird that
+why don't we simply use 'real' newlines.
+This is largely for the ease of line-based
+diff(1), which is used in git-diff,
+patch(1) and various means to control
+the version and share edits.
+.P
+If we use 'real' newlines, every time
+we make a tiny edit, we get a real mountainous
+number of diff(1) result.
+.P
+This might sound a bit abstract. You
+can check the commit history of
+some git-based GitHub Pages.
+.P
+Yes, many people just do not use
+version control, neither collobrate
+with others
+with old-school Unix tools
+like diff(1) and patch(1).
+But that's a large portion of
+the world of Markdown.
+The world of Unix.
+.P
+In fact, I feel really nature
+about this line-break convention - that's
+just how we do for everything.
+Roff(7), LaTeX, RST, HTML.
+Yes, HTML - we can check the source
+of the HTML pages, and we could find
+that it's in the same line-breaking
+convention.
+HTML is designed to line break
+the same way - why? Because
+that's just how we do all the time.
+Lol.
+.P
+Check the plain text documents
+provided along with the Unix world
+stuff. 99% of them are written
+this way. Let's just grab two
+Slackware documents for example.
+If you want more, I could find really enough
+amount of them. Since they are just everywhere.
+Either LFS, TLDP, Python PEPs, Python RST documentation,
+the Linux kernel documentation,
+RFC sources ...
+.RS
+ftp.slackware.com/pub/slackware/slackware64-15.0/Slackware-HOWTO
+ftp.slackware.com/pub/slackware/slackware64-15.0/usb-and-pxe-istallers/README_USB.TXT
+.RE
+.P
+And I forgot the plain text emails - yes,
+just check any maillist, either
+ArchLinux, Debian, Slackware, Gentoo ...
+Majority of the mails are line-broke
+this way.
+.P
+So the result is - for people of
+certain background, this feels just
+natural. But for others, this might
+feel weird.
+.P
+It might help with understand this thing
+with some historical matter. At first,
+the word-wrap feature is not as common as
+they are in today - just grab a classic
+vi(1) or vim(1) editor, and you could
+find that the word-wrap feature is
+even disabled by default.
+.P
+Since there are no common word-wrap,
+it has grown into a habit and etiputte to
+wrap by hand - that's just we say, that
+new-line convention. The rational is simple:
+some other people do not have word-wrap
+turned on in their editors, so it would look
+a mess if we don't.
+.P
+And for the asterik part, I shall say that
+underscore is for underline.
+.P
+.SH GACHA
+.
 .SH THEN HOW?
 .P
 Ok, now we have learnt from the possible
