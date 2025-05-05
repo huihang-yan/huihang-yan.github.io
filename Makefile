@@ -2,9 +2,9 @@ all: index.html
 
 index.html: huihang.7 ascii.art Makefile
 	@cat heading > $@
-	@echo '            $$Id: huihang-yan.github.io,' $$(date '+%+4Y/%m/%d %T') 'huihang Exp $$'  >> $@
+	@echo '      $$Id: huihang-yan.github.io,' $$(date '+%+4Y/%m/%d %T') 'huihang Exp $$'  >> $@
 	@echo >> $@
-	@echo '            Last update:' $$(date) >> $@
+	@echo '      Last update:' $$(date) >> $@
 	@echo >> $@
 	@echo ------------------------------------------------------------------------------- >> $@
 	@echo >> $@
