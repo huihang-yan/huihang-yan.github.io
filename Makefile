@@ -1,9 +1,9 @@
 all: index.html index.txt
 
-index.txt: index.xml Makefile
+index.txt: index.xml
 	~/local/bin/xml2rfc index.xml
 
-index.html: huihang.7 ascii.art Makefile
+index.html: huihang.7 ascii.art
 	@cat heading > $@
 	@echo '      $$Id: huihang-yan.github.io,' $$(date '+%+4Y/%m/%d %T') 'huihang Exp $$'  >> $@
 	@echo >> $@
