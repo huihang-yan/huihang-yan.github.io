@@ -1,8 +1,12 @@
 all: index.html
 
-index.html: huihang.7 ascii.art
+index.html: huihang.7 ascii.art Makefile
 	@cat heading > $@
-	@echo '<div style="border: 1px solid">$$Id: huihang-yan.github.io,' $$(date '+<u><b>%+4Y/%m/%d %T</u></b>') 'huihang Exp $$</div>'  >> $@
+	@echo '$$Id: huihang-yan.github.io,' $$(date '+%+4Y/%m/%d %T') 'huihang Exp $$'  >> $@
+	@echo >> $@
+	@echo 'Last update: $$(date)' >> $@
+	@echo >> $@
+	@echo 'Current version: $$(date)' >> $@
 	@groff -man -T ascii < huihang.7 | sed 's/\x08.//g' >> $@
 	@echo '</pre></html>' >> $@
 	@sed -i '/BANNER_HERE/r banner.ascii' $@
