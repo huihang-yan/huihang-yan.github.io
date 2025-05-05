@@ -1,4 +1,7 @@
-all: index.html
+all: index.html index.txt
+
+index.txt: index.xml Makefile
+	~/local/bin/xml2rfc index.xml
 
 index.html: huihang.7 ascii.art Makefile
 	@cat heading > $@
