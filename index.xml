@@ -94,7 +94,12 @@
          use by search engines. -->
 
     <abstract>
-      <t>Abstract here.</t>
+    <t>I am migrating the blog to the old groff(7) format to
+       this new RFC format, since I find the table of contents
+       charming. The page-break might be also a good thing.</t>
+
+    <t>I don't put much time on it every day since this is just a
+       hobby. So the migration would take quite a long time.</t>
     </abstract>
  
   </front>
