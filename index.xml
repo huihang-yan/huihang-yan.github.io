@@ -143,6 +143,13 @@
       </section>
 
       <section>
+      <name>Quotes</name>
+      <t>
+      Man only gets flower in funeral.
+      </t>
+      </section>
+
+      <section>
       <name>XML2RFC</name>
       <sourcecode name="xml2rfc.sh" type="sh" markers="true">
       <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
