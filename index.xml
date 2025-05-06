@@ -143,6 +143,36 @@
       </section>
 
       <section>
+      <name>XML2RFC</name>
+      <t>
+$ xml2rfc SOURCE [options] FORMATS ...
+
+      $ xml2rfc draft.xml --text
+      </t>
+      </section>
+      <section>
+      <name>MAPSCII</name>
+      <t>
+$ npx mapscii
+$ npm install -g mapscii
+      </t>
+      </section>
+
+      <section>
+      <name>Unix v.s. Windows</name>
+      <t>
+      Pro: learn things.</t>
+      <t>
+
+Con: cost time? No, no, not at all.
+When we find that we don't want that,
+just switch to the Windows virtual
+machine.
+At least in my case, there
+      are nothing the VM cannot do.</t>
+      </section>
+
+      <section>
       <name>Morality</name>
       <t>
 
