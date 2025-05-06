@@ -140,7 +140,44 @@
 	      <t>Yes, I've got an old CPU. But that still suggests
 	         something. And even for newer CPU, there would be
 	         more complex projects.</t>
-      </section>
+		 </section>
+
+ <section>
+ <name>Arknights PV-10</name>
+ <t>
+ Guards:</t>
+ <t>
+ 1. LV II-60 Thorns, model X
+ 2. LV  I-55 Popuklar
+ 3. LV  I-55 Melantha
+
+ Defenders:
+ 4. LV  I-55 Spot
+ 5. Cardigan LV I-55
+ </t>
+
+    <section>
+      <name>Tables</name>
+      <table> <!-- https://authors.ietf.org/rfcxml-vocabulary#table -->
+        <thead> <!-- https://authors.ietf.org/rfcxml-vocabulary#thead -->
+        <!-- A table header is optional -->
+          <tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+        </thead>
+        <tbody> <!-- https://authors.ietf.org/rfcxml-vocabulary#tbody -->
+        <!-- A table body is required -->
+          <tr><td align="left">Left cell</td><td colspan="2">Colspan cell</td></tr>
+          <!-- align can be right, left or center.  colspan and rowspan work as they do in HTML -->
+          <tr><td rowspan="2">Rowspan cell</td><td align="center">Center cell</td><td align="right">Right cell</td></tr>
+          <tr><td>Cell</td><td>Cell</td></tr>
+        </tbody>
+        <tfoot> <!-- https://authors.ietf.org/rfcxml-vocabulary#tfoot -->
+        <!-- A table footer is optional -->
+          <tr><td colspan="3">Colspan footer</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    </section>
     </section>
     
     <section>
@@ -158,7 +195,8 @@
       
       <section>
         <name>Ordered List With Lowercase Letters in Brackets Instead of Numbers</name>
-        <ol type="(%c)"> <!-- https://authors.ietf.org/en/rfcxml-vocabulary#type-1 -->
+	<ol type="(%c)">
+	<!-- https://authors.ietf.org/en/rfcxml-vocabulary#type-1 -->
           <li>List item (a)</li>
           <li>List item (b)</li>
         </ol>
