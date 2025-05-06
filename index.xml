@@ -231,8 +231,25 @@ Uprising.
       </table>
 
     </section>
+    </section> <!-- body -->
+
+    <section>
+    <name>Build Python</name>
+    <t>
+    [OK] Check README.rst</t>
+    <t>
+    [OK] Check `./configure --help`</t>
+      <sourcecode name="python.sh" type="sh" markers="true">
+      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+          <![CDATA[
+./configure --prefix=/home/huihang/local
+make
+make test
+sudo make install
+          ]]>
+        </sourcecode>
     </section>
-    
+
     <section>
       <name>List Examples</name>
       
