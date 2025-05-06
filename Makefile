@@ -12,7 +12,6 @@ index.html: huihang.7 ascii.art index.txt
 	@echo ------------------------------------------------------------------------------- >> $@
 	@echo >> $@
 	@groff -man -T ascii < huihang.7 | sed 's/\x08.//g' >> $@
-	@echo '</pre></html>' >> $@
 	@sed -i '/BANNER_HERE/r banner.ascii' $@
 	@sed -i '/BANNER_HERE/d' $@
 	@sed -i '/ASCII_ART_HERE/r ascii.art' $@
@@ -20,3 +19,4 @@ index.html: huihang.7 ascii.art index.txt
 	@sed -i '/ASCII_ART2/r ascii.art2' $@
 	@sed -i '/ASCII_ART2/d' $@
 	@cat index.txt >> $@
+	@echo '</pre></html>' >> $@
