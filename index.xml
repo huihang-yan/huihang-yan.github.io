@@ -156,8 +156,6 @@
  5. Cardigan LV I-55
  </t>
 
-    <section>
-      <name>Tables</name>
       <table> <!-- https://authors.ietf.org/rfcxml-vocabulary#table -->
         <thead> <!-- https://authors.ietf.org/rfcxml-vocabulary#thead -->
         <!-- A table header is optional -->
@@ -175,7 +173,6 @@
           <tr><td colspan="3">Colspan footer</td></tr>
         </tfoot>
       </table>
-    </section>
 
     </section>
     </section>
