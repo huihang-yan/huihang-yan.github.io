@@ -152,10 +152,14 @@ $ xml2rfc SOURCE [options] FORMATS ...
       </section>
       <section>
       <name>MAPSCII</name>
-      <t>
+
+        <sourcecode name="mapscii" type="sh" markers="true"> <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+          <![CDATA[
 $ npx mapscii
 $ npm install -g mapscii
-      </t>
+          ]]>
+        </sourcecode>
+
       </section>
 
       <section>
