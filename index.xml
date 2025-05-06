@@ -94,9 +94,11 @@
          use by search engines. -->
 
     <abstract>
-    <t>I am migrating the blog from the original groff(7) format to
-       this new RFC format, since I find the table of contents
-       charming. The page-break might be also a good thing.</t>
+    <t>This blog is being migrated from the original groff(7)
+    format to the new RFC format. RFC's table of contents and
+    the page-break functionality are expected to enhance
+    the blog's overall readability and presentation.
+    </t>
 
     <t>I don't put much time on it every day since this is just a
        hobby. So the migration would take quite a long time.</t>
