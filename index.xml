@@ -159,19 +159,21 @@
       <table> <!-- https://authors.ietf.org/rfcxml-vocabulary#table -->
         <thead> <!-- https://authors.ietf.org/rfcxml-vocabulary#thead -->
         <!-- A table header is optional -->
-          <tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+	<tr><th>Profession</th><th>No.<!--/th><th-->LV.</th><th>Operator</th></tr>
         </thead>
         <tbody> <!-- https://authors.ietf.org/rfcxml-vocabulary#tbody -->
         <!-- A table body is required -->
-          <tr><td align="left">Left cell</td><td colspan="2">Colspan cell</td></tr>
+          <!--tr><td align="left">Left cell</td><td colspan="2">Colspan cell</td></tr-->
           <!-- align can be right, left or center.  colspan and rowspan work as they do in HTML -->
-          <tr><td rowspan="2">Rowspan cell</td><td align="center">Center cell</td><td align="right">Right cell</td></tr>
-          <tr><td>Cell</td><td>Cell</td></tr>
+	  <tr><td rowspan="2">Defenders</td>
+	  <td align="center">Center cell</td>
+	  <td align="right">Right cell</td></tr>
+          <tr><td>Cardigan</td><td>I-55</td></tr>
         </tbody>
-        <tfoot> <!-- https://authors.ietf.org/rfcxml-vocabulary#tfoot -->
+        <!--tfoot--> <!-- https://authors.ietf.org/rfcxml-vocabulary#tfoot -->
         <!-- A table footer is optional -->
-          <tr><td colspan="3">Colspan footer</td></tr>
-        </tfoot>
+          <!--tr><td colspan="3">Colspan footer</td></tr-->
+        <!--/tfoot-->
       </table>
 
     </section>
