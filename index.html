@@ -10,9 +10,9 @@ pre {
 </style>
 <pre>
 
-      $Id: huihang-yan.github.io, 2025/05/06 21:28:48 huihang Exp $
+      $Id: huihang-yan.github.io, 2025/05/06 21:29:46 huihang Exp $
 
-      Last update: Tue May 6 21:28:48 HKT 2025
+      Last update: Tue May 6 21:29:46 HKT 2025
 
 -------------------------------------------------------------------------------
 
@@ -1514,7 +1514,7 @@ Table of Contents
      2.2.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .   3
      2.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .   3
      2.4.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .   3
-     2.5.  Morality  . . . . . . . . . . . . . . . . . . . . . . . .   3
+     2.5.  Morality  . . . . . . . . . . . . . . . . . . . . . . . .   4
      2.6.  Arknights PV-10 . . . . . . . . . . . . . . . . . . . . .   4
    3.  List Examples . . . . . . . . . . . . . . . . . . . . . . . .   4
      3.1.  Simple Unordered (Bullet) List  . . . . . . . . . . . . .   4
@@ -1526,7 +1526,7 @@ Table of Contents
      3.4.  Definition Lists  . . . . . . . . . . . . . . . . . . . .   5
      3.5.  Lists With Hanging Labels . . . . . . . . . . . . . . . .   5
    4.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . .   5
-   5.  Source Code Examples  . . . . . . . . . . . . . . . . . . . .   5
+   5.  Source Code Examples  . . . . . . . . . . . . . . . . . . . .   6
    6.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . . . .   6
    7.  Using xref  . . . . . . . . . . . . . . . . . . . . . . . . .   6
    8.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   6
@@ -1574,11 +1574,16 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 2.2.  XML2RFC
 
-   $ xml2rfc SOURCE [options] FORMATS ...  $ xml2rfc draft.xml --text
+   <CODE BEGINS> file "xml2rfc.sh"
+
+   $ xml2rfc SOURCE [options] FORMATS ...
+   $ xml2rfc draft.xml --text
+
+   <CODE ENDS>
 
 2.3.  MAPSCII
 
-   <CODE BEGINS> file "mapscii"
+   <CODE BEGINS> file "mapscii.sh"
 
    $ npx mapscii
    $ npm install -g mapscii
@@ -1593,12 +1598,7 @@ Internet-Draft              Abbreviated Title                   May 2025
    that, just switch to the Windows virtual machine.  At least in my
    case, there are nothing the VM cannot do.
 
-2.5.  Morality
 
-   Yes, personal.  Some people might *believe* that something are wrong.
-   Like carved into mind.  They *just* simply don't do those things.
-
-   Uprising.  Family.
 
 
 
@@ -1607,6 +1607,13 @@ Yan                      Expires 7 November 2025                [Page 3]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+2.5.  Morality
+
+   Yes, personal.  Some people might *believe* that something are wrong.
+   Like carved into mind.  They *just* simply don't do those things.
+
+   Uprising.  Family.
 
 2.6.  Arknights PV-10
 
@@ -1650,19 +1657,18 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    REQ1:  This will be "REQ1:"
 
-   REQ2:  This will be "REQ2:"
-
-   Some text in between
-
-   REQ3:  This will be "REQ3:"
-
-
 
 
 Yan                      Expires 7 November 2025                [Page 4]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+   REQ2:  This will be "REQ2:"
+
+   Some text in between
+
+   REQ3:  This will be "REQ3:"
 
    REQ4:  This will be "REQ4:"
 
@@ -1706,12 +1712,6 @@ Internet-Draft              Abbreviated Title                   May 2025
                 | Colspan footer                          |
                 +-----------------------------------------+
 
-                                  Table 2
-
-5.  Source Code Examples
-
-   This is an example C program
-
 
 
 
@@ -1719,6 +1719,12 @@ Yan                      Expires 7 November 2025                [Page 5]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+                                  Table 2
+
+5.  Source Code Examples
+
+   This is an example C program
 
    <CODE BEGINS> file "helloworld.c"
 
@@ -1763,18 +1769,17 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 10.2.  Informative References
 
-   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
-              Requirement Levels", BCP 14, RFC 2119,
-              DOI 10.17487/RFC2119, March 1997,
-              <https://www.rfc-editor.org/info/rfc2119>.
-
-
 
 
 Yan                      Expires 7 November 2025                [Page 6]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
 
    [exampleRefMin]
               Surname, Initials., "Title", 2006.
@@ -1811,11 +1816,6 @@ Author's Address
    Phone: Phone
    Email: huihang.yan@outlook.com
    URI:   huihang-yan.github.io
-
-
-
-
-
 
 
 

@@ -144,16 +144,19 @@
 
       <section>
       <name>XML2RFC</name>
-      <t>
+      <sourcecode name="xml2rfc.sh" type="sh" markers="true">
+      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+          <![CDATA[
 $ xml2rfc SOURCE [options] FORMATS ...
-
-      $ xml2rfc draft.xml --text
-      </t>
+$ xml2rfc draft.xml --text
+          ]]>
+        </sourcecode>
       </section>
       <section>
       <name>MAPSCII</name>
 
-        <sourcecode name="mapscii" type="sh" markers="true"> <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+      <sourcecode name="mapscii.sh" type="sh" markers="true">
+      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
           <![CDATA[
 $ npx mapscii
 $ npm install -g mapscii
