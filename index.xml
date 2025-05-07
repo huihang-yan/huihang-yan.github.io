@@ -127,9 +127,38 @@
       <!-- The 'Requirements Language' section is optional -->
     </section>
     
-    <section>
+<section>
       <name>Body</name>
       <t>Body text</t>
+
+<section><name>Author</name>
+
+<t>Huihang Yan, huihang.yan@outlook.com.</t>
+
+<t>https://github.com/huihang-yan</t>
+
+<t>Live in Guangzhou.</t>
+<t>
+Wholeheartedly support and celebrate neurodiversity.</t>
+<dl newline="true" spacing="normal" indent="8">
+<dt>
+The typesetting was accomplished with groff(1):</dt>
+<dd>
+      <sourcecode markers="true"><![CDATA[
+GNU groff version 1.22.4
+Copyright (C) 2018 Free Software Foundation, Inc.
+GNU groff comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of groff and its subprograms
+under the terms of the GNU General Public License.
+For more information about these matters, see the file
+named COPYING.
+      
+called subprograms:
+      
+GNU grops (groff) version 1.22.4
+GNU troff (groff) version 1.22.4
+      ]]>   </sourcecode></dd></dl>
+</section>
 
       <section><name>Focus</name>
       <t>Yes, we got to focus.</t>
