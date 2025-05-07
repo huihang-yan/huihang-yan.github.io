@@ -188,13 +188,12 @@ vice president and is ultimately responsible for a phone call you
 are to receive from your boss.
 	  </dd>
         </dl>
-      <sourcecode markers="true"><![CDATA[
-Systems programmers are the high priests of a low cult.
-		-- R.S. Barton
-      ]]>   </sourcecode>
       <t>
       Avoid reality at all costs.</t>
       <dl newline="true" spacing="normal" indent="8">
+      <dt>
+      Systems programmers are the high priests of a low cult.</dt><dd>
+      -- R.S. Barton</dd>
       <dt>
 The most difficult thing in the world is to know how to do a thing and
       to watch someone else do it wrong without comment.</dt>
