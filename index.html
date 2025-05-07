@@ -10,9 +10,9 @@ pre {
 </style>
 <pre>
 
-      $Id: huihang-yan.github.io, 2025/05/07 09:42:14 huihang Exp $
+      $Id: huihang-yan.github.io, 2025/05/07 09:43:54 huihang Exp $
 
-      Last update: Wed May 7 09:42:14 HKT 2025
+      Last update: Wed May 7 09:43:54 HKT 2025
 
 -------------------------------------------------------------------------------
 
@@ -1456,7 +1456,7 @@ Table of Contents
      2.1.  Focus . . . . . . . . . . . . . . . . . . . . . . . . . .   3
      2.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .   3
      2.3.  Quotes  . . . . . . . . . . . . . . . . . . . . . . . . .   4
-     2.4.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .   6
+     2.4.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .   5
      2.5.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .   6
      2.6.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .   6
      2.7.  Morality  . . . . . . . . . . . . . . . . . . . . . . . .   6
@@ -1472,7 +1472,7 @@ Table of Contents
      4.4.  Definition Lists  . . . . . . . . . . . . . . . . . . . .   8
      4.5.  Lists With Hanging Labels . . . . . . . . . . . . . . . .   8
    5.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . .   8
-   6.  Source Code Examples  . . . . . . . . . . . . . . . . . . . .   9
+   6.  Source Code Examples  . . . . . . . . . . . . . . . . . . . .   8
    7.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . . . .   9
    8.  Using xref  . . . . . . . . . . . . . . . . . . . . . . . . .   9
    9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
@@ -1570,20 +1570,24 @@ Internet-Draft              Abbreviated Title                   May 2025
    and to watch someone else do it wrong without comment.
            -- Theodore H.  White
 
-   <CODE BEGINS>
    The mosquito is the state bird of New Jersey.
-   .rj
-   -- Andy Warhol
-   <CODE ENDS>
+           -- Andy Warhol
+
+   The most exciting phrase to hear in science, the one that heralds
+   new discoveries, is not "Eureka!"  (I found it!) but "That's funny
+   ..."
+           -- Isaac Asimov
+
+   No violence, gentlemen -- no violence, I beg of you!  Consider the
+   furniture!
+           -- Sherlock Holmes
+
+   No woman can call herself free until she can choose consciously
+   whether she will or will not be a mother.
+           -- Margaret H.  Sanger
 
    The more we disagree, the more chance there is that at least one of
    us is right.
-
-   <CODE BEGINS>
-   The most exciting phrase to hear in science, the one that heralds new
-   discoveries, is not "Eureka!" (I found it!) but "That's funny ..."
-                   -- Isaac Asimov
-   <CODE ENDS>
 
    <CODE BEGINS>
    The National Short-Sleeved Shirt Association says:
@@ -1593,10 +1597,6 @@ Internet-Draft              Abbreviated Title                   May 2025
    The new Congressmen say they're going to turn the government around.
    I hope I don't get run over again.
 
-   <CODE BEGINS>
-   No use getting too involved in life --
-   you're only here for a limited time.
-   <CODE ENDS>
 
 
 
@@ -1608,14 +1608,8 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
    <CODE BEGINS>
-   No violence, gentlemen -- no violence, I beg of you!  Consider the furniture!
-                   -- Sherlock Holmes
-   <CODE ENDS>
-
-   <CODE BEGINS> file "sanger"
-   No woman can call herself free until she can choose consciously whether
-   she will or will not be a mother.
-                   -- Margaret H. Sanger
+   No use getting too involved in life --
+   you're only here for a limited time.
    <CODE ENDS>
 
    <CODE BEGINS> file "bookaholic"
@@ -1655,6 +1649,12 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    <CODE ENDS>
 
+   Man only gets flower in funeral.
+
+2.4.  XML2RFC
+
+
+
 
 
 
@@ -1662,10 +1662,6 @@ Yan                      Expires 8 November 2025                [Page 5]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
-
-   Man only gets flower in funeral.
-
-2.4.  XML2RFC
 
    <CODE BEGINS> file "xml2rfc.sh"
 
@@ -1711,6 +1707,10 @@ Internet-Draft              Abbreviated Title                   May 2025
              +------------+-----+-----------------+----------+
              | Defenders  | 4   | Spot            | I-55     |
              |            +-----+-----------------+----------+
+             |            | 5   | Cardigan        | I-55     |
+             +------------+-----+-----------------+----------+
+
+                                  Table 1
 
 
 
@@ -1718,11 +1718,6 @@ Yan                      Expires 8 November 2025                [Page 6]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
-
-             |            | 5   | Cardigan        | I-55     |
-             +------------+-----+-----------------+----------+
-
-                                  Table 1
 
 3.  Build Python
 
@@ -1767,6 +1762,11 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Some text in between
 
+   REQ3:  This will be "REQ3:"
+
+   REQ4:  This will be "REQ4:"
+
+
 
 
 
@@ -1774,10 +1774,6 @@ Yan                      Expires 8 November 2025                [Page 7]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
-
-   REQ3:  This will be "REQ3:"
-
-   REQ4:  This will be "REQ4:"
 
 4.3.1.  Section in-between
 
@@ -1821,6 +1817,10 @@ Internet-Draft              Abbreviated Title                   May 2025
 
                                   Table 2
 
+6.  Source Code Examples
+
+   This is an example C program
+
 
 
 
@@ -1830,10 +1830,6 @@ Yan                      Expires 8 November 2025                [Page 8]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
-
-6.  Source Code Examples
-
-   This is an example C program
 
    <CODE BEGINS> file "helloworld.c"
 
@@ -1878,6 +1874,10 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 11.2.  Informative References
 
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
 
 
 
@@ -1886,11 +1886,6 @@ Yan                      Expires 8 November 2025                [Page 9]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
-
-   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
-              Requirement Levels", BCP 14, RFC 2119,
-              DOI 10.17487/RFC2119, March 1997,
-              <https://www.rfc-editor.org/info/rfc2119>.
 
    [exampleRefMin]
               Surname, Initials., "Title", 2006.
@@ -1927,6 +1922,11 @@ Author's Address
    Phone: Phone
    Email: huihang.yan@outlook.com
    URI:   huihang-yan.github.io
+
+
+
+
+
 
 
 

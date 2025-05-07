@@ -199,20 +199,23 @@ The most difficult thing in the world is to know how to do a thing and
       to watch someone else do it wrong without comment.</dt>
       <dd>
       -- Theodore H. White</dd>
+      <dt>
+      The mosquito is the state bird of New Jersey.</dt><dd>
+      -- Andy Warhol</dd><dt>
+The most exciting phrase to hear in science, the one that heralds new
+      discoveries, is not "Eureka!" (I found it!) but "That's funny ..."</dt><dd>
+      -- Isaac Asimov</dd>
+      <dt>
+      No violence, gentlemen -- no violence, I beg of you!  Consider the furniture!</dt><dd>
+      -- Sherlock Holmes</dd>
+      <dt>
+No woman can call herself free until she can choose consciously whether
+      she will or will not be a mother.</dt><dd>
+      -- Margaret H. Sanger</dd>
       </dl>
-      <sourcecode markers="true"><![CDATA[
-The mosquito is the state bird of New Jersey.
-.rj
--- Andy Warhol
-      ]]>   </sourcecode>
       <t>
 The more we disagree, the more chance there is that at least one of us
       is right.</t>
-      <sourcecode markers="true"><![CDATA[
-The most exciting phrase to hear in science, the one that heralds new
-discoveries, is not "Eureka!" (I found it!) but "That's funny ..."
-		-- Isaac Asimov
-      ]]>   </sourcecode>
       <sourcecode markers="true"><![CDATA[
 The National Short-Sleeved Shirt Association says:
 	Support your right to bare arms!
@@ -223,15 +226,6 @@ The new Congressmen say they're going to turn the government around.
       <sourcecode markers="true"><![CDATA[
 No use getting too involved in life --
 you're only here for a limited time.
-          ]]>   </sourcecode>
-      <sourcecode markers="true"><![CDATA[
-No violence, gentlemen -- no violence, I beg of you!  Consider the furniture!
-		-- Sherlock Holmes
-          ]]>   </sourcecode>
-      <sourcecode name="sanger" type="txt" markers="true">      <![CDATA[
-No woman can call herself free until she can choose consciously whether
-she will or will not be a mother.
-		-- Margaret H. Sanger
           ]]>   </sourcecode>
 
       <sourcecode name="bookaholic" type="txt" markers="true">
