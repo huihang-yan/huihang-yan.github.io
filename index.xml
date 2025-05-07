@@ -194,12 +194,13 @@ Systems programmers are the high priests of a low cult.
       ]]>   </sourcecode>
       <t>
       Avoid reality at all costs.</t>
-      <sourcecode markers="true"><![CDATA[
+      <dl newline="true" spacing="normal" indent="8">
+      <dt>
 The most difficult thing in the world is to know how to do a thing and
-to watch someone else do it wrong without comment.
-.rj
--- Theodore H. White
-      ]]>   </sourcecode>
+      to watch someone else do it wrong without comment.</dt>
+      <dd>
+      -- Theodore H. White</dd>
+      </dl>
       <sourcecode markers="true"><![CDATA[
 The mosquito is the state bird of New Jersey.
 .rj
