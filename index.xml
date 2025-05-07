@@ -275,8 +275,36 @@ in life.
 	<li>
 	Repay kindness with kindness.</li>
 	</ol></dd>
-      </dl>
-      </section>
+	</dl>
+
+      <dl newline="true" spacing="normal" indent="8">
+      <dt>
+      Here are some other quotes:</dt>
+      <dd>
+	<ol type="(%d)">
+	<!-- https://authors.ietf.org/en/rfcxml-vocabulary#type-1 -->
+	<li>
+Do not confuse knowledge with
+wisdom: knowledge teachs you
+to earn a living, while
+wisdom ensures that life
+	is worth living.</li><li>
+Surround yourself with those
+who appreciate your unique qualities,
+not those who try to
+	diminish them.</li><li>
+Life shines brightly, and
+	every creature is delightful.</li><li>
+A low-quality circle will do
+and say all sorts of things to destroy
+	your ambition.</li><li>
+I am often asked why I am handsome.
+Truth is, I come from a good-looking family.
+	But many say I have a babyface.</li></ol></dd></dl>
+	<t>Here `circle' stands for social circle - people
+	we talk/meet/have fun/hang out with etc.</t>
+
+	</section> <!--Quotes-->
 
       <section>
       <name> Fortune(6) Quotes</name>
