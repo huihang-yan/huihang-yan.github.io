@@ -10,9 +10,9 @@ pre {
 </style>
 <pre>
 
-      $Id: huihang-yan.github.io, 2025/05/07 09:16:56 huihang Exp $
+      $Id: huihang-yan.github.io, 2025/05/07 09:27:31 huihang Exp $
 
-      Last update: Wed May 7 09:16:56 HKT 2025
+      Last update: Wed May 7 09:27:31 HKT 2025
 
 -------------------------------------------------------------------------------
 
@@ -706,109 +706,84 @@ FORTUNE(6) QUOTES
        cult.
                  -- R.S. Barton
 
-       Avoid reality at all costs.
-
-       The  most difficult thing in the world is to know how
-       to do a thing and to watch someone else do  it  wrong
-       without comment.
-                                        -- Theodore H. White
-
-       The mosquito is the state bird of New Jersey.
-                                              -- Andy Warhol
-
-       The  more  we disagree, the more chance there is that
-       at least one of us is right.
-
-       The most exciting phrase to hear in science, the  one
-       that  heralds  new  discoveries,  is not "Eureka!" (I
-       found it!) but "That's funny ..."
-                                             -- Isaac Asimov
-
-       The National Short-Sleeved Shirt Association says:
-                   Support your right to bare arms!
-
-       The new Congressmen say they're  going  to  turn  the
-       government  around.   I  hope  I  don't  get run over
-       again.
-
 INTERPRETED/SCRIPTING LANGUAGES
-       Interpreted/scripting languages are good in  the  way
+       Interpreted/scripting  languages  are good in the way
        that there is no compilation - and therefore, no com-
        pile-time errors!  Wow.  Only run-time errors.
 
-       What's more, there are no extra  generated  files  to
+       What's  more,  there  are no extra generated files to
        worry about.  Just the source files.
 
-       The  problem  of  C/C++  is that they do not have the
+       The problem of C/C++ is that they  do  not  have  the
        modern standard libraries.  They are born in the ages
-       of  the  command-line interface, and when the network
+       of the command-line interface, and when  the  network
        standards have not yet been settled.
 
-       C/C++ have not standard library for GUI, network  and
-       even  no curses-like terminal functionality.  All the
-       things are file system and line-oriented I/O  -  that
+       C/C++  have not standard library for GUI, network and
+       even no curses-like terminal functionality.  All  the
+       things  are  file system and line-oriented I/O - that
        is, only ed(1), even not vi(1).
 
-       At  that time C is a good save for portability.  How-
-       ever it's not anymore true today.  The lack of  stan-
+       At that time C is a good save for portability.   How-
+       ever  it's not anymore true today.  The lack of stan-
        dard libraries result in lack of portability.
 
-       Imagine  when we develop a GUI program.  If we are to
-       use a GUI toolkit,  then  the  portability  gets  re-
-       stricted  by that GUI toolkit.  If we are to write it
-       ourselves, people with other environment would  often
-       find  our  program not working in their boxes, due to
+       Imagine when we develop a GUI program.  If we are  to
+       use  a  GUI  toolkit,  then  the portability gets re-
+       stricted by that GUI toolkit.  If we are to write  it
+       ourselves,  people with other environment would often
+       find our program not working in their boxes,  due  to
        the system-dependent code.
 
-       The good thing is  that  we  have  Qt,  GTK  and  web
+       The  good  thing  is  that  we  have  Qt, GTK and web
        browsers, which provide a really full support to dif-
-       ferent environments, and work as a good standard  li-
-       brary  -  filling the gaps of the standard library of
+       ferent  environments, and work as a good standard li-
+       brary - filling the gaps of the standard  library  of
        C/C++.
 
-       Apart from giant  solutions  like  Qt,  GTK  and  web
-       browsers,  it  is also popular to solve this issue by
+       Apart  from  giant  solutions  like  Qt,  GTK and web
+       browsers, it is also popular to solve this  issue  by
        writing a HTTP server instead and let the user pick a
        browser to render the user interface. This is smart.
 
-       However,  this  also  requires  a good cross-platform
+       However, this also  requires  a  good  cross-platform
        network library.  The good news is that a network li-
        brary is much smaller and there exist good ones.
 
 ROFF(7)/GROFF(1)/TROFF?
-       At  first this blog is written directly in HTML.  Af-
-       ter some edits I found it really tiring to  redo  the
-       typesetting  whenever  I  make  some edits - the line
-       lengths would change, so if I am to edit one line,  I
-       would  in  the  end edit multiple lines to adjust the
-       typesetting, sometimes even the whole paragraph.   So
+       At first this blog is written directly in HTML.   Af-
+       ter  some  edits I found it really tiring to redo the
+       typesetting whenever I make some  edits  -  the  line
+       lengths  would change, so if I am to edit one line, I
+       would in the end edit multiple lines  to  adjust  the
+       typesetting,  sometimes even the whole paragraph.  So
        I turned to groff(1), and it works great!
 
        The roff(7) text formatting language syntax is really
-       clear and easy to use.  I just grab a roff file  from
-       /usr/share/man/  - it was /usr/share/man/man1/bzip2.1
-       - and I got my hands on.  There are really  not  much
+       clear  and easy to use.  I just grab a roff file from
+       /usr/share/man/ - it was  /usr/share/man/man1/bzip2.1
+       -  and  I got my hands on.  There are really not much
        commands, just SS, SH and TH for the title stuff.
 
-       The  only  problem  is that groff(1) generates output
-       for the terminal, so I need to sed(1) out the  termi-
+       The only problem is that  groff(1)  generates  output
+       for  the terminal, so I need to sed(1) out the termi-
        nal escape sequences.
 
-       Now  I  just  need  to  edit  the  roff(7) source and
+       Now I just  need  to  edit  the  roff(7)  source  and
        `make`.   The  output  HTML  is  also  maintained  by
-       git(1),  and it's really pleasant seeing the git-diff
-       updates automatically generated  by  groff(1).   It's
-       beautiful.    Clear,  neat  and  beautiful.   And  it
+       git(1), and it's really pleasant seeing the  git-diff
+       updates  automatically  generated  by groff(1).  It's
+       beautiful.   Clear,  neat  and  beautiful.   And   it
        doesn't hurt anything - if I were to continue editing
-       the  HTML  by  hand as before, that would be the same
+       the HTML by hand as before, that would  be  the  same
        scene, with the only difference that the git-diff up-
-       dates  are  typeset by my hands, instead of automati-
+       dates are typeset by my hands, instead  of  automati-
        cally by groff(1).
 
-       groff(7) randomly resets  the  typesetting  even  for
-       paragraphs  that  I  haven't  touched.  An AI told me
-       that I can use the '.na' command to disable  justifi-
-       cation  in  order to fix this.  Let's see if it works
+       groff(7)  randomly  resets  the  typesetting even for
+       paragraphs that I haven't touched.   An  AI  told  me
+       that  I can use the '.na' command to disable justifi-
+       cation in order to fix this.  Let's see if  it  works
        ...
 
 THE ROFF FAMILY
@@ -816,48 +791,48 @@ THE ROFF FAMILY
 
        groff = GNU roff
 
-       troff: the *roff language*  was  historically  called
+       troff:  the  *roff  language* was historically called
        *troff*.
 
-       Texinfo:  software  documentation  system that uses a
+       Texinfo: software documentation system  that  uses  a
        single source file to produce both online information
        and printed output.
 
        nroff: use groff to format documents for TTY devices.
 
               GNU  _nroff_  emulates  the  traditional  Unix
-              _nroff_ command using groff(1).  _nroff_  gen-
+              _nroff_  command using groff(1).  _nroff_ gen-
               erats output via grotty(1), _groff_'s TTY out-
               put device.
 
        troff.org: 'The Text Processor for Typesetters'
 
-              'troff, and its  GNU  implementation  `groff`,
-              are  programs  that process a textual descrip-
-              tion of a document to produce typeset  verions
-              suitable  for  printing.   It's more 'What you
-              describe is what you get'  rather  than  WYSI-
+              'troff,  and  its  GNU implementation `groff`,
+              are programs that process a  textual  descrip-
+              tion  of a document to produce typeset verions
+              suitable for printing.  It's  more  'What  you
+              describe  is  what  you get' rather than WYSI-
               WYG.'
 
-              'The  great  strength of `troff` is the flexi-
-              bility of the  basic  language  and  its  pro-
+              'The great strength of `troff` is  the  flexi-
+              bility  of  the  basic  language  and its pro-
               grammability - it can be made to do almost any
               formatting task.'
                      -- The UNIX Programming Environment,
                         Brian W. Kernighan and Rob Pike.
 
 ROFF NOTES
-       The roff language is line-oriented.  There  are  only
-       two  kinds  of  lines,  control lines and text lines.
-       The control lines start with a control character,  by
+       The  roff  language is line-oriented.  There are only
+       two kinds of lines, control  lines  and  text  lines.
+       The  control lines start with a control character, by
        default a period '.' or a single quote `'`; all other
        lines are text lines.
 
-       Command arguments are separated by  spaces,  but  not
+       Command  arguments  are  separated by spaces, but not
        tab characters.
 
-       For  indentation,  any number of space or tab charac-
-       ters can be  inserted  between  the  leading  control
+       For indentation, any number of space or  tab  charac-
+       ters  can  be  inserted  between  the leading control
        character and the command name, but the control char-
        acter must be on the first position of the line.
 
@@ -867,50 +842,50 @@ ROFF NOTES
 
        '.I xxx' - italic
 
-       '.' - a line consisting of  a  dot  only,  an  'empty
+       '.'  -  a  line  consisting  of a dot only, an 'empty
        roff(1) request':
 
             'To  additionally  use  the  auto-fill  mode  in
        Emacs, it is best to insert an empty roff(1) request,
-       a  line  consisting  of  a  dot only, after each sen-
+       a line consisting of a  dot  only,  after  each  sen-
        tence.'
 
-            Thus, this dot-line appears to serve solely  the
-       purpose  of  activating  a  certain auto-fill feature
-       within Emacs, and seems to hold no function in  terms
-       of  typesetting,  much  like a comment line that does
-       not contribute to the actual execution or  formatting
-       of  the  content.  Since I don't use Emacs, it stands
-       to reason that I can  safely  overlook  this  command
-       without  any  adverse  effects on my tasks related to
+            Thus,  this dot-line appears to serve solely the
+       purpose of activating  a  certain  auto-fill  feature
+       within  Emacs, and seems to hold no function in terms
+       of typesetting, much like a comment  line  that  does
+       not  contribute to the actual execution or formatting
+       of the content.  Since I don't use Emacs,  it  stands
+       to  reason  that  I  can safely overlook this command
+       without any adverse effects on my  tasks  related  to
        typesetting or otherwise.
 
        '.BR' - bold text?
 
-       Macro definition: '.de [macro]',  then  use  '..'  to
+       Macro  definition:  '.de  [macro]',  then use '..' to
        end.
 
        nop: '.nop [anything]' - always process [anything]
 
        macro stuff: \)\\$*
 
-              \$*:  the concatenation of all arguments sepa-
+              \$*: the concatenation of all arguments  sepa-
               rated by spaces
 
        However, when `\$' appears alone, it stands as a sin-
-       gle-character  escapes, resulting in a non-printable,
+       gle-character escapes, resulting in a  non-printable,
        zero-width glyph.
 
-       This nature makes it suitable for the purpose of  be-
-       ing  put at the start of a line to prevent the `real'
-       beginning character to be parsed  as  commands.   For
-       example,  when we really need to write something that
-       begins with the dot, instead of trying  to  enter  an
+       This  nature makes it suitable for the purpose of be-
+       ing put at the start of a line to prevent the  `real'
+       beginning  character  to  be parsed as commands.  For
+       example, when we really need to write something  that
+       begins  with  the  dot, instead of trying to enter an
        groff command.
 
-       tab:  if  a tab character occurs during text, the in-
+       tab: if a tab character occurs during text,  the  in-
        terpreter makes a horizontal jump to the next pre-de-
-       fined  tab position.  There is a sophisticated inter-
+       fined tab position.  There is a sophisticated  inter-
        face for handling tab positions.
 
        Tabbed/indent example code snippet:
@@ -920,8 +895,8 @@ ROFF NOTES
               .EE
               .RE
 
-       .RS: reduce space. Start a block  of  indented  text.
-       Creates  a  new indentation level. `.RS n` to specify
+       .RS:  reduce  space.  Start a block of indented text.
+       Creates a new indentation level. `.RS n`  to  specify
        the indentation value.
 
        .EX: start an example block.
@@ -951,45 +926,45 @@ ROFF NOTES
               .IP \(bu
 
 SPACING
-       An  issue  has  been noticed when using Groff. It ap-
+       An issue has been noticed when using  Groff.  It  ap-
        pears that whenever there are alterations to a single
-       line  within  a paragraph, even when subsequent para-
-       graphs remain completely unchanged in terms of  their
+       line within a paragraph, even when  subsequent  para-
+       graphs  remain completely unchanged in terms of their
        content, their spacing also gets modified.
 
-       Despite  the text content in these paragraphs remain-
-       ing the same, the visible layout of the  document  is
+       Despite the text content in these paragraphs  remain-
+       ing  the  same, the visible layout of the document is
        affected.
 
-       This  is  very  annoying  when it comes together with
-       git-diff.  I am wondering if this is a well-known  or
+       This is very annoying when  it  comes  together  with
+       git-diff.   I am wondering if this is a well-known or
        classical problem within in the Groff community.
 
-       Well,  it seems so. Let's check the man-page.  In the
+       Well, it seems so. Let's check the man-page.  In  the
        section EDITING ROFF:
 
-              All _roff_ formatters provide  automated  line
+              All  _roff_  formatters provide automated line
               breaks and horizontal and vertical spacing. In
-              order to not disturb this, the following  tips
+              order  to not disturb this, the following tips
               can be helpful.
 
-              First  of  all,  never  include empty or blank
-              lines in a roff  document.  Instead,  use  the
+              First of all, never  include  empty  or  blank
+              lines  in  a  roff  document. Instead, use the
               empty request, i.e. a line consisting of a dot
-              only, or a line comment .\" if  a  structuring
+              only,  or  a line comment .\" if a structuring
               element is needed.
 
-              Never  start  a  line  with whitespace because
-              this can lead to  unexpected  behaviour.   In-
+              Never start a  line  with  whitespace  because
+              this  can  lead  to unexpected behaviour.  In-
               dented paragraphs can be constructed in a con-
               trolled way by roff requests.
 
-              Start each sentence on a line of its own,  for
+              Start  each sentence on a line of its own, for
               the spacing after a dot is handled differently
               depending on whether it terminates an abbrevi-
-              ation  or  a  sentence.   To  distinguish both
-              cases, do a line break  after  each  sentence.
-              The  following  example shows a judicious line
+              ation or  a  sentence.   To  distinguish  both
+              cases,  do  a  line break after each sentence.
+              The following example shows a  judicious  line
               breaking in a roff input file.
 
                      This is an example of a
@@ -1007,34 +982,34 @@ SPACING
                      In the output, this sentence continues
                      the same paragraph.
 
-       This might be the case.  There seems  to  have  three
+       This  might  be  the case.  There seems to have three
        things which might cause problems.
 
        Firstly the blank lines.  It would 'disturb' the for-
        matting?
 
        Secondly the line starting with whitespace.  This can
-       'lead  to  unexpected  behaviour'?  Well, weird.  Too
+       'lead to unexpected behaviour'?   Well,  weird.   Too
        weird.  Anyway, though it's weird, let's try not step
        on this trap.  It's not that hard.
 
-       Finally,  start  each  sentence on a line of its own.
-       'For the spacing after a dot is  handled  differently
+       Finally, start each sentence on a line  of  its  own.
+       'For  the  spacing after a dot is handled differently
        depending on whether it terminates an abbreviation or
-       a sentence.'  Well, this is also weird.   But  anyway
+       a  sentence.'   Well, this is also weird.  But anyway
        let's try to follow this security advice too.
 
 SEMBR
        Semantic line breaks.  Yes, that's the term.
 
-       I  remember  seeing  it  for Markdown stuff.  Haven't
-       thought it would even really work in this case -  and
+       I remember seeing it  for  Markdown  stuff.   Haven't
+       thought  it would even really work in this case - and
        as such an important role - in roff(7).
 
        See sembr.org.
 
               Semantic Line Breaks describe a set of conven-
-              tions for using  insensitive  vertical  white-
+              tions  for  using  insensitive vertical white-
               space to structure prose along semantic bound-
               aries.  Many lightweight markup languages, in-
               cluding Markdown, reStructured Text, and Asci-
@@ -1044,55 +1019,55 @@ SEMBR
               writingslowly.com/
                      semantic-line-breaks-are-a.html
 
-              Semantic line breaks are a  feature  of  Mark-
+              Semantic  line  breaks  are a feature of Mark-
               down, not a bug
 
-              As  the semantic line break specification sug-
-              gests, by inserting line  breaks  at  semantic
-              boundaries,  writers,  editors, and other col-
+              As the semantic line break specification  sug-
+              gests,  by  inserting  line breaks at semantic
+              boundaries, writers, editors, and  other  col-
               laborators can make source text easier to work
               with, without affecting how it's seen by read-
               ers.
 
 A COMMENT
-       A commenter claimed the Markdown  line-break  conven-
-       tion  was  a  compromise to appease conflicting stan-
-       dards.  They found  it  infuriating  -  obviously,  a
+       A  commenter  claimed the Markdown line-break conven-
+       tion was a compromise to  appease  conflicting  stan-
+       dards.   They  found  it  infuriating  - obviously, a
        Markdown line-break should equal a real one.
 
        They also hate the Markdown bold and italic text con-
        ventions.  To them, single asterisks should mark bold
        text, single underscores italic.  Simple as that.
 
-       I  find  these designs natural and good.  The comment
+       I find these designs natural and good.   The  comment
        surprised me, and I want to respond to it.
 
-       People wonder why not  `real'  newlines.   One  major
+       People  wonder  why  not  `real' newlines.  One major
        reason is to enable easy line-based diffs, like those
-       in git-diff, patch(1) and other version  control  and
-       collaboration   tools.    Recall  when  patches  were
+       in  git-diff,  patch(1) and other version control and
+       collaboration  tools.   Recall  when   patches   were
        emailed.
 
-       Using `real' newlines means a tiny edit can  spawn  a
+       Using  `real'  newlines means a tiny edit can spawn a
        huge diff(1) result.
 
-       Sounds   abstract?  Check  the  commit  histories  of
-       GitHub-hosted GitHub Pages  sites,  plain-text  docu-
+       Sounds  abstract?  Check  the  commit  histories   of
+       GitHub-hosted  GitHub  Pages  sites, plain-text docu-
        ments, or Markdown files.
 
-       Many  don't  use  version control or collaborate with
+       Many don't use version control  or  collaborate  with
        old-school Unix tools like diff(1) and patch(1).  But
-       that's  a large portion of the worlds of Markdown and
+       that's a large portion of the worlds of Markdown  and
        Unix.
 
-       The Markdown  line-break  convention  feels  natural.
-       It's  the  norm  in Roff, LaTeX, RST and HTML.  Check
+       The  Markdown  line-break  convention  feels natural.
+       It's the norm in Roff, LaTeX, RST  and  HTML.   Check
        HTML source - same deal.  That's just how it is.
 
-       Look at Unix-world plain text docs.  Nearly  all  are
-       formatted  a certain way.  Take two Slackware docs as
-       an example.  There are countless more  -  LFS,  TLDP,
-       Python  PEPs, Python RST docs, Linux kernel docs, RFC
+       Look  at  Unix-world plain text docs.  Nearly all are
+       formatted a certain way.  Take two Slackware docs  as
+       an  example.   There  are countless more - LFS, TLDP,
+       Python PEPs, Python RST docs, Linux kernel docs,  RFC
        sources.  They are everywhere.
 
               ftp.slackware.com/pub/slackware/
@@ -1100,25 +1075,25 @@ A COMMENT
                       Slackware-HOWTO
                       usb-and-pxe-istallers/README_USB.TXT
 
-       And I forgot the plain text emails - yes, just  check
-       any  maillist,  either  ArchLinux, Debian, Slackware,
+       And  I forgot the plain text emails - yes, just check
+       any maillist, either  ArchLinux,  Debian,  Slackware,
        Gentoo ...  Majority of the mails are line-broke this
        way.
 
-       So  the result is - for people of certain background,
-       this feels just natural. But for others,  this  might
+       So the result is - for people of certain  background,
+       this  feels  just natural. But for others, this might
        feel weird.
 
-       Historical  context helps.  Word-wrap was not common.
-       Open vi(1) or vim(1), and you will see  it's  off  by
-       default.   Sure,  some distros like Ubuntu might pro-
+       Historical context helps.  Word-wrap was not  common.
+       Open  vi(1)  or  vim(1), and you will see it's off by
+       default.  Sure, some distros like Ubuntu  might  pro-
        vide a nice good default `.vimrc', trying to be user-
-       friendly  like  Windows.  But that's not the standard
+       friendly like Windows.  But that's not  the  standard
        way.
 
        Without a common word-wrap feature, manual line-wrap-
-       ping  became  a habit and standard.  People do it be-
-       cause some editors do not auto-warp.   Skip  it,  and
+       ping became a habit and standard.  People do  it  be-
+       cause  some  editors  do not auto-warp.  Skip it, and
        the next turns into a jumbled mess.
 
        And for the asterik part, I shall say that underscore
@@ -1131,32 +1106,32 @@ AGAIN
        Well, while editing the above, I found that I want to
        write something completely different.
 
-       No question, Markdown is annoying.  Ditching  it  was
+       No  question,  Markdown is annoying.  Ditching it was
        my best move.  Its charm, the good looks in raw form,
-       became its downfall.  I had  to  constantly  preserve
+       became  its  downfall.   I had to constantly preserve
        that aesthetic.
 
-       Besides  this, I am convinced it's impossible to com-
+       Besides this, I am convinced it's impossible to  com-
        bine raw-file attractiveness with full functionality;
        they are mutually exclusive.  When we strive for more
        functions in Markdown, the result is usually a worse-
        looking raw file.
 
        Now I use roff(7).  Maybe you have never heard of it,
-       but odds are you  have  used  it  without  realising,
-       since  it  formats man-pages(7).  By sacrificing raw-
-       file prettiness, it simplifies my  life,  leaving  me
+       but  odds  are  you  have  used it without realising,
+       since it formats man-pages(7).  By  sacrificing  raw-
+       file  prettiness,  it  simplifies my life, leaving me
        content and free from Markdown's demands.
 
        However, I want to talk the line-breaking style.  Its
-       key advantage lies in version control, where it  gen-
-       erates  more  concise  diffs, making it effortless to
-       review edits upon sign-off.  This benefit extends  to
+       key  advantage lies in version control, where it gen-
+       erates more concise diffs, making  it  effortless  to
+       review  edits upon sign-off.  This benefit extends to
        collaboration  as  well;  when  sharing  patches  via
-       email, it streamlines the process and  saves  others'
+       email,  it  streamlines the process and saves others'
        time.
 
-       Look  at  this  example from the real git-log of this
+       Look at this example from the real  git-log  of  this
        very text that I am editing:
 
               commit fc05868be12a41cfce056f59a3c5e50cea26a14b
@@ -1205,43 +1180,43 @@ AGAIN
               +       thought was entire reasonable; I had simply grown ac-
               +       customed to the design.
 
-       Manually placing new-lines shrinks  diff(1)  results.
-       One-line  paragraphs  make diff(1) cover entire text,
+       Manually  placing  new-lines shrinks diff(1) results.
+       One-line paragraphs make diff(1) cover  entire  text,
        untouched parts included.
 
-       Many don't find this an issue.   Even  paragraph-long
-       diff(1)  results are trivial, and plenty on GitHub do
-       it.  Moreover, not everyone uses version control  and
+       Many  don't  find this an issue.  Even paragraph-long
+       diff(1) results are trivial, and plenty on GitHub  do
+       it.   Moreover, not everyone uses version control and
        diff(1).  For them, it's non-existent.
 
-       But  I discuss this because without it, this Markdown
-       design has no purpose.  Also, it's worth noting  that
-       this  is the default design across nearly all similar
+       But I discuss this because without it, this  Markdown
+       design  has no purpose.  Also, it's worth noting that
+       this is the default design across nearly all  similar
        tools - RST, LaTeX, roff(7), Texinfo, HTML, and more.
-       Thus,  I found this design both natural and good, and
+       Thus, I found this design both natural and good,  and
        the comment caught me off guard.
 
-       However,  I  quickly  grapsed  the  situation.    The
+       However,   I  quickly  grapsed  the  situation.   The
        thought was entire reasonable; I had simply grown ac-
        customed to the design.
 
 STOCK PODCAST
-       Gold price - real industuries.  Oil, iron  ...   v.s.
-       virtual  industries  -  different  section of cost. -
+       Gold  price  - real industuries.  Oil, iron ...  v.s.
+       virtual industries - different  section  of  cost.  -
        cost of human.
 
-       USD decrease - higher price.   Global  market.   real
-       estate  - many industries.  however, too high - break
+       USD  decrease  -  higher price.  Global market.  real
+       estate - many industries.  however, too high -  break
        up, like japan.  selling all.  foreign money.
 
 GACHA
 THEN HOW?
-       Ok, now we have learnt from the  possible  causes  to
+       Ok,  now  we  have learnt from the possible causes to
        that space-modifing issue.  Then what should we do?
 
-       The  only  issue should be how to separate paragraphs
-       without using black lines.  I check the roff  sources
-       of  the  man-pages, and I see them use '.P'.  I tried
+       The only issue should be how to  separate  paragraphs
+       without  using black lines.  I check the roff sources
+       of the man-pages, and I see them use '.P'.   I  tried
        it and it works.
 
        Well, seems that we don't have problems anymore.  But
@@ -1251,21 +1226,21 @@ THEN HOW?
        used to start a new paragraph.
 
        The AI also told me that there is an '.LP' command to
-       start  a  list paragraph, and might add bullet points
+       start a list paragraph, and might add  bullet  points
        and numbering.  That sounds good and useful.
 
        But where is '.P' command mentioned in the man-pages?
        Weird, can't find it.
 
 KAKAOTALK
-       The  registration  requires  the user to send an SMS,
+       The registration requires the user to  send  an  SMS,
        instead of receiving an SMS from them.
 
 PROTON MAIL
-       Proton Mail also comes with a VPN. The limit  of  the
+       Proton  Mail  also comes with a VPN. The limit of the
        free plan is one connection.
 
-       IMAP/SMTP:  included with Mail Plus, Proton Unlimited
+       IMAP/SMTP: included with Mail Plus, Proton  Unlimited
        and Proton for Business.  Need to upgrade.
 
        That is, there is no access to IMAP/SMTP or something
@@ -1276,53 +1251,53 @@ PROTON MAIL
 APPS
        Proton VPN - haven't tried but I guess it works.
 
-       Proton  Mail  - for free plan, this is the only email
+       Proton Mail - for free plan, this is the  only  email
        client supporting Proton Mail accounts.
 
 SINS AND VIRTUES
        inspirationfeed.com
 
-       The seven cardinal sins: pride, greed,  wrath,  lust,
+       The  seven  cardinal sins: pride, greed, wrath, lust,
        envy, gluttony and sloth.
 
-       Lust  refers  to an intense desire, usually to engage
+       Lust refers to an intense desire, usually  to  engage
        in illegal or immoral sexual pleasure.
 
-       Gluttony refers to the  overconsumption  of  food  or
+       Gluttony  refers  to  the  overconsumption of food or
        anything to the point of waste.
 
-       Greed  is  an  intense desire and passionate love for
-       material wealth. Much like lust and  gluttony,  greed
+       Greed is an intense desire and  passionate  love  for
+       material  wealth.  Much like lust and gluttony, greed
        results from an irrational longing for what you don't
        need.
 
-       Sloth is laziness as is  manifested  by  the  willful
-       avoidance  of work. It stems from the desire to avoid
+       Sloth  is  laziness  as  is manifested by the willful
+       avoidance of work. It stems from the desire to  avoid
        responsibility. One adage that aptly captures the sin
        of sloth is, 'those who do not work should not eat.'
 
-       Wrath  is simply uncontrolled feelings of anger, rage
-       or hatred. Wrath feeds on a strong  desire  to  exact
-       vengeance  and is often fueled by an irrational drive
+       Wrath is simply uncontrolled feelings of anger,  rage
+       or  hatred.  Wrath  feeds on a strong desire to exact
+       vengeance and is often fueled by an irrational  drive
        to harm others.
 
        Wrath  counterparts:  gentleness,  self-control,  pa-
        tience and peace.
 
-       Scriptural   references:  Colossians  3:8,  Ephesians
-       4:26-27, James  1:19-20,  Proverbs  14:29  and  15:1,
+       Scriptural  references:  Colossians  3:8,   Ephesians
+       4:26-27,  James  1:19-20,  Proverbs  14:29  and 15:1,
        Psalm 37:8 and Romans 12:19.
 
        Envy is the desire for possessions, happiness as well
        as the talents and abilities of others.
 
-       Pride is defined as an excessive  love  for  oneself,
+       Pride  is  defined  as an excessive love for oneself,
        belief in one's abilities, the desire to excel every-
        one else.  Pride is such a vile sin that it has often
        been considered as the root cause of the other six of
        the seven cardinal sins.
 
-       The seven heavenly virtues: prudence,  justice,  tem-
+       The  seven  heavenly virtues: prudence, justice, tem-
        perance, courage, faith, hope and charity.
 
 STORIES
@@ -1342,25 +1317,25 @@ TODO
 
        Published: Jun 29, 2020
 
-       Learn how Niklas  Luhmann,  a  prolific  sociologist,
+       Learn  how  Niklas  Luhmann,  a prolific sociologist,
        used Zettelkasten, or slip box, to organise his ideas
-       and boost his productivity.  Discover  how  to  apply
+       and  boost  his  productivity.  Discover how to apply
        ...
 
-       Like  vinyl  records  and  hardcover books, Luhmann's
+       Like vinyl records  and  hardcover  books,  Luhmann's
        original system was analog.  It consisted of numbered
-       index  cards,  or slips, filed in six large cabinets.
-       Each slip contained a single  and  complete  idea,  a
+       index cards, or slips, filed in six  large  cabinets.
+       Each  slip  contained  a  single and complete idea, a
        concept his followers call 'atomicity' ...
 
-       Sometimes,  what  seems  like  relaxation is actually
-       work.  For instance, choosing chess over games as  it
-       has  utility makes it less relaxing.  Headaches vary,
+       Sometimes, what seems  like  relaxation  is  actually
+       work.   For instance, choosing chess over games as it
+       has utility makes it less relaxing.  Headaches  vary,
        so it's personal.
 
-       Here is a simple example that is  plain  to  you  yet
-       eluded  me until now.  Can you share other such seem-
-       ingly obvious things other miss,  or  ones  you  have
+       Here  is  a  simple  example that is plain to you yet
+       eluded me until now.  Can you share other such  seem-
+       ingly  obvious  things  other  miss, or ones you have
        overlooked while others find them self-evident?  I am
        eager to know.
 
@@ -1368,26 +1343,26 @@ TODO
        erates.
 
 A MEMORY
-       This  brings to mind a university English class where
-       our teacher asked for English  reads  recommendation.
-       I  proposed  to the Bible, and the teaching assistant
+       This brings to mind a university English class  where
+       our  teacher  asked for English reads recommendation.
+       I proposed to the Bible, and the  teaching  assistant
        asked me how one should read Bible.
 
        Back then, I was surprised by that question.  I found
-       it  odd,  thinking  'Just  simply read it!'  But now,
-       having dipped into parts that piqued my  interest,  I
+       it odd, thinking 'Just simply  read  it!'   But  now,
+       having  dipped  into parts that piqued my interest, I
        now recognise the significance of that query.  I have
-       realised that reading  whole  books,  not  fragments,
+       realised  that  reading  whole  books, not fragments,
        safeguards me from missing out on any detail.
 
        query: ['kwire], a question, especially one addressed
        to an official or organisation
 
-       pique: [peek], verb, stimulate - interest or  curios-
-       ity.   E.g.  'you have piqued my curiousity about the
+       pique:  [peek], verb, stimulate - interest or curios-
+       ity.  E.g. 'you have piqued my curiousity  about  the
        man'
 
-       odd: [ah-d] adjective: different from what  is  usual
+       odd:  [ah-d]  adjective: different from what is usual
        or expected; strange.
 
 AUTHOR
@@ -1397,7 +1372,7 @@ AUTHOR
 
        I live in Guangzhou.
 
-       I  wholeheartedly  support  and celebrate neurodiver-
+       I wholeheartedly support  and  celebrate  neurodiver-
        sity.
 
        The typesetting was accomplished with groff(1):
@@ -1413,8 +1388,6 @@ AUTHOR
 
               GNU grops (groff) version 1.22.4
               GNU troff (groff) version 1.22.4
-       No use getting too involved in life  --  you're  only
-       here for a limited time.
 
 
 
@@ -1497,33 +1470,33 @@ Table of Contents
      2.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .   3
      2.3.  Quotes  . . . . . . . . . . . . . . . . . . . . . . . . .   3
      2.4.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .   5
-     2.5.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .   5
-     2.6.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .   5
-     2.7.  Morality  . . . . . . . . . . . . . . . . . . . . . . . .   5
-     2.8.  Arknights PV-10 . . . . . . . . . . . . . . . . . . . . .   5
-   3.  Build Python  . . . . . . . . . . . . . . . . . . . . . . . .   6
-   4.  List Examples . . . . . . . . . . . . . . . . . . . . . . . .   6
-     4.1.  Simple Unordered (Bullet) List  . . . . . . . . . . . . .   6
+     2.5.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .   6
+     2.6.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .   6
+     2.7.  Morality  . . . . . . . . . . . . . . . . . . . . . . . .   6
+     2.8.  Arknights PV-10 . . . . . . . . . . . . . . . . . . . . .   6
+   3.  Build Python  . . . . . . . . . . . . . . . . . . . . . . . .   7
+   4.  List Examples . . . . . . . . . . . . . . . . . . . . . . . .   7
+     4.1.  Simple Unordered (Bullet) List  . . . . . . . . . . . . .   7
      4.2.  Ordered List With Lowercase Letters in Brackets Instead of
-           Numbers . . . . . . . . . . . . . . . . . . . . . . . . .   6
+           Numbers . . . . . . . . . . . . . . . . . . . . . . . . .   7
      4.3.  Continuous Numbering in a List That is Split by Text or
-           Sections  . . . . . . . . . . . . . . . . . . . . . . . .   6
-       4.3.1.  Section in-between  . . . . . . . . . . . . . . . . .   7
-     4.4.  Definition Lists  . . . . . . . . . . . . . . . . . . . .   7
-     4.5.  Lists With Hanging Labels . . . . . . . . . . . . . . . .   7
-   5.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . .   7
+           Sections  . . . . . . . . . . . . . . . . . . . . . . . .   7
+       4.3.1.  Section in-between  . . . . . . . . . . . . . . . . .   8
+     4.4.  Definition Lists  . . . . . . . . . . . . . . . . . . . .   8
+     4.5.  Lists With Hanging Labels . . . . . . . . . . . . . . . .   8
+   5.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . .   8
    6.  Source Code Examples  . . . . . . . . . . . . . . . . . . . .   8
-   7.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . . . .   8
-   8.  Using xref  . . . . . . . . . . . . . . . . . . . . . . . . .   8
-   9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   8
-   10. Security Considerations . . . . . . . . . . . . . . . . . . .   8
-   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .   8
-     11.1.  Normative References . . . . . . . . . . . . . . . . . .   8
-     11.2.  Informative References . . . . . . . . . . . . . . . . .   8
-   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .   9
-   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .   9
-   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .   9
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   9
+   7.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . . . .   9
+   8.  Using xref  . . . . . . . . . . . . . . . . . . . . . . . . .   9
+   9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
+   10. Security Considerations . . . . . . . . . . . . . . . . . . .   9
+   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .   9
+     11.1.  Normative References . . . . . . . . . . . . . . . . . .   9
+     11.2.  Informative References . . . . . . . . . . . . . . . . .   9
+   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  10
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  10
+   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  10
 
 
 
@@ -1592,9 +1565,60 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
    <CODE BEGINS>
+   (Artwork only available as (unknown type): see
+   https://www.ietf.org/archive/id/Greenhouse of Huihang Yan.html)
+   <CODE ENDS>
+
+   Avoid reality at all costs.
+
+   <CODE BEGINS>
+   The most difficult thing in the world is to know how to do a thing and
+   to watch someone else do it wrong without comment.
+   .rj
+   -- Theodore H. White
+   <CODE ENDS>
+
+   <CODE BEGINS>
+   The mosquito is the state bird of New Jersey.
+   .rj
+   -- Andy Warhol
+   <CODE ENDS>
+
+   The more we disagree, the more chance there is that at least one of
+   us is right.
+
+   <CODE BEGINS>
+   The most exciting phrase to hear in science, the one that heralds new
+   discoveries, is not "Eureka!" (I found it!) but "That's funny ..."
+                   -- Isaac Asimov
+   <CODE ENDS>
+
+   <CODE BEGINS>
+   The National Short-Sleeved Shirt Association says:
+           Support your right to bare arms!
+   <CODE ENDS>
+
+   The new Congressmen say they're going to turn the government around.
+   I hope I don't get run over again.
+
+   <CODE BEGINS>
+   No use getting too involved in life --
+   you're only here for a limited time.
+   <CODE ENDS>
+
+   <CODE BEGINS>
    No violence, gentlemen -- no violence, I beg of you!  Consider the furniture!
                    -- Sherlock Holmes
    <CODE ENDS>
+
+
+
+
+
+Yan                      Expires 8 November 2025                [Page 4]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    <CODE BEGINS> file "sanger"
    No woman can call herself free until she can choose consciously whether
@@ -1639,17 +1663,18 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    <CODE ENDS>
 
-
-
-
-Yan                      Expires 8 November 2025                [Page 4]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
    Man only gets flower in funeral.
 
 2.4.  XML2RFC
+
+
+
+
+
+Yan                      Expires 8 November 2025                [Page 5]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    <CODE BEGINS> file "xml2rfc.sh"
 
@@ -1695,18 +1720,17 @@ Internet-Draft              Abbreviated Title                   May 2025
              +------------+-----+-----------------+----------+
              | Defenders  | 4   | Spot            | I-55     |
              |            +-----+-----------------+----------+
-
-
-
-Yan                      Expires 8 November 2025                [Page 5]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
              |            | 5   | Cardigan        | I-55     |
              +------------+-----+-----------------+----------+
 
                                   Table 1
+
+
+
+Yan                      Expires 8 November 2025                [Page 6]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
 3.  Build Python
 
@@ -1751,17 +1775,18 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Some text in between
 
-
-
-
-Yan                      Expires 8 November 2025                [Page 6]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
    REQ3:  This will be "REQ3:"
 
    REQ4:  This will be "REQ4:"
+
+
+
+
+
+Yan                      Expires 8 November 2025                [Page 7]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
 4.3.1.  Section in-between
 
@@ -1805,19 +1830,19 @@ Internet-Draft              Abbreviated Title                   May 2025
 
                                   Table 2
 
-
-
-
-
-
-Yan                      Expires 8 November 2025                [Page 7]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
 6.  Source Code Examples
 
    This is an example C program
+
+
+
+
+
+
+Yan                      Expires 8 November 2025                [Page 8]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    <CODE BEGINS> file "helloworld.c"
 
@@ -1862,19 +1887,18 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 11.2.  Informative References
 
-
-
-
-
-Yan                      Expires 8 November 2025                [Page 8]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
+
+
+
+
+Yan                      Expires 8 November 2025                [Page 9]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    [exampleRefMin]
               Surname, Initials., "Title", 2006.
@@ -1922,5 +1946,10 @@ Author's Address
 
 
 
-Yan                      Expires 8 November 2025                [Page 9]
+
+
+
+
+
+Yan                      Expires 8 November 2025               [Page 10]
 </pre></html>
