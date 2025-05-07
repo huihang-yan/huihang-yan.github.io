@@ -131,6 +131,27 @@
       <name>Body</name>
       <t>Body text</t>
 
+      <section><name>Focus</name>
+      <t>Yes, we got to focus.</t>
+      <t>We ask ourselves: does it harm when we listen to radio/music
+         while working?</t>
+      <t>Let's then ask ourselves: sometimes we hear interesting
+      parts in radio/music. At that point, don't we feel that we
+      *try* to listen to it? Yes, we paied our attention.</t>
+      <t>But hey - does it harm? Yes. Absolutely. As we pay
+      our attention elsewhere, we pay less attention on less work.
+      Which means it equals to spending less time at work.
+      Wow, that's bad.</t>
+      <t>It makes the work time less measurable. We can't
+      get an exact 'full-work' time, but full of interruptions.
+      We don't know whether those interruptions are in great
+      number
+      or tiny.</t>
+      <t>Actually, it *can* be in great number, just like how
+      we have tried chatting in the same time as working.</t>
+
+      </section>
+
       <section>
       	   <name>Interpretation Lanuages</name>
 	   <t>Just feel how good interpretation/scripting languages
@@ -144,6 +165,16 @@
 
       <section>
       <name>Quotes</name>
+
+      <sourcecode name="holmes" type="txt" markers="true"><![CDATA[
+No violence, gentlemen -- no violence, I beg of you!  Consider the furniture!
+		-- Sherlock Holmes
+          ]]>   </sourcecode>
+      <sourcecode name="sanger" type="txt" markers="true">      <![CDATA[
+No woman can call herself free until she can choose consciously whether
+she will or will not be a mother.
+		-- Margaret H. Sanger
+          ]]>   </sourcecode>
 
       <sourcecode name="bookaholic" type="txt" markers="true">
       <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
