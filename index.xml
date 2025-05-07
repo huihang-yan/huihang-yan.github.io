@@ -730,7 +730,8 @@ int main() {
     
     <section anchor="Contributors" numbered="false">
       <!-- a Contributors section is optional -->
-      <name>Contributors</name>
+    <name>Contributors</name>
+    <t>You can find me on Arknights Global: XHWMIC#2945</t>
       <t>Thanks to all of the contributors.</t>
       <contact fullname="Jane Doe" initials="J" surname="Doe"><!-- https://authors.ietf.org/en/rfcxml-vocabulary#contact-->
         <!-- including contact information for contributors is optional -->
