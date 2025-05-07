@@ -165,18 +165,29 @@
 
       <section>
       <name>Quotes</name>
+      <!--
       <sourcecode markers="true"><![CDATA[
       ]]>   </sourcecode>
-      <sourcecode markers="true"><![CDATA[
-SYSTEM-INDEPENDENT:
+      -->
+        <!-- https://authors.ietf.org/en/rfcxml-vocabulary#dl -->
+	<dl newline="true">
+	<!-- https://authors.ietf.org/en/rfcxml-vocabulary#newline -->
+        <!-- Omit newline="true" if you want each definition to start on the same line as the corresponding term -->
+          <dt>  
+	  SYSTEM-INDEPENDENT:
+
+	  </dt>
+	  <dd>
 	Works equally poorly on all systems.
-      ]]>   </sourcecode>
-      <sourcecode markers="true"><![CDATA[
-Systems programmer:
+	  </dd>
+	  <dt>
+	  Systems programmer:</dt>
+	  <dd>
 	A person in sandals who has been in the elevator with the senior
 vice president and is ultimately responsible for a phone call you
 are to receive from your boss.
-      ]]>   </sourcecode>
+	  </dd>
+        </dl>
       <sourcecode markers="true"><![CDATA[
 Systems programmers are the high priests of a low cult.
 		-- R.S. Barton
