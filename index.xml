@@ -165,10 +165,24 @@
 
       <section>
       <name>Quotes</name>
+      <t>
+      Man only gets flower in funeral.
+      </t>
+      </section>
+
+      <section>
+      <name> Fortune(6) Quotes</name>
       <!--
       <sourcecode markers="true"><![CDATA[
       ]]>   </sourcecode>
       -->
+      <sourcecode markers="true"><![CDATA[
+T:     One big monster, he called TROLL.
+       He don't rock, and he don't roll;
+       Drink no wine, and smoke no stogies.
+       He just Love To Eat Them Roguies.
+	       -- The Roguelet's ABC
+      ]]>   </sourcecode>
         <!-- https://authors.ietf.org/en/rfcxml-vocabulary#dl -->
 	<dl newline="true">
 	<!-- https://authors.ietf.org/en/rfcxml-vocabulary#newline -->
@@ -283,9 +297,6 @@ One of the hunters wasn't insured.	In my trophy room right now:
 		-- Tom Lehrer, "The Hunting Song"
           ]]>
         </sourcecode>
-      <t>
-      Man only gets flower in funeral.
-      </t>
       </section>
 
       <section>
