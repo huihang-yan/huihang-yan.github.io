@@ -131,6 +131,80 @@
       <name>Body</name>
       <t>Body text</t>
 
+      <section>
+      <name>THEN HOW?</name>
+      <t>
+Ok, now we have learnt from the possible
+causes to that space-modifing issue.
+Then what should we do?
+      </t>
+      <t>
+The only issue should be how to
+separate paragraphs without using
+black lines.
+I check the roff sources of the
+man-pages, and I see them use
+'.P'.
+I tried it and it works.
+      </t>
+      <t>
+Well, seems that we don't have
+problems anymore.
+But what exactly is
+'.P'?
+      </t>
+      <t>
+I asked an AI and it told
+me that the '.P' command is
+used to start a new paragraph.
+      </t>
+      <t>
+The AI also told me that
+there is an '.LP' command to
+start a list paragraph,
+and might add bullet points
+and numbering.
+That sounds good and useful.
+      </t>
+      <t>
+But where is '.P' command
+mentioned in the man-pages?
+Weird, can't find it.
+      </t>
+      </section>
+
+      <section>
+      <name>KAKAOTALK</name>
+      <t>
+The registration requires the user to send an SMS, instead of receiving an
+SMS from them.
+      </t>
+      </section>
+
+      <section>
+      <name>PROTON MAIL</name>
+      <t>
+Proton Mail also comes with a VPN. The limit of the free plan is
+one connection.
+      </t><t>
+IMAP/SMTP: included with Mail Plus, Proton Unlimited and Proton for Business.
+Need to upgrade.
+      </t><t>
+That is, no access to IMAP/SMTP or something similar for the free
+plan users. Got to upgrade to use Proton Mail in other
+email clients. Anyway we could download its own email client.
+      </t>
+      </section>
+
+      <section>
+      <name>APPS</name>
+      <t>
+Proton VPN - haven't tried but I guess it works.
+      </t><t>
+Proton Mail - for free plan, this is the only email client supporting
+      Proton Mail accounts.</t>
+      </section>
+
 <section><name>Author</name>
 
 <t>Huihang Yan, huihang.yan@outlook.com.</t>
