@@ -354,10 +354,16 @@ email clients. Anyway we could download its own email client.
       </section>
 
 
-    <section><name>Miscellaneous</name>
-
+      <section><name>Arknights</name>
+      <section><name>Hidden Front</name>
+      <t>
+      Pick which ending you want and check which stat is the highest.
+      Afterwards pick the team that has the highest stat. Example:
+      Medical Squad and Ending E.
+      </t>
+      </section>
  <section>
- <name>Arknights PV-10</name>
+ <name>PV-10</name>
 
       <table> <!-- https://authors.ietf.org/rfcxml-vocabulary#table -->
         <thead> <!-- https://authors.ietf.org/rfcxml-vocabulary#thead -->
@@ -386,6 +392,10 @@ email clients. Anyway we could download its own email client.
       </table>
 
     </section>
+</section>
+
+    <section><name>Miscellaneous</name>
+
       <section>
       <name>Quotes</name>
       <t>
