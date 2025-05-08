@@ -305,16 +305,6 @@ temperance, courage, faith, hope and charity.
 
       </section>
 
-      <section>
-      	   <name>Interpretation Lanuages</name>
-	   <t>Just feel how good interpretation/scripting languages
-	      are when I built Node.JS for several hours yesterday
-	      night.</t>
-
-	      <t>Yes, I've got an old CPU. But that still suggests
-	         something. And even for newer CPU, there would be
-	         more complex projects.</t>
-      </section>
 <section>
 <name>TODO</name>
 <t>Atomic Note</t>
@@ -598,32 +588,7 @@ $ xml2rfc draft.xml --text
           ]]>
         </sourcecode>
       </section>
-      <section>
-      <name>MAPSCII</name>
 
-      <sourcecode name="mapscii.sh" type="sh" markers="true">
-      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
-          <![CDATA[
-$ npx mapscii
-$ npm install -g mapscii
-          ]]>
-        </sourcecode>
-
-      </section>
-
-      <section>
-      <name>Unix v.s. Windows</name>
-      <t>
-      Pro: learn things.</t>
-      <t>
-
-Con: cost time? No, no, not at all.
-When we find that we don't want that,
-just switch to the Windows virtual
-machine.
-At least in my case, there
-      are nothing the VM cannot do.</t>
-      </section>
 
       <section>
       <name>Morality</name>
@@ -671,6 +636,43 @@ Uprising.
 
     </section>
     </section> <!-- body -->
+
+      <section>
+      <name>Unix v.s. Windows</name>
+      <t>
+      Pro: learn things.</t>
+      <t>
+
+Con: cost time? No, no, not at all.
+When we find that we don't want that,
+just switch to the Windows virtual
+machine.
+At least in my case, there
+      are nothing the VM cannot do.</t>
+      </section>
+      <section>
+      	   <name>Interpretation Lanuages</name>
+	   <t>Just feel how good interpretation/scripting languages
+	      are when I built Node.JS for several hours yesterday
+	      night.</t>
+
+	      <t>Yes, I've got an old CPU. But that still suggests
+	         something. And even for newer CPU, there would be
+	         more complex projects.</t>
+      </section>
+
+      <section>
+      <name>MAPSCII</name>
+
+      <sourcecode name="mapscii.sh" type="sh" markers="true">
+      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+          <![CDATA[
+$ npx mapscii
+$ npm install -g mapscii
+          ]]>
+        </sourcecode>
+
+      </section>
 
     <section>
     <name>Build Python</name>
