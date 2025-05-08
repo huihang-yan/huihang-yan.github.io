@@ -131,59 +131,6 @@
       <name>Body</name>
       <t>Body text</t>
 
-      <section>
-      <name>THEN HOW?</name>
-      <t>
-Ok, now we have learnt from the possible
-causes to that space-modifing issue.
-Then what should we do?
-      </t>
-      <t>
-The only issue should be how to
-separate paragraphs without using
-black lines.
-I check the roff sources of the
-man-pages, and I see them use
-'.P'.
-I tried it and it works.
-      </t>
-      <t>
-Well, seems that we don't have
-problems anymore.
-But what exactly is
-'.P'?
-      </t>
-      <t>
-I asked an AI and it told
-me that the '.P' command is
-used to start a new paragraph.
-      </t>
-      <t>
-The AI also told me that
-there is an '.LP' command to
-start a list paragraph,
-and might add bullet points
-and numbering.
-That sounds good and useful.
-      </t>
-      <t>
-But where is '.P' command
-mentioned in the man-pages?
-Weird, can't find it.
-      </t>
-      </section>
-
-
-      <section>
-      <name>XML2RFC</name>
-      <sourcecode name="xml2rfc.sh" type="sh" markers="true">
-      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
-          <![CDATA[
-$ xml2rfc SOURCE [options] FORMATS ...
-$ xml2rfc draft.xml --text
-          ]]>
-        </sourcecode>
-      </section>
 
       <section>
       <name>KAKAOTALK</name>
@@ -640,6 +587,59 @@ Uprising.
     </section> <!-- body -->
     <section><name>CS Stuff</name>
 
+      <section>
+      <name>THEN HOW?</name>
+      <t>
+Ok, now we have learnt from the possible
+causes to that space-modifing issue.
+Then what should we do?
+      </t>
+      <t>
+The only issue should be how to
+separate paragraphs without using
+black lines.
+I check the roff sources of the
+man-pages, and I see them use
+'.P'.
+I tried it and it works.
+      </t>
+      <t>
+Well, seems that we don't have
+problems anymore.
+But what exactly is
+'.P'?
+      </t>
+      <t>
+I asked an AI and it told
+me that the '.P' command is
+used to start a new paragraph.
+      </t>
+      <t>
+The AI also told me that
+there is an '.LP' command to
+start a list paragraph,
+and might add bullet points
+and numbering.
+That sounds good and useful.
+      </t>
+      <t>
+But where is '.P' command
+mentioned in the man-pages?
+Weird, can't find it.
+      </t>
+      </section>
+
+
+      <section>
+      <name>XML2RFC</name>
+      <sourcecode name="xml2rfc.sh" type="sh" markers="true">
+      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+          <![CDATA[
+$ xml2rfc SOURCE [options] FORMATS ...
+$ xml2rfc draft.xml --text
+          ]]>
+        </sourcecode>
+      </section>
       <section>
       <name>Unix v.s. Windows</name>
       <t>
