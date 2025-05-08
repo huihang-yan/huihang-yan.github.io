@@ -638,6 +638,7 @@ Uprising.
 
     </section>
     </section> <!-- body -->
+    <section><name>CS Stuff</name>
 
       <section>
       <name>Unix v.s. Windows</name>
@@ -691,6 +692,7 @@ make test
 sudo make install
           ]]>
         </sourcecode>
+    </section>
     </section>
 
     <section><name>RFC Typesetting Examples</name>
