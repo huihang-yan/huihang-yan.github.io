@@ -173,6 +173,18 @@ Weird, can't find it.
       </t>
       </section>
 
+
+      <section>
+      <name>XML2RFC</name>
+      <sourcecode name="xml2rfc.sh" type="sh" markers="true">
+      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
+          <![CDATA[
+$ xml2rfc SOURCE [options] FORMATS ...
+$ xml2rfc draft.xml --text
+          ]]>
+        </sourcecode>
+      </section>
+
       <section>
       <name>KAKAOTALK</name>
       <t>
@@ -578,16 +590,6 @@ One of the hunters wasn't insured.	In my trophy room right now:
         </sourcecode>
       </section>
 
-      <section>
-      <name>XML2RFC</name>
-      <sourcecode name="xml2rfc.sh" type="sh" markers="true">
-      <!-- https://authors.ietf.org/en/rfcxml-vocabulary#sourcecode -->
-          <![CDATA[
-$ xml2rfc SOURCE [options] FORMATS ...
-$ xml2rfc draft.xml --text
-          ]]>
-        </sourcecode>
-      </section>
 
 
       <section>
