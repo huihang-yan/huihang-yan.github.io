@@ -693,6 +693,7 @@ sudo make install
         </sourcecode>
     </section>
 
+    <section><name>RFC Typesetting Examples</name>
     <section>
       <name>List Examples</name>
       
@@ -863,7 +864,7 @@ int main() {
       <name>Security Considerations</name>
       <t>This document should not affect the security of the Internet.</t>
     </section>
-    
+    </section>
     <!-- NOTE: The Acknowledgements and Contributors sections are at the end of this template -->
   </middle>
 
