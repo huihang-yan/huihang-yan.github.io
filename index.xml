@@ -565,9 +565,8 @@ One of the hunters wasn't insured.	In my trophy room right now:
         </sourcecode>
       </section>
 
-    </section>
-    <section><name>CS Stuff</name>
-
+      </section>
+      <section><name>Typesetting</name>
       <section>
       <name>THEN HOW?</name>
       <t>
@@ -621,6 +620,10 @@ $ xml2rfc draft.xml --text
           ]]>
         </sourcecode>
       </section>
+      </section>
+
+    <section><name>CS Stuff</name>
+
       <section>
       <name>Unix v.s. Windows</name>
       <t>
