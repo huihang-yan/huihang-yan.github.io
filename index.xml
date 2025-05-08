@@ -164,34 +164,6 @@ Proton Mail - for free plan, this is the only email client supporting
       Proton Mail accounts.</t>
       </section>
 
-<section><name>Author</name>
-
-<t>Huihang Yan, huihang.yan@outlook.com.</t>
-
-<t>https://github.com/huihang-yan</t>
-
-<t>Live in Guangzhou.</t>
-<t>
-Wholeheartedly support and celebrate neurodiversity.</t>
-<dl newline="true" spacing="normal" indent="8">
-<dt>
-The typesetting was accomplished with groff(1):</dt>
-<dd>
-      <sourcecode markers="true"><![CDATA[
-GNU groff version 1.22.4
-Copyright (C) 2018 Free Software Foundation, Inc.
-GNU groff comes with ABSOLUTELY NO WARRANTY.
-You may redistribute copies of groff and its subprograms
-under the terms of the GNU General Public License.
-For more information about these matters, see the file
-named COPYING.
-      
-called subprograms:
-      
-GNU grops (groff) version 1.22.4
-GNU troff (groff) version 1.22.4
-      ]]>   </sourcecode></dd></dl>
-      </section>
       <section>
 <name>SINS AND VIRTUES</name>
 <t>
@@ -349,6 +321,57 @@ odd: [ah-d] adjective: different
 from what is usual or expected; strange.
 </t>
 </section>
+
+
+
+
+      <section>
+      <name>Morality</name>
+      <t>
+
+Yes, personal.
+Some people might *believe* that
+something are wrong.
+Like carved into mind.
+They *just* simply don't do those
+      things.</t>
+      <t>
+Uprising.
+      Family.</t>
+      </section>
+
+ <section>
+ <name>Arknights PV-10</name>
+
+      <table> <!-- https://authors.ietf.org/rfcxml-vocabulary#table -->
+        <thead> <!-- https://authors.ietf.org/rfcxml-vocabulary#thead -->
+        <!-- A table header is optional -->
+	<tr><th>Profession</th><th>No.</th><th>LV.</th><th>Operator</th></tr>
+        </thead>
+        <tbody> <!-- https://authors.ietf.org/rfcxml-vocabulary#tbody -->
+        <!-- A table body is required -->
+          <!--tr><td align="left">Left cell</td><td colspan="2">Colspan cell</td></tr-->
+          <!-- align can be right, left or center.  colspan and rowspan work as they do in HTML -->
+	  <tr><td rowspan="3">Guards</td>
+	  <td>1</td><td>Thorns, model X</td><td>II-60</td>
+	  </tr>
+	  <tr><td>2</td><td>Popuklar</td><td>I-55</td></tr>
+	  <tr><td>3</td><td>Melantha</td><td>I-55</td></tr>
+	  <tr><td rowspan="2">Defenders</td>
+	  <td>4</td>
+	  <td><!--td align="center"-->Spot</td>
+	  <td><!--td align="right"-->I-55</td></tr>
+	  <tr><td>5</td><td>Cardigan</td><td>I-55</td></tr>
+        </tbody>
+        <!--tfoot--> <!-- https://authors.ietf.org/rfcxml-vocabulary#tfoot -->
+        <!-- A table footer is optional -->
+          <!--tr><td colspan="3">Colspan footer</td></tr-->
+        <!--/tfoot-->
+      </table>
+
+    </section>
+    </section> <!-- body -->
+    <section><name>Miscellaneous</name>
 
       <section>
       <name>Quotes</name>
@@ -537,54 +560,7 @@ One of the hunters wasn't insured.	In my trophy room right now:
         </sourcecode>
       </section>
 
-
-
-      <section>
-      <name>Morality</name>
-      <t>
-
-Yes, personal.
-Some people might *believe* that
-something are wrong.
-Like carved into mind.
-They *just* simply don't do those
-      things.</t>
-      <t>
-Uprising.
-      Family.</t>
-      </section>
-
- <section>
- <name>Arknights PV-10</name>
-
-      <table> <!-- https://authors.ietf.org/rfcxml-vocabulary#table -->
-        <thead> <!-- https://authors.ietf.org/rfcxml-vocabulary#thead -->
-        <!-- A table header is optional -->
-	<tr><th>Profession</th><th>No.</th><th>LV.</th><th>Operator</th></tr>
-        </thead>
-        <tbody> <!-- https://authors.ietf.org/rfcxml-vocabulary#tbody -->
-        <!-- A table body is required -->
-          <!--tr><td align="left">Left cell</td><td colspan="2">Colspan cell</td></tr-->
-          <!-- align can be right, left or center.  colspan and rowspan work as they do in HTML -->
-	  <tr><td rowspan="3">Guards</td>
-	  <td>1</td><td>Thorns, model X</td><td>II-60</td>
-	  </tr>
-	  <tr><td>2</td><td>Popuklar</td><td>I-55</td></tr>
-	  <tr><td>3</td><td>Melantha</td><td>I-55</td></tr>
-	  <tr><td rowspan="2">Defenders</td>
-	  <td>4</td>
-	  <td><!--td align="center"-->Spot</td>
-	  <td><!--td align="right"-->I-55</td></tr>
-	  <tr><td>5</td><td>Cardigan</td><td>I-55</td></tr>
-        </tbody>
-        <!--tfoot--> <!-- https://authors.ietf.org/rfcxml-vocabulary#tfoot -->
-        <!-- A table footer is optional -->
-          <!--tr><td colspan="3">Colspan footer</td></tr-->
-        <!--/tfoot-->
-      </table>
-
     </section>
-    </section> <!-- body -->
     <section><name>CS Stuff</name>
 
       <section>
@@ -868,6 +844,36 @@ int main() {
     </section>
     </section>
     <!-- NOTE: The Acknowledgements and Contributors sections are at the end of this template -->
+
+
+<section><name>About the Author</name>
+
+<t>Huihang Yan, huihang.yan@outlook.com.</t>
+
+<t>https://github.com/huihang-yan</t>
+
+<t>Live in Guangzhou.</t>
+<t>
+Wholeheartedly support and celebrate neurodiversity.</t>
+<dl newline="true" spacing="normal" indent="8">
+<dt>
+The typesetting was accomplished with groff(1):</dt>
+<dd>
+      <sourcecode markers="true"><![CDATA[
+GNU groff version 1.22.4
+Copyright (C) 2018 Free Software Foundation, Inc.
+GNU groff comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of groff and its subprograms
+under the terms of the GNU General Public License.
+For more information about these matters, see the file
+named COPYING.
+      
+called subprograms:
+      
+GNU grops (groff) version 1.22.4
+GNU troff (groff) version 1.22.4
+      ]]>   </sourcecode></dd></dl>
+      </section>
   </middle>
 
   <back>
