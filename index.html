@@ -10,9 +10,9 @@ pre {
 </style>
 <pre>
 
-      $Id: huihang-yan.github.io, 2025/05/09 09:29:45 huihang Exp $
+      $Id: huihang-yan.github.io, 2025/05/09 10:04:46 huihang Exp $
 
-      Last update: Fri May 9 09:29:45 HKT 2025
+      Last update: Fri May 9 10:04:46 HKT 2025
 
 -------------------------------------------------------------------------------
 
@@ -746,110 +746,6 @@ THE ROFF FAMILY
                      -- The UNIX Programming Environment,
                         Brian W. Kernighan and Rob Pike.
 
-ROFF NOTES
-       The roff language is line-oriented.  There  are  only
-       two  kinds  of  lines,  control lines and text lines.
-       The control lines start with a control character,  by
-       default a period '.' or a single quote `'`; all other
-       lines are text lines.
-
-       Command arguments are separated by  spaces,  but  not
-       tab characters.
-
-       For  indentation,  any number of space or tab charac-
-       ters can be  inserted  between  the  leading  control
-       character and the command name, but the control char-
-       acter must be on the first position of the line.
-
-       Escape sequence - backslash `\'.
-
-       '.P'
-
-       '.I xxx' - italic
-
-       '.' - a line consisting of  a  dot  only,  an  'empty
-       roff(1) request':
-
-            'To  additionally  use  the  auto-fill  mode  in
-       Emacs, it is best to insert an empty roff(1) request,
-       a  line  consisting  of  a  dot only, after each sen-
-       tence.'
-
-            Thus, this dot-line appears to serve solely  the
-       purpose  of  activating  a  certain auto-fill feature
-       within Emacs, and seems to hold no function in  terms
-       of  typesetting,  much  like a comment line that does
-       not contribute to the actual execution or  formatting
-       of  the  content.  Since I don't use Emacs, it stands
-       to reason that I can  safely  overlook  this  command
-       without  any  adverse  effects on my tasks related to
-       typesetting or otherwise.
-
-       '.BR' - bold text?
-
-       Macro definition: '.de [macro]',  then  use  '..'  to
-       end.
-
-       nop: '.nop [anything]' - always process [anything]
-
-       macro stuff: \)\\$*
-
-              \$*:  the concatenation of all arguments sepa-
-              rated by spaces
-
-       However, when `\$' appears alone, it stands as a sin-
-       gle-character  escapes, resulting in a non-printable,
-       zero-width glyph.
-
-       This nature makes it suitable for the purpose of  be-
-       ing  put at the start of a line to prevent the `real'
-       beginning character to be parsed  as  commands.   For
-       example,  when we really need to write something that
-       begins with the dot, instead of trying  to  enter  an
-       groff command.
-
-       tab:  if  a tab character occurs during text, the in-
-       terpreter makes a horizontal jump to the next pre-de-
-       fined  tab position.  There is a sophisticated inter-
-       face for handling tab positions.
-
-       Tabbed/indent example code snippet:
-              .RS
-              .EX
-              $ code here, automatically indented
-              .EE
-              .RE
-
-       .RS: reduce space. Start a block  of  indented  text.
-       Creates  a  new indentation level. `.RS n` to specify
-       the indentation value.
-
-       .EX: start an example block.
-
-       .SS: subsection, like .SN, though .SS further indents
-       - that's why its called _sub_section.
-
-       List:
-              .TP
-              .B item1
-              blah blah
-              .TP
-              .B item2
-              blah blah
-
-       Table:
-              .RS
-              .TS
-              tab (@);
-              lb l.
-              item1@blah
-              item2@blah
-              .TE
-              .RE
-
-       IP: Increase position/tab?
-              .IP \(bu
-
 
 
 Greenhouse of Huihang Yan    MAY THE FOURTH MMXXV                   huihang(7)
@@ -946,21 +842,21 @@ Table of Contents
      6.1.  Quotes  . . . . . . . . . . . . . . . . . . . . . . . . .   7
      6.2.  Fortune(6) Quotes . . . . . . . . . . . . . . . . . . . .   8
    7.  Typesetting . . . . . . . . . . . . . . . . . . . . . . . . .  11
-     7.1.  SPACING . . . . . . . . . . . . . . . . . . . . . . . . .  11
-     7.2.  SEMBR . . . . . . . . . . . . . . . . . . . . . . . . . .  13
-     7.3.  A COMMENT . . . . . . . . . . . . . . . . . . . . . . . .  13
-     7.4.  AGAIN . . . . . . . . . . . . . . . . . . . . . . . . . .  14
-     7.5.  THEN HOW? . . . . . . . . . . . . . . . . . . . . . . . .  16
-     7.6.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .  17
-   8.  CS Stuff  . . . . . . . . . . . . . . . . . . . . . . . . . .  17
-     8.1.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .  17
-     8.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .  17
-     8.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .  17
-     8.4.  Build Python  . . . . . . . . . . . . . . . . . . . . . .  18
-   9.  RFC Typesetting Examples  . . . . . . . . . . . . . . . . . .  18
-     9.1.  List Examples . . . . . . . . . . . . . . . . . . . . . .  18
-       9.1.1.  Simple Unordered (Bullet) List  . . . . . . . . . . .  18
-
+     7.1.  ROFF NOTES  . . . . . . . . . . . . . . . . . . . . . . .  11
+     7.2.  SPACING . . . . . . . . . . . . . . . . . . . . . . . . .  13
+     7.3.  SEMBR . . . . . . . . . . . . . . . . . . . . . . . . . .  15
+     7.4.  A COMMENT . . . . . . . . . . . . . . . . . . . . . . . .  15
+     7.5.  AGAIN . . . . . . . . . . . . . . . . . . . . . . . . . .  17
+     7.6.  THEN HOW? . . . . . . . . . . . . . . . . . . . . . . . .  19
+     7.7.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .  20
+   8.  CS Stuff  . . . . . . . . . . . . . . . . . . . . . . . . . .  20
+     8.1.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .  20
+     8.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .  20
+     8.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .  20
+     8.4.  Build Python  . . . . . . . . . . . . . . . . . . . . . .  21
+   9.  RFC Typesetting Examples  . . . . . . . . . . . . . . . . . .  21
+     9.1.  List Examples . . . . . . . . . . . . . . . . . . . . . .  21
+       9.1.1.  Simple Unordered (Bullet) List  . . . . . . . . . . .  21
 
 
 
@@ -970,25 +866,25 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
        9.1.2.  Ordered List With Lowercase Letters in Brackets Instead
-               of Numbers  . . . . . . . . . . . . . . . . . . . . .  18
+               of Numbers  . . . . . . . . . . . . . . . . . . . . .  21
        9.1.3.  Continuous Numbering in a List That is Split by Text or
-               Sections  . . . . . . . . . . . . . . . . . . . . . .  18
-       9.1.4.  Definition Lists  . . . . . . . . . . . . . . . . . .  19
-       9.1.5.  Lists With Hanging Labels . . . . . . . . . . . . . .  19
-     9.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .  19
-     9.3.  Source Code Examples  . . . . . . . . . . . . . . . . . .  19
-     9.4.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . .  20
-     9.5.  Using xref  . . . . . . . . . . . . . . . . . . . . . . .  20
-     9.6.  IANA Considerations . . . . . . . . . . . . . . . . . . .  20
-     9.7.  Security Considerations . . . . . . . . . . . . . . . . .  20
-   10. About the Author  . . . . . . . . . . . . . . . . . . . . . .  20
-   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  21
-     11.1.  Normative References . . . . . . . . . . . . . . . . . .  21
-     11.2.  Informative References . . . . . . . . . . . . . . . . .  21
-   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  21
-   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  21
-   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  21
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  22
+               Sections  . . . . . . . . . . . . . . . . . . . . . .  21
+       9.1.4.  Definition Lists  . . . . . . . . . . . . . . . . . .  22
+       9.1.5.  Lists With Hanging Labels . . . . . . . . . . . . . .  22
+     9.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .  22
+     9.3.  Source Code Examples  . . . . . . . . . . . . . . . . . .  22
+     9.4.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . .  23
+     9.5.  Using xref  . . . . . . . . . . . . . . . . . . . . . . .  23
+     9.6.  IANA Considerations . . . . . . . . . . . . . . . . . . .  23
+     9.7.  Security Considerations . . . . . . . . . . . . . . . . .  23
+   10. About the Author  . . . . . . . . . . . . . . . . . . . . . .  23
+   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  24
+     11.1.  Normative References . . . . . . . . . . . . . . . . . .  24
+     11.2.  Informative References . . . . . . . . . . . . . . . . .  24
+   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  24
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  24
+   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  24
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  25
 
 1.  Introduction
 
@@ -1442,7 +1338,124 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 7.  Typesetting
 
-7.1.  SPACING
+7.1.  ROFF NOTES
+
+   The roff language is line-oriented.  There are only two kinds of
+   lines, control lines and text lines.  The control lines start with a
+   control character, by default a period '.' or a single quote `'`; all
+   other lines are text lines.
+
+   Command arguments are separated by spaces, but not tab characters.
+
+   For indentation, any number of space or tab characters can be
+   inserted between the leading control character and the command name,
+   but the control character must be on the first position of the line.
+
+   Escape sequence - backslash `\'.
+
+   '.P'
+
+   '.I xxx' - italic
+
+   '.' - a line consisting of a dot only, an 'empty roff(1) request':
+           'To additionally use the auto-fill mode in Emacs, it is best
+           to insert an empty roff(1) request, a line consisting of a
+           dot only, after each sentence.'
+
+
+
+Yan                     Expires 10 November 2025               [Page 11]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+           Thus, this dot-line appears to serve solely the purpose of
+           activating a certain auto-fill feature within Emacs, and
+           seems to hold no function in terms of typesetting, much like
+           a comment line that does not contribute to the actual
+           execution or formatting of the content.  Since I don't use
+           Emacs, it stands to reason that I can safely overlook this
+           command without any adverse effects on my tasks related to
+           typesetting or otherwise.
+
+   '.BR' - bold text?
+
+   Macro definition: '.de [macro]', then use '..' to end.
+
+   nop: '.nop [anything]' - always process [anything]
+
+   macro stuff: \)\\$*
+           \$*: the concatenation of all arguments separated by spaces
+
+   However, when `\$' appears alone, it stands as a single-character
+   escapes, resulting in a non-printable, zero-width glyph.
+
+   This nature makes it suitable for the purpose of being put at the
+   start of a line to prevent the `real' beginning character to be
+   parsed as commands.  For example, when we really need to write
+   something that begins with the dot, instead of trying to enter an
+   groff command.
+
+   tab: if a tab character occurs during text, the interpreter makes a
+   horizontal jump to the next pre-defined tab position.  There is a
+   sophisticated interface for handling tab positions.
+
+   Tabbed/indent example for code snippets:
+
+   <CODE BEGINS>
+   .RS
+   .EX
+   $ code here, automatically indented
+   .EE
+   .RE
+   <CODE ENDS>
+
+   .RS: reduce space.  Start a block of indented text.  Creates a new
+   indentation level. `.RS n` to specify the indentation value.
+
+   .EX: start an example block.
+
+   .SS: subsection, like .SN, though .SS further indents - that's why
+   its called _sub_section.
+
+
+
+Yan                     Expires 10 November 2025               [Page 12]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+   List:
+
+   <CODE BEGINS>
+   .TP
+   .B item1
+   blah blah
+   .TP
+   .B item2
+   blah blah
+   <CODE ENDS>
+
+   Table:
+
+   <CODE BEGINS>
+   .RS
+   .TS
+   tab (@);
+   lb l.
+   item1@blah
+   item2@blah
+   .TE
+   .RE
+   <CODE ENDS>
+
+   IP: Increase position/tab?
+
+   <CODE BEGINS>
+   .IP \(bu
+   <CODE ENDS>
+
+7.2.  SPACING
 
    An issue has been noticed when using Groff.  It appears that whenever
    there are alterations to a single line within a paragraph, even when
@@ -1458,20 +1471,19 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Well, it seems so.  Let's check the man-page.  In the section
    EDITING ROFF:
-           All _roff_ formatters provide automated line breaks and
-           horizontal and vertical spacing.  In order to not disturb
-           this, the following tips can be helpful.
 
 
 
 
 
-
-
-Yan                     Expires 10 November 2025               [Page 11]
+Yan                     Expires 10 November 2025               [Page 13]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+           All _roff_ formatters provide automated line breaks and
+           horizontal and vertical spacing.  In order to not disturb
+           this, the following tips can be helpful.
 
            First of all, never include empty or blank lines in a roff
            document.  Instead, use the empty request, i.e. a line
@@ -1516,20 +1528,21 @@ Internet-Draft              Abbreviated Title                   May 2025
    unexpected behaviour'?  Well, weird.  Too weird.  Anyway, though it's
    weird, let's try not step on this trap.  It's not that hard.
 
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 14]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
    Finally, start each sentence on a line of its own.  'For the spacing
    after a dot is handled differently depending on whether it terminates
    an abbreviation or a sentence.'  Well, this is also weird.  But
    anyway let's try to follow this security advice too.
 
-
-
-
-Yan                     Expires 10 November 2025               [Page 12]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
-7.2.  SEMBR
+7.3.  SEMBR
 
    Semantic line breaks.  Yes, that's the term.
 
@@ -1553,7 +1566,7 @@ Internet-Draft              Abbreviated Title                   May 2025
            editors, and other collaborators can make source text easier
            to work with, without affecting how it's seen by readers.
 
-7.3.  A COMMENT
+7.4.  A COMMENT
 
    A commenter claimed the Markdown line-break convention was a
    compromise to appease conflicting standards.  They found it
@@ -1572,18 +1585,19 @@ Internet-Draft              Abbreviated Title                   May 2025
    version control and collaboration tools.  Recall when patches were
    emailed.
 
+
+
+
+Yan                     Expires 10 November 2025               [Page 15]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
    Using `real' newlines means a tiny edit can spawn a huge diff(1)
    result.
 
    Sounds abstract?  Check the commit histories of GitHub-hosted GitHub
    Pages sites, plain-text documents, or Markdown files.
-
-
-
-Yan                     Expires 10 November 2025               [Page 13]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
 
    Many don't use version control or collaborate with old-school Unix
    tools like diff(1) and patch(1).  But that's a large portion of the
@@ -1624,22 +1638,23 @@ Internet-Draft              Abbreviated Title                   May 2025
    And for the asterik part, I shall say that underscore is for
    underline.
 
-7.4.  AGAIN
+
+
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 16]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+7.5.  AGAIN
 
    writingslowly.com/2025/01/13/semantic-line-breaks-are-a.html
 
    Well, while editing the above, I found that I want to write something
    completely different.
-
-
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 14]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
 
    No question, Markdown is annoying.  Ditching it was my best move.
    Its charm, the good looks in raw form, became its downfall.  I had to
@@ -1663,6 +1678,32 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Look at this example from the real git-log of this very text that I
    am editing:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 17]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    <CODE BEGINS>
    commit fc05868be12a41cfce056f59a3c5e50cea26a14b
@@ -1692,7 +1733,30 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 15]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 18]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1737,7 +1801,7 @@ Internet-Draft              Abbreviated Title                   May 2025
    However, I quickly grapsed the situation.  The thought was entire
    reasonable; I had simply grown accustomed to the design.
 
-7.5.  THEN HOW?
+7.6.  THEN HOW?
 
    Ok, now we have learnt from the possible causes to that space-
    modifing issue.  Then what should we do?
@@ -1748,7 +1812,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 16]
+Yan                     Expires 10 November 2025               [Page 19]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1766,7 +1830,7 @@ Internet-Draft              Abbreviated Title                   May 2025
    But where is '.P' command mentioned in the man-pages?  Weird, can't
    find it.
 
-7.6.  XML2RFC
+7.7.  XML2RFC
 
    <CODE BEGINS> file "xml2rfc.sh"
 
@@ -1804,7 +1868,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 17]
+Yan                     Expires 10 November 2025               [Page 20]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1860,7 +1924,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 18]
+Yan                     Expires 10 November 2025               [Page 21]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1916,7 +1980,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 19]
+Yan                     Expires 10 November 2025               [Page 22]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1972,7 +2036,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 20]
+Yan                     Expires 10 November 2025               [Page 23]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -2028,7 +2092,7 @@ Contributors
 
 
 
-Yan                     Expires 10 November 2025               [Page 21]
+Yan                     Expires 10 November 2025               [Page 24]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -2084,5 +2148,5 @@ Author's Address
 
 
 
-Yan                     Expires 10 November 2025               [Page 22]
+Yan                     Expires 10 November 2025               [Page 25]
 </pre></html>
