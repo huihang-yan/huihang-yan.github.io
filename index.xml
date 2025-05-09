@@ -621,6 +621,48 @@ One of the hunters wasn't insured.	In my trophy room right now:
 
       </section>
       <section><name>Typesetting</name>
+     
+      <section>
+
+      <name> SEMBR</name>
+      <t>
+Semantic line breaks.
+Yes, that's the term.
+      </t><t>
+I remember seeing it for Markdown stuff.
+Haven't thought it would even really
+work in this case - and as such an
+important role - in roff(7).
+      </t>
+        <dl newline="true" spacing="normal" indent="8">
+          <dt>
+	  See sembr.org:</dt>
+	  <dd>
+Semantic Line Breaks describe a set of conventions
+for using insensitive vertical whitespace
+to structure prose along semantic
+boundaries.
+Many lightweight markup languages,
+including Markdown,
+reStructured Text, and AsciiDoc, join ...
+	  </dd>
+	  <dt>
+	  Also see:</dt>
+	  <dd>
+	  <t>
+writingslowly.com/semantic-line-breaks-are-a.html
+	  </t><t>
+Semantic line breaks are a feature of Markdown, not a bug
+	  </t><t>
+As the semantic line break specification suggests,
+by inserting line breaks at semantic
+boundaries, writers, editors, and other
+collaborators can make
+source text easier to work with, without
+affecting how it's seen by readers.
+	  </t></dd></dl>
+      </section>
+
 
       <section>
       <name>A COMMENT</name>
