@@ -10,9 +10,9 @@ pre {
 </style>
 <pre>
 
-      $Id: huihang-yan.github.io, 2025/05/09 08:55:52 huihang Exp $
+      $Id: huihang-yan.github.io, 2025/05/09 09:22:02 huihang Exp $
 
-      Last update: Fri May 9 08:55:52 HKT 2025
+      Last update: Fri May 9 09:22:02 HKT 2025
 
 -------------------------------------------------------------------------------
 
@@ -954,178 +954,8 @@ SEMBR
               with, without affecting how it's seen by read-
               ers.
 
-A COMMENT
-       A commenter claimed the Markdown  line-break  conven-
-       tion  was  a  compromise to appease conflicting stan-
-       dards.  They found  it  infuriating  -  obviously,  a
-       Markdown line-break should equal a real one.
 
-       They also hate the Markdown bold and italic text con-
-       ventions.  To them, single asterisks should mark bold
-       text, single underscores italic.  Simple as that.
 
-       I  find  these designs natural and good.  The comment
-       surprised me, and I want to respond to it.
-
-       People wonder why not  `real'  newlines.   One  major
-       reason is to enable easy line-based diffs, like those
-       in git-diff, patch(1) and other version  control  and
-       collaboration   tools.    Recall  when  patches  were
-       emailed.
-
-       Using `real' newlines means a tiny edit can  spawn  a
-       huge diff(1) result.
-
-       Sounds   abstract?  Check  the  commit  histories  of
-       GitHub-hosted GitHub Pages  sites,  plain-text  docu-
-       ments, or Markdown files.
-
-       Many  don't  use  version control or collaborate with
-       old-school Unix tools like diff(1) and patch(1).  But
-       that's  a large portion of the worlds of Markdown and
-       Unix.
-
-       The Markdown  line-break  convention  feels  natural.
-       It's  the  norm  in Roff, LaTeX, RST and HTML.  Check
-       HTML source - same deal.  That's just how it is.
-
-       Look at Unix-world plain text docs.  Nearly  all  are
-       formatted  a certain way.  Take two Slackware docs as
-       an example.  There are countless more  -  LFS,  TLDP,
-       Python  PEPs, Python RST docs, Linux kernel docs, RFC
-       sources.  They are everywhere.
-
-              ftp.slackware.com/pub/slackware/
-                  slackware64-15.0/
-                      Slackware-HOWTO
-                      usb-and-pxe-istallers/README_USB.TXT
-
-       And I forgot the plain text emails - yes, just  check
-       any  maillist,  either  ArchLinux, Debian, Slackware,
-       Gentoo ...  Majority of the mails are line-broke this
-       way.
-
-       So  the result is - for people of certain background,
-       this feels just natural. But for others,  this  might
-       feel weird.
-
-       Historical  context helps.  Word-wrap was not common.
-       Open vi(1) or vim(1), and you will see  it's  off  by
-       default.   Sure,  some distros like Ubuntu might pro-
-       vide a nice good default `.vimrc', trying to be user-
-       friendly  like  Windows.  But that's not the standard
-       way.
-
-       Without a common word-wrap feature, manual line-wrap-
-       ping  became  a habit and standard.  People do it be-
-       cause some editors do not auto-warp.   Skip  it,  and
-       the next turns into a jumbled mess.
-
-       And for the asterik part, I shall say that underscore
-       is for underline.
-
-AGAIN
-       writingslowly.com/2025/01/13/semantic-line-breaks-
-       are-a.html
-
-       Well, while editing the above, I found that I want to
-       write something completely different.
-
-       No question, Markdown is annoying.  Ditching  it  was
-       my best move.  Its charm, the good looks in raw form,
-       became its downfall.  I had  to  constantly  preserve
-       that aesthetic.
-
-       Besides  this, I am convinced it's impossible to com-
-       bine raw-file attractiveness with full functionality;
-       they are mutually exclusive.  When we strive for more
-       functions in Markdown, the result is usually a worse-
-       looking raw file.
-
-       Now I use roff(7).  Maybe you have never heard of it,
-       but odds are you  have  used  it  without  realising,
-       since  it  formats man-pages(7).  By sacrificing raw-
-       file prettiness, it simplifies my  life,  leaving  me
-       content and free from Markdown's demands.
-
-       However, I want to talk the line-breaking style.  Its
-       key advantage lies in version control, where it  gen-
-       erates  more  concise  diffs, making it effortless to
-       review edits upon sign-off.  This benefit extends  to
-       collaboration  as  well;  when  sharing  patches  via
-       email, it streamlines the process and  saves  others'
-       time.
-
-       Look  at  this  example from the real git-log of this
-       very text that I am editing:
-
-              commit fc05868be12a41cfce056f59a3c5e50cea26a14b
-              Author: Huihang Yan <huihang.yan@outlook.com>
-              Date:   Mon May 5 12:37:23 2025 +0800
-
-              diff --git a/index.html b/index.html
-              index 116c92d..2e7d61a 100644
-              --- a/index.html
-              +++ b/index.html
-              @@ -1126,9 +1126,9 @@ AGAIN
-
-                      Besides this, I am convinced it's impossible to  com-
-                      bine raw-file attractiveness with full functionality;
-              -       they are mutually exclusive.  Then, if we  want  more
-              -       functions in Markdown, usually we got a worse looking
-              -       raw file.
-              +       they are mutually exclusive.  When we strive for more
-              +       functions in Markdown, the result is usually a worse-
-              +       looking raw file.
-
-                      Now I use roff(7).  Maybe you have never heard of it,
-                      but  odds  are  you  have  used it without realising,
-
-       As another example:
-
-              commit b5bd37869fb450576dbdd0bf07ff5057747c414b
-              Author: Huihang Yan <huihang.yan@outlook.com>
-              Date:   Mon May 5 13:00:20 2025 +0800
-
-              diff --git a/index.html b/index.html
-              index 691cf8b..4e74ae5 100644
-              --- a/index.html
-              +++ b/index.html
-
-              @@ -1182,8 +1182,12 @@ AGAIN
-                      design  has no purpose.  Also, it's worth noting that
-                      this is the default design across nearly all  similar
-                      tools - RST, LaTeX, roff(7), Texinfo, HTML, and more.
-              -       As a result, I found this design  natural  and  good,
-              -       and was surprised by the comment.
-              +       Thus, I found this design both natural and good,  and
-              +       the comment caught me off guard.
-              +
-              +       However,   I  quickly  grapsed  the  situation.   The
-              +       thought was entire reasonable; I had simply grown ac-
-              +       customed to the design.
-
-       Manually placing new-lines shrinks  diff(1)  results.
-       One-line  paragraphs  make diff(1) cover entire text,
-       untouched parts included.
-
-       Many don't find this an issue.   Even  paragraph-long
-       diff(1)  results are trivial, and plenty on GitHub do
-       it.  Moreover, not everyone uses version control  and
-       diff(1).  For them, it's non-existent.
-
-       But  I discuss this because without it, this Markdown
-       design has no purpose.  Also, it's worth noting  that
-       this  is the default design across nearly all similar
-       tools - RST, LaTeX, roff(7), Texinfo, HTML, and more.
-       Thus,  I found this design both natural and good, and
-       the comment caught me off guard.
-
-       However,  I  quickly  grapsed  the  situation.    The
-       thought was entire reasonable; I had simply grown ac-
-       customed to the design.
-
-GACHA
 Greenhouse of Huihang Yan    MAY THE FOURTH MMXXV                   huihang(7)
 
 
@@ -1202,6 +1032,7 @@ Table of Contents
      1.1.  Requirements Language . . . . . . . . . . . . . . . . . .   3
    2.  Body  . . . . . . . . . . . . . . . . . . . . . . . . . . . .   3
      2.1.  TODO  . . . . . . . . . . . . . . . . . . . . . . . . . .   3
+       2.1.1.  GACHA . . . . . . . . . . . . . . . . . . . . . . . .   4
      2.2.  STORIES . . . . . . . . . . . . . . . . . . . . . . . . .   4
      2.3.  A MEMORY  . . . . . . . . . . . . . . . . . . . . . . . .   4
    3.  Thoughts  . . . . . . . . . . . . . . . . . . . . . . . . . .   5
@@ -1219,22 +1050,21 @@ Table of Contents
      6.1.  Quotes  . . . . . . . . . . . . . . . . . . . . . . . . .   7
      6.2.  Fortune(6) Quotes . . . . . . . . . . . . . . . . . . . .   8
    7.  Typesetting . . . . . . . . . . . . . . . . . . . . . . . . .  11
-     7.1.  THEN HOW? . . . . . . . . . . . . . . . . . . . . . . . .  11
-     7.2.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .  12
-   8.  CS Stuff  . . . . . . . . . . . . . . . . . . . . . . . . . .  12
-     8.1.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .  12
-     8.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .  12
-     8.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .  12
-     8.4.  Build Python  . . . . . . . . . . . . . . . . . . . . . .  12
-   9.  RFC Typesetting Examples  . . . . . . . . . . . . . . . . . .  13
-     9.1.  List Examples . . . . . . . . . . . . . . . . . . . . . .  13
-       9.1.1.  Simple Unordered (Bullet) List  . . . . . . . . . . .  13
+     7.1.  A COMMENT . . . . . . . . . . . . . . . . . . . . . . . .  11
+     7.2.  AGAIN . . . . . . . . . . . . . . . . . . . . . . . . . .  12
+     7.3.  THEN HOW? . . . . . . . . . . . . . . . . . . . . . . . .  14
+     7.4.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .  15
+   8.  CS Stuff  . . . . . . . . . . . . . . . . . . . . . . . . . .  15
+     8.1.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .  15
+     8.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .  15
+     8.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .  15
+     8.4.  Build Python  . . . . . . . . . . . . . . . . . . . . . .  16
+   9.  RFC Typesetting Examples  . . . . . . . . . . . . . . . . . .  16
+     9.1.  List Examples . . . . . . . . . . . . . . . . . . . . . .  16
+       9.1.1.  Simple Unordered (Bullet) List  . . . . . . . . . . .  16
        9.1.2.  Ordered List With Lowercase Letters in Brackets Instead
-               of Numbers  . . . . . . . . . . . . . . . . . . . . .  13
-       9.1.3.  Continuous Numbering in a List That is Split by Text or
-               Sections  . . . . . . . . . . . . . . . . . . . . . .  13
-       9.1.4.  Definition Lists  . . . . . . . . . . . . . . . . . .  14
-       9.1.5.  Lists With Hanging Labels . . . . . . . . . . . . . .  14
+               of Numbers  . . . . . . . . . . . . . . . . . . . . .  16
+
 
 
 
@@ -1243,20 +1073,24 @@ Yan                     Expires 10 November 2025                [Page 2]
 Internet-Draft              Abbreviated Title                   May 2025
 
 
-     9.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .  14
-     9.3.  Source Code Examples  . . . . . . . . . . . . . . . . . .  14
-     9.4.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . .  15
-     9.5.  Using xref  . . . . . . . . . . . . . . . . . . . . . . .  15
-     9.6.  IANA Considerations . . . . . . . . . . . . . . . . . . .  15
-     9.7.  Security Considerations . . . . . . . . . . . . . . . . .  15
-   10. About the Author  . . . . . . . . . . . . . . . . . . . . . .  15
-   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  16
-     11.1.  Normative References . . . . . . . . . . . . . . . . . .  16
-     11.2.  Informative References . . . . . . . . . . . . . . . . .  16
-   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  16
-   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  16
-   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  16
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  17
+       9.1.3.  Continuous Numbering in a List That is Split by Text or
+               Sections  . . . . . . . . . . . . . . . . . . . . . .  16
+       9.1.4.  Definition Lists  . . . . . . . . . . . . . . . . . .  17
+       9.1.5.  Lists With Hanging Labels . . . . . . . . . . . . . .  17
+     9.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .  17
+     9.3.  Source Code Examples  . . . . . . . . . . . . . . . . . .  17
+     9.4.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . .  18
+     9.5.  Using xref  . . . . . . . . . . . . . . . . . . . . . . .  18
+     9.6.  IANA Considerations . . . . . . . . . . . . . . . . . . .  18
+     9.7.  Security Considerations . . . . . . . . . . . . . . . . .  18
+   10. About the Author  . . . . . . . . . . . . . . . . . . . . . .  18
+   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  19
+     11.1.  Normative References . . . . . . . . . . . . . . . . . .  19
+     11.2.  Informative References . . . . . . . . . . . . . . . . .  19
+   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  19
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  19
+   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  19
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  20
 
 1.  Introduction
 
@@ -1290,10 +1124,6 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-
-
-
-
 Yan                     Expires 10 November 2025                [Page 3]
 
 Internet-Draft              Abbreviated Title                   May 2025
@@ -1314,6 +1144,8 @@ Internet-Draft              Abbreviated Title                   May 2025
    am eager to know.
 
    Diligent pursuit of truth unlocks knowledge that liberates.
+
+2.1.1.  GACHA
 
 2.2.  STORIES
 
@@ -1343,8 +1175,6 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    odd: [ah-d] adjective: different from what is usual or expected;
    strange.
-
-
 
 
 
@@ -1716,7 +1546,190 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 7.  Typesetting
 
-7.1.  THEN HOW?
+7.1.  A COMMENT
+
+   A commenter claimed the Markdown line-break convention was a
+   compromise to appease conflicting standards.  They found it
+   infuriating - obviously, a Markdown line-break should equal a real
+   one.
+
+   They also hate the Markdown bold and italic text conventions.  To
+   them, single asterisks should mark bold text, single underscores
+   italic.  Simple as that.
+
+   I find these designs natural and good.  The comment surprised me, and
+   I want to respond to it.
+
+   People wonder why not `real' newlines.  One major reason is to enable
+   easy line-based diffs, like those in git-diff, patch(1) and other
+   version control and collaboration tools.  Recall when patches were
+   emailed.
+
+   Using `real' newlines means a tiny edit can spawn a huge diff(1)
+   result.
+
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 11]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+   Sounds abstract?  Check the commit histories of GitHub-hosted GitHub
+   Pages sites, plain-text documents, or Markdown files.
+
+   Many don't use version control or collaborate with old-school Unix
+   tools like diff(1) and patch(1).  But that's a large portion of the
+   worlds of Markdown and Unix.
+
+   The Markdown line-break convention feels natural.  It's the norm in
+   Roff, LaTeX, RST and HTML.  Check HTML source - same deal.  That's
+   just how it is.
+
+   Look at Unix-world plain text docs.  Nearly all are formatted a
+   certain way.  Take two Slackware docs as an example.  There are
+   countless more - LFS, TLDP, Python PEPs, Python RST docs, Linux
+   kernel docs, RFC sources.  They are everywhere.
+
+   <CODE BEGINS>
+   ftp.slackware.com/pub/slackware/
+         slackware64-15.0/
+           Slackware-HOWTO
+           usb-and-pxe-istallers/README_USB.TXT
+   <CODE ENDS>
+
+   And I forgot the plain text emails - yes, just check any maillist,
+   either ArchLinux, Debian, Slackware, Gentoo ... Majority of the mails
+   are line-broke this way.
+
+   So the result is - for people of certain background, this feels just
+   natural.  But for others, this might feel weird.
+
+   Historical context helps.  Word-wrap was not common.  Open vi(1) or
+   vim(1), and you will see it's off by default.  Sure, some distros
+   like Ubuntu might provide a nice good default `.vimrc', trying to be
+   user-friendly like Windows.  But that's not the standard way.
+
+   Without a common word-wrap feature, manual line-wrapping became a
+   habit and standard.  People do it because some editors do not auto-
+   warp.  Skip it, and the next turns into a jumbled mess.
+
+   And for the asterik part, I shall say that underscore is for
+   underline.
+
+7.2.  AGAIN
+
+   writingslowly.com/2025/01/13/semantic-line-breaks-are-a.html
+
+   Well, while editing the above, I found that I want to write something
+   completely different.
+
+
+
+Yan                     Expires 10 November 2025               [Page 12]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+   No question, Markdown is annoying.  Ditching it was my best move.
+   Its charm, the good looks in raw form, became its downfall.  I had to
+   constantly preserve that aesthetic.
+
+   Besides this, I am convinced it's impossible to combine raw-file
+   attractiveness with full functionality; they are mutually exclusive.
+   When we strive for more functions in Markdown, the result is usually
+   a worse-looking raw file.
+
+   Now I use roff(7).  Maybe you have never heard of it, but odds are
+   you have used it without realising, since it formats man-pages(7).
+   By sacrificing raw-file prettiness, it simplifies my life, leaving me
+   content and free from Markdown's demands.
+
+   However, I want to talk the line-breaking style.  Its key advantage
+   lies in version control, where it generates more concise diffs,
+   making it effortless to review edits upon sign-off.  This benefit
+   extends to collaboration as well; when sharing patches via email, it
+   streamlines the process and saves others' time.
+
+   Look at this example from the real git-log of this very text that I
+   am editing:
+
+   <CODE BEGINS>
+   commit fc05868be12a41cfce056f59a3c5e50cea26a14b
+   Author: Huihang Yan <huihang.yan@outlook.com>
+   Date:   Mon May 5 12:37:23 2025 +0800
+
+   diff --git a/index.html b/index.html
+   index 116c92d..2e7d61a 100644
+   --- a/index.html
+   +++ b/index.html
+   @@ -1126,9 +1126,9 @@ AGAIN
+
+           Besides this, I am convinced it's impossible to  com-
+           bine raw-file attractiveness with full functionality;
+   -       they are mutually exclusive.  Then, if we  want  more
+   -       functions in Markdown, usually we got a worse looking
+   -       raw file.
+   +       they are mutually exclusive.  When we strive for more
+   +       functions in Markdown, the result is usually a worse-
+   +       looking raw file.
+
+           Now I use roff(7).  Maybe you have never heard of it,
+           but  odds  are  you  have  used it without realising,
+   <CODE ENDS>
+
+   As another example:
+
+
+
+Yan                     Expires 10 November 2025               [Page 13]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+   <CODE BEGINS>
+   commit b5bd37869fb450576dbdd0bf07ff5057747c414b
+   Author: Huihang Yan <huihang.yan@outlook.com>
+   Date:   Mon May 5 13:00:20 2025 +0800
+
+   diff --git a/index.html b/index.html
+   index 691cf8b..4e74ae5 100644
+   --- a/index.html
+   +++ b/index.html
+
+   @@ -1182,8 +1182,12 @@ AGAIN
+           design  has no purpose.  Also, it's worth noting that
+           this is the default design across nearly all  similar
+           tools - RST, LaTeX, roff(7), Texinfo, HTML, and more.
+   -       As a result, I found this design  natural  and  good,
+   -       and was surprised by the comment.
+   +       Thus, I found this design both natural and good,  and
+   +       the comment caught me off guard.
+   +
+   +       However,   I  quickly  grapsed  the  situation.   The
+   +       thought was entire reasonable; I had simply grown ac-
+   +       customed to the design.
+   <CODE ENDS>
+
+   Manually placing new-lines shrinks diff(1) results.  One-line
+   paragraphs make diff(1) cover entire text, untouched parts included.
+
+   Many don't find this an issue.  Even paragraph-long diff(1) results
+   are trivial, and plenty on GitHub do it.  Moreover, not everyone uses
+   version control and diff(1).  For them, it's non-existent.
+
+   But I discuss this because without it, this Markdown design has no
+   purpose.  Also, it's worth noting that this is the default design
+   across nearly all similar tools - RST, LaTeX, roff(7), Texinfo, HTML,
+   and more.  Thus, I found this design both natural and good, and the
+   comment caught me off guard.
+
+   However, I quickly grapsed the situation.  The thought was entire
+   reasonable; I had simply grown accustomed to the design.
+
+7.3.  THEN HOW?
 
    Ok, now we have learnt from the possible causes to that space-
    modifing issue.  Then what should we do?
@@ -1724,6 +1737,13 @@ Internet-Draft              Abbreviated Title                   May 2025
    The only issue should be how to separate paragraphs without using
    black lines.  I check the roff sources of the man-pages, and I see
    them use '.P'.  I tried it and it works.
+
+
+
+Yan                     Expires 10 November 2025               [Page 14]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    Well, seems that we don't have problems anymore.  But what exactly is
    '.P'?
@@ -1738,16 +1758,7 @@ Internet-Draft              Abbreviated Title                   May 2025
    But where is '.P' command mentioned in the man-pages?  Weird, can't
    find it.
 
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 11]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
-7.2.  XML2RFC
+7.4.  XML2RFC
 
    <CODE BEGINS> file "xml2rfc.sh"
 
@@ -1783,25 +1794,18 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    <CODE ENDS>
 
+
+
+Yan                     Expires 10 November 2025               [Page 15]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
 8.4.  Build Python
 
    [OK] Check README.rst
 
    [OK] Check `./configure --help`
-
-
-
-
-
-
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 12]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
 
    <CODE BEGINS> file "python.sh"
 
@@ -1845,19 +1849,19 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    REQ3:  This will be "REQ3:"
 
+
+
+
+Yan                     Expires 10 November 2025               [Page 16]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
    REQ4:  This will be "REQ4:"
 
 9.1.3.1.  Section in-between
 
    More text in-between
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 13]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
 
    REQ5:  This will be REQ5:
 
@@ -1904,13 +1908,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-
-
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 14]
+Yan                     Expires 10 November 2025               [Page 17]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1966,7 +1964,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 15]
+Yan                     Expires 10 November 2025               [Page 18]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -2022,7 +2020,7 @@ Contributors
 
 
 
-Yan                     Expires 10 November 2025               [Page 16]
+Yan                     Expires 10 November 2025               [Page 19]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -2078,5 +2076,5 @@ Author's Address
 
 
 
-Yan                     Expires 10 November 2025               [Page 17]
+Yan                     Expires 10 November 2025               [Page 20]
 </pre></html>
