@@ -10,9 +10,9 @@ pre {
 </style>
 <pre>
 
-      $Id: huihang-yan.github.io, 2025/05/09 09:25:11 huihang Exp $
+      $Id: huihang-yan.github.io, 2025/05/09 09:29:45 huihang Exp $
 
-      Last update: Fri May 9 09:25:11 HKT 2025
+      Last update: Fri May 9 09:29:45 HKT 2025
 
 -------------------------------------------------------------------------------
 
@@ -850,80 +850,6 @@ ROFF NOTES
        IP: Increase position/tab?
               .IP \(bu
 
-SPACING
-       An  issue  has  been noticed when using Groff. It ap-
-       pears that whenever there are alterations to a single
-       line  within  a paragraph, even when subsequent para-
-       graphs remain completely unchanged in terms of  their
-       content, their spacing also gets modified.
-
-       Despite  the text content in these paragraphs remain-
-       ing the same, the visible layout of the  document  is
-       affected.
-
-       This  is  very  annoying  when it comes together with
-       git-diff.  I am wondering if this is a well-known  or
-       classical problem within in the Groff community.
-
-       Well,  it seems so. Let's check the man-page.  In the
-       section EDITING ROFF:
-
-              All _roff_ formatters provide  automated  line
-              breaks and horizontal and vertical spacing. In
-              order to not disturb this, the following  tips
-              can be helpful.
-
-              First  of  all,  never  include empty or blank
-              lines in a roff  document.  Instead,  use  the
-              empty request, i.e. a line consisting of a dot
-              only, or a line comment .\" if  a  structuring
-              element is needed.
-
-              Never  start  a  line  with whitespace because
-              this can lead to  unexpected  behaviour.   In-
-              dented paragraphs can be constructed in a con-
-              trolled way by roff requests.
-
-              Start each sentence on a line of its own,  for
-              the spacing after a dot is handled differently
-              depending on whether it terminates an abbrevi-
-              ation  or  a  sentence.   To  distinguish both
-              cases, do a line break  after  each  sentence.
-              The  following  example shows a judicious line
-              breaking in a roff input file.
-
-                     This is an example of a
-                     .I roff
-                     document that you can type into your text editor.
-                     .
-                     This is the next sentence in the same paragraph.
-                     .
-                     This is a longer sentence stretching over several
-                     input lines;
-                     abbreviations like cf. are easily identified
-                     because the dot is not followed by a
-                     line break.
-                     .
-                     In the output, this sentence continues
-                     the same paragraph.
-
-       This might be the case.  There seems  to  have  three
-       things which might cause problems.
-
-       Firstly the blank lines.  It would 'disturb' the for-
-       matting?
-
-       Secondly the line starting with whitespace.  This can
-       'lead  to  unexpected  behaviour'?  Well, weird.  Too
-       weird.  Anyway, though it's weird, let's try not step
-       on this trap.  It's not that hard.
-
-       Finally,  start  each  sentence on a line of its own.
-       'For the spacing after a dot is  handled  differently
-       depending on whether it terminates an abbreviation or
-       a sentence.'  Well, this is also weird.   But  anyway
-       let's try to follow this security advice too.
-
 
 
 Greenhouse of Huihang Yan    MAY THE FOURTH MMXXV                   huihang(7)
@@ -1020,21 +946,21 @@ Table of Contents
      6.1.  Quotes  . . . . . . . . . . . . . . . . . . . . . . . . .   7
      6.2.  Fortune(6) Quotes . . . . . . . . . . . . . . . . . . . .   8
    7.  Typesetting . . . . . . . . . . . . . . . . . . . . . . . . .  11
-     7.1.  SEMBR . . . . . . . . . . . . . . . . . . . . . . . . . .  11
-     7.2.  A COMMENT . . . . . . . . . . . . . . . . . . . . . . . .  12
-     7.3.  AGAIN . . . . . . . . . . . . . . . . . . . . . . . . . .  13
-     7.4.  THEN HOW? . . . . . . . . . . . . . . . . . . . . . . . .  15
-     7.5.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .  16
-   8.  CS Stuff  . . . . . . . . . . . . . . . . . . . . . . . . . .  16
-     8.1.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .  16
-     8.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .  16
-     8.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .  16
-     8.4.  Build Python  . . . . . . . . . . . . . . . . . . . . . .  17
-   9.  RFC Typesetting Examples  . . . . . . . . . . . . . . . . . .  17
-     9.1.  List Examples . . . . . . . . . . . . . . . . . . . . . .  17
-       9.1.1.  Simple Unordered (Bullet) List  . . . . . . . . . . .  17
-       9.1.2.  Ordered List With Lowercase Letters in Brackets Instead
-               of Numbers  . . . . . . . . . . . . . . . . . . . . .  17
+     7.1.  SPACING . . . . . . . . . . . . . . . . . . . . . . . . .  11
+     7.2.  SEMBR . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+     7.3.  A COMMENT . . . . . . . . . . . . . . . . . . . . . . . .  13
+     7.4.  AGAIN . . . . . . . . . . . . . . . . . . . . . . . . . .  14
+     7.5.  THEN HOW? . . . . . . . . . . . . . . . . . . . . . . . .  16
+     7.6.  XML2RFC . . . . . . . . . . . . . . . . . . . . . . . . .  17
+   8.  CS Stuff  . . . . . . . . . . . . . . . . . . . . . . . . . .  17
+     8.1.  Unix v.s.  Windows  . . . . . . . . . . . . . . . . . . .  17
+     8.2.  Interpretation Lanuages . . . . . . . . . . . . . . . . .  17
+     8.3.  MAPSCII . . . . . . . . . . . . . . . . . . . . . . . . .  17
+     8.4.  Build Python  . . . . . . . . . . . . . . . . . . . . . .  18
+   9.  RFC Typesetting Examples  . . . . . . . . . . . . . . . . . .  18
+     9.1.  List Examples . . . . . . . . . . . . . . . . . . . . . .  18
+       9.1.1.  Simple Unordered (Bullet) List  . . . . . . . . . . .  18
+
 
 
 
@@ -1043,24 +969,26 @@ Yan                     Expires 10 November 2025                [Page 2]
 Internet-Draft              Abbreviated Title                   May 2025
 
 
+       9.1.2.  Ordered List With Lowercase Letters in Brackets Instead
+               of Numbers  . . . . . . . . . . . . . . . . . . . . .  18
        9.1.3.  Continuous Numbering in a List That is Split by Text or
-               Sections  . . . . . . . . . . . . . . . . . . . . . .  17
-       9.1.4.  Definition Lists  . . . . . . . . . . . . . . . . . .  18
-       9.1.5.  Lists With Hanging Labels . . . . . . . . . . . . . .  18
-     9.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .  18
-     9.3.  Source Code Examples  . . . . . . . . . . . . . . . . . .  18
-     9.4.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . .  19
-     9.5.  Using xref  . . . . . . . . . . . . . . . . . . . . . . .  19
-     9.6.  IANA Considerations . . . . . . . . . . . . . . . . . . .  19
-     9.7.  Security Considerations . . . . . . . . . . . . . . . . .  19
-   10. About the Author  . . . . . . . . . . . . . . . . . . . . . .  19
-   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  20
-     11.1.  Normative References . . . . . . . . . . . . . . . . . .  20
-     11.2.  Informative References . . . . . . . . . . . . . . . . .  20
-   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  20
-   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  20
-   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  20
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  21
+               Sections  . . . . . . . . . . . . . . . . . . . . . .  18
+       9.1.4.  Definition Lists  . . . . . . . . . . . . . . . . . .  19
+       9.1.5.  Lists With Hanging Labels . . . . . . . . . . . . . .  19
+     9.2.  Tables  . . . . . . . . . . . . . . . . . . . . . . . . .  19
+     9.3.  Source Code Examples  . . . . . . . . . . . . . . . . . .  19
+     9.4.  Adding Diagrams . . . . . . . . . . . . . . . . . . . . .  20
+     9.5.  Using xref  . . . . . . . . . . . . . . . . . . . . . . .  20
+     9.6.  IANA Considerations . . . . . . . . . . . . . . . . . . .  20
+     9.7.  Security Considerations . . . . . . . . . . . . . . . . .  20
+   10. About the Author  . . . . . . . . . . . . . . . . . . . . . .  20
+   11. References  . . . . . . . . . . . . . . . . . . . . . . . . .  21
+     11.1.  Normative References . . . . . . . . . . . . . . . . . .  21
+     11.2.  Informative References . . . . . . . . . . . . . . . . .  21
+   Appendix A.  Appendix 1 . . . . . . . . . . . . . . . . . . . . .  21
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  21
+   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .  21
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  22
 
 1.  Introduction
 
@@ -1088,9 +1016,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Published: Jun 29, 2020
 
-   Learn how Niklas Luhmann, a prolific sociologist, used Zettelkasten,
-   or slip box, to organise his ideas and boost his productivity.
-   Discover how to apply ...
+
 
 
 
@@ -1098,6 +1024,10 @@ Yan                     Expires 10 November 2025                [Page 3]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+   Learn how Niklas Luhmann, a prolific sociologist, used Zettelkasten,
+   or slip box, to organise his ideas and boost his productivity.
+   Discover how to apply ...
 
    Like vinyl records and hardcover books, Luhmann's original system was
    analog.  It consisted of numbered index cards, or slips, filed in six
@@ -1143,10 +1073,6 @@ Internet-Draft              Abbreviated Title                   May 2025
    pique: [peek], verb, stimulate - interest or curiosity.  E.g. 'you
    have piqued my curiousity about the man'
 
-   odd: [ah-d] adjective: different from what is usual or expected;
-   strange.
-
-
 
 
 
@@ -1154,6 +1080,9 @@ Yan                     Expires 10 November 2025                [Page 4]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
+
+   odd: [ah-d] adjective: different from what is usual or expected;
+   strange.
 
 3.  Thoughts
 
@@ -1200,9 +1129,6 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Envy is the desire for possessions, happiness as well as the talents
    and abilities of others.
-
-
-
 
 
 
@@ -1516,7 +1442,94 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 7.  Typesetting
 
-7.1.  SEMBR
+7.1.  SPACING
+
+   An issue has been noticed when using Groff.  It appears that whenever
+   there are alterations to a single line within a paragraph, even when
+   subsequent paragraphs remain completely unchanged in terms of their
+   content, their spacing also gets modified.
+
+   Despite the text content in these paragraphs remaining the same, the
+   visible layout of the document is affected.
+
+   This is very annoying when it comes together with git-diff.  I am
+   wondering if this is a well-known or classical problem within in the
+   Groff community.
+
+   Well, it seems so.  Let's check the man-page.  In the section
+   EDITING ROFF:
+           All _roff_ formatters provide automated line breaks and
+           horizontal and vertical spacing.  In order to not disturb
+           this, the following tips can be helpful.
+
+
+
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 11]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+           First of all, never include empty or blank lines in a roff
+           document.  Instead, use the empty request, i.e. a line
+           consisting of a dot only, or a line comment .\" if a
+           structuring element is needed.
+
+           Never start a line with whitespace because this can lead to
+           unexpected behaviour.  Indented paragraphs can be constructed
+           in a controlled way by roff requests.
+
+           Start each sentence on a line of its own, for the spacing
+           after a dot is handled differently depending on whether it
+           terminates an abbreviation or a sentence.  To distinguish
+           both cases, do a line break after each sentence.
+
+           The following example shows a judicious line breaking in a
+           roff input file.
+
+           <CODE BEGINS>
+           This is an example of a
+           .I roff
+           document that you can type into your text editor.
+           .
+           This is the next sentence in the same paragraph.
+           .
+           This is a longer sentence stretching over several
+           input lines;
+           abbreviations like cf. are easily identified
+           because the dot is not followed by a
+           line break.
+           .
+           In the output, this sentence continues
+           the same paragraph.
+           <CODE ENDS>
+
+   This might be the case.  There seems to have three things which might
+   cause problems.
+
+   Firstly the blank lines.  It would 'disturb' the formatting?
+
+   Secondly the line starting with whitespace.  This can 'lead to
+   unexpected behaviour'?  Well, weird.  Too weird.  Anyway, though it's
+   weird, let's try not step on this trap.  It's not that hard.
+
+   Finally, start each sentence on a line of its own.  'For the spacing
+   after a dot is handled differently depending on whether it terminates
+   an abbreviation or a sentence.'  Well, this is also weird.  But
+   anyway let's try to follow this security advice too.
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 12]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
+
+7.2.  SEMBR
 
    Semantic line breaks.  Yes, that's the term.
 
@@ -1540,14 +1553,7 @@ Internet-Draft              Abbreviated Title                   May 2025
            editors, and other collaborators can make source text easier
            to work with, without affecting how it's seen by readers.
 
-
-
-Yan                     Expires 10 November 2025               [Page 11]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
-7.2.  A COMMENT
+7.3.  A COMMENT
 
    A commenter claimed the Markdown line-break convention was a
    compromise to appease conflicting standards.  They found it
@@ -1571,6 +1577,13 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Sounds abstract?  Check the commit histories of GitHub-hosted GitHub
    Pages sites, plain-text documents, or Markdown files.
+
+
+
+Yan                     Expires 10 November 2025               [Page 13]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    Many don't use version control or collaborate with old-school Unix
    tools like diff(1) and patch(1).  But that's a large portion of the
@@ -1596,13 +1609,6 @@ Internet-Draft              Abbreviated Title                   May 2025
    either ArchLinux, Debian, Slackware, Gentoo ... Majority of the mails
    are line-broke this way.
 
-
-
-Yan                     Expires 10 November 2025               [Page 12]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
-
    So the result is - for people of certain background, this feels just
    natural.  But for others, this might feel weird.
 
@@ -1618,12 +1624,22 @@ Internet-Draft              Abbreviated Title                   May 2025
    And for the asterik part, I shall say that underscore is for
    underline.
 
-7.3.  AGAIN
+7.4.  AGAIN
 
    writingslowly.com/2025/01/13/semantic-line-breaks-are-a.html
 
    Well, while editing the above, I found that I want to write something
    completely different.
+
+
+
+
+
+
+Yan                     Expires 10 November 2025               [Page 14]
+
+Internet-Draft              Abbreviated Title                   May 2025
+
 
    No question, Markdown is annoying.  Ditching it was my best move.
    Its charm, the good looks in raw form, became its downfall.  I had to
@@ -1647,17 +1663,6 @@ Internet-Draft              Abbreviated Title                   May 2025
 
    Look at this example from the real git-log of this very text that I
    am editing:
-
-
-
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 13]
-
-Internet-Draft              Abbreviated Title                   May 2025
-
 
    <CODE BEGINS>
    commit fc05868be12a41cfce056f59a3c5e50cea26a14b
@@ -1687,30 +1692,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Yan                     Expires 10 November 2025               [Page 14]
+Yan                     Expires 10 November 2025               [Page 15]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1755,7 +1737,7 @@ Internet-Draft              Abbreviated Title                   May 2025
    However, I quickly grapsed the situation.  The thought was entire
    reasonable; I had simply grown accustomed to the design.
 
-7.4.  THEN HOW?
+7.5.  THEN HOW?
 
    Ok, now we have learnt from the possible causes to that space-
    modifing issue.  Then what should we do?
@@ -1766,7 +1748,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 15]
+Yan                     Expires 10 November 2025               [Page 16]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1784,7 +1766,7 @@ Internet-Draft              Abbreviated Title                   May 2025
    But where is '.P' command mentioned in the man-pages?  Weird, can't
    find it.
 
-7.5.  XML2RFC
+7.6.  XML2RFC
 
    <CODE BEGINS> file "xml2rfc.sh"
 
@@ -1822,7 +1804,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 16]
+Yan                     Expires 10 November 2025               [Page 17]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1878,7 +1860,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 17]
+Yan                     Expires 10 November 2025               [Page 18]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1934,7 +1916,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 18]
+Yan                     Expires 10 November 2025               [Page 19]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -1990,7 +1972,7 @@ Internet-Draft              Abbreviated Title                   May 2025
 
 
 
-Yan                     Expires 10 November 2025               [Page 19]
+Yan                     Expires 10 November 2025               [Page 20]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -2046,7 +2028,7 @@ Contributors
 
 
 
-Yan                     Expires 10 November 2025               [Page 20]
+Yan                     Expires 10 November 2025               [Page 21]
 
 Internet-Draft              Abbreviated Title                   May 2025
 
@@ -2102,5 +2084,5 @@ Author's Address
 
 
 
-Yan                     Expires 10 November 2025               [Page 21]
+Yan                     Expires 10 November 2025               [Page 22]
 </pre></html>
